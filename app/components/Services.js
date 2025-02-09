@@ -1,26 +1,26 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import { Link, Element } from 'react-scroll';
-import AI from '../images/aiNew.png'
+import { Link } from 'react-scroll';
+
 import Image from "next/image";
-import Codebug from '../images/codebugfinal7.png'
+
 import Arrow from '../images/rightArrow2.png'
 import ScrollReveal from "scrollreveal";
 
 const Services = ({handleTalkClick}) => {
   const [service, setService] = useState("Artificial Intelligence");
-  const outerContainerRef = useRef(null);
-  const [isInnerScrollActive, setInnerScrollActive] = useState(true);
+  //const outerContainerRef = useRef(null);
+  //const [isInnerScrollActive, setInnerScrollActive] = useState(true);
 
-  const handleActivateInnerScroll = () => {
-    setInnerScrollActive(true);
-    document.body.style.overflow = "hidden"; // Prevent main page scrolling
-  };
+  // const handleActivateInnerScroll = () => {
+  //   setInnerScrollActive(true);
+  //   document.body.style.overflow = "hidden"; // Prevent main page scrolling
+  // };
 
-  const handleDeactivateInnerScroll = () => {
-    setInnerScrollActive(false);
-    document.body.style.overflow = ""; // Re-enable main page scrolling
-  };
+  // const handleDeactivateInnerScroll = () => {
+  //   setInnerScrollActive(false);
+  //   document.body.style.overflow = ""; // Re-enable main page scrolling
+  // };
   
   const divRef = useRef(null);
 
@@ -327,7 +327,7 @@ const Services = ({handleTalkClick}) => {
                   </div>
                   <div className="h-[400%] pl-[50px] pr-4  py-4">
                     <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-80 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
-                      <p  className="text-[13px] text-sans leading-4 ">At CodeBug, we create visually stunning and user-friendly designs that elevate the user experience. Our team focuses on crafting intuitive interfaces and seamless interactions to ensure your users enjoy every step of their journey. By combining creativity with functionality, we deliver designs that not only look great but also drive engagement and satisfaction. Let CodeBug enhance your digital products with exceptional UI/UX design tailored to your audience's needs.
+                      <p  className="text-[13px] text-sans leading-4 ">At CodeBug, we create visually stunning and user-friendly designs that elevate the user experience. Our team focuses on crafting intuitive interfaces and seamless interactions to ensure your users enjoy every step of their journey. By combining creativity with functionality, we deliver designs that not only look great but also drive engagement and satisfaction. Let CodeBug enhance your digital products with exceptional UI/UX design tailored to your audience&apos;s needs.
                       </p>
                     </div>
                   </div>

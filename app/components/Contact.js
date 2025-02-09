@@ -10,11 +10,11 @@ const Contact = () => {
                 <div className="lg:w-[40%] w-[100%] py-10 flex flex-col items-center">
                     <div className="sm:w-[100%] w-[90%]">
                     <p className=" text-2xl sm:text-3xl text-white">Contact Us</p>
-                    <p className=" text-4xl sm:text-5xl text-white w-[90%]">Let's Talk About <span className="text-yellow-400">Your Next Project</span></p>
+                    <p className=" text-4xl sm:text-5xl text-white w-[90%]">Let&apos;s Talk About <span className="text-yellow-400">Your Next Project</span></p>
                     <p className=" text-[16px] sm:text-lg text-yellow-200 mt-4 w-[90%]">
-                        We'd love to hear from you! Whether it's a project 
-                        inquiry, feedback, or just a friendly hello, don't hesitate 
-                        to reach out: Let's create something amazing together!
+                        We&apos;d love to hear from you! Whether it&apos;s a project 
+                        inquiry, feedback, or just a friendly hello, don&apos;t hesitate 
+                        to reach out: Let&apos;s create something amazing together!
                     </p>
                     </div>
                 </div>

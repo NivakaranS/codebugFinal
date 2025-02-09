@@ -1,6 +1,6 @@
 
 'use client'
-import Image from "next/image";
+
 import Navigation from "./components/Navigation";
 
 import React, {useEffect, useState} from "react";
@@ -13,7 +13,7 @@ import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
 import Blogs from "./components/Blogs";
 import { Element } from "react-scroll";
-import Contact from "./components/Contact";
+
 import ContactForm from "./components/contactForm";
 
 
@@ -38,9 +38,6 @@ const Home = () => {
     
   }
 
-  const handlePrivacyClick = () => {
-    //router.push('./privacy')
-  }
 
   const onContactClick = () => {
       setContactClick(!contactClick);

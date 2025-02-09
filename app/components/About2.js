@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import ReactPlayer from 'react-player'
+
 import Image from 'next/image'
 import Codebug from '../images/codebugNew4.png'
 import ScrollReveal from 'scrollreveal'

@@ -2,15 +2,15 @@
 import React from 'react';
 import Image from 'next/image';
 import Logo from '../images/codebugfinal7.png'
-import MobileLogo from '../images/codebugfinal8.png'
+
 import Menu from '../images/menu.png'
 import { useState } from 'react';
 import Logo2 from '../images/codebugNew.png'
 import {Link} from 'react-scroll'
-import { useRouter } from "next/navigation";
+
 import Button1 from './Button1';
 
-const Navigation = ({handlePortfolioClick, setContactClick, handleTalkClick, handleCareerClick, handleResourceClick, onNavigationClick, navigationClick}) => {
+const Navigation = ({handlePortfolioClick, handleTalkClick, handleCareerClick, handleResourceClick, onNavigationClick, navigationClick}) => {
     const [onMenuClick, setOneMenuClick] = useState(false)
     //const router = useRouter();
 
@@ -53,7 +53,7 @@ const Navigation = ({handlePortfolioClick, setContactClick, handleTalkClick, han
                 </ul>
                 <div className='flex flex-row space-x-3 text-[15px]'>
                     <Link onClick={handleTalkClick}  to="contact" offset={0} smooth={true} duration={500}  className='flex shadow-[0_0px_2px_rgba(0,0,0,0.9)] cursor-pointer justify-center text-black text-[16px] items-center bg-[#39B5C8] hover:bg-[#41CAD9]  ring-blue-800 rounded-[5px]  px-4'>
-                        <p>Let's talk</p>
+                        <p>Let&apos;s talk</p>
                     </Link>
                     
 
@@ -107,7 +107,7 @@ const Navigation = ({handlePortfolioClick, setContactClick, handleTalkClick, han
                     <div className='flex flex-col space-y-2 items-center justify-center mt-5'>
                         
                         <Link to="contact" offset={0} smooth={true} duration={500} onClick={handleTalkClick} className='flex shadow-[0_0px_2px_rgba(0,0,0,0.9)] bg-[#39B5C8] hover:bg-[#41CAD9]  ring-blue-800 w-fit  flex-row space-x-3 text-[16px] cursor-pointer  text-white ring-[0.5px] ring-black rounded-[5px] py-1 px-[50px]'>
-                            <p>Let's talk</p>
+                            <p>Let&apos;s talk</p>
                         </Link>
                         <Button1 ButtonName='Login' ButtonFunction={handleNavigate}/>
                     </div>

@@ -108,7 +108,7 @@ const Blogs = ({handleBlog1Click, handleBlogClick, handleBlog4Click, handleBlog3
                             </div>
                             <p className="text-[16px] leading-[18px] text-gray-900">The Future of Software Development: Trends to Watch in 2025</p>
                             <p className="text-[11px] leading-[13px] text-gray-600 mt-1">Discover the key trends like AI, low-code, Web3 and more shaping software development in 2025. Stay 
-                                ahead with insights into the industry's future.
+                                ahead with insights into the industry&apos;s future.
                             </p>
                             
                             <div onClick={handleBlog1Click} className="mt-2 bg-[#F1A230] flex flex-row items-center justify-center ring-[#BF532C] ring-[0.5px] text-xl text-black rounded-[5px] px-4 2xl:py-2 ring-[#8C2020] py-[3px] cursor-pointer  group  ">
