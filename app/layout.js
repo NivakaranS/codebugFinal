@@ -17,7 +17,7 @@ export const metadata = {
   description: "Your Partner in Digital Transformation",
 };
 
-export default function RootLayout({ children }) {
+const RootLayout =({ children }) => {
   return (
     <html lang="en">
       <head>
@@ -33,3 +33,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+export default RootLayout;

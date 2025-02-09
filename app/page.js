@@ -17,7 +17,7 @@ import Contact from "./components/Contact";
 import ContactForm from "./components/contactForm";
 
 
-export default function Home() {
+const Home = () => {
   const [navigationClick, setNavigationClick] = useState('Home');
   const [contactClick, setContactClick] = useState(false);
 
@@ -116,6 +116,7 @@ const handleBlogClick = () => {
   );
 }
 
+export default Home;
 
       
     
