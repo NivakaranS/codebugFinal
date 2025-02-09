@@ -20,7 +20,15 @@ import ContactForm from "./components/contactForm";
 const Home = () => {
   const [navigationClick, setNavigationClick] = useState('Home');
   const [contactClick, setContactClick] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
  
 
   //const router = useRouter();
