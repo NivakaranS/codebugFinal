@@ -189,7 +189,7 @@ const Services = ({handleTalkClick}) => {
                                             <p className="text-[16px]">
                                                 Schedule a Free Consultation
                                             </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
                   </div>
                 </div>  
@@ -220,7 +220,7 @@ const Services = ({handleTalkClick}) => {
                                             <p className="text-[16px]">
                                                 Schedule a Free Consultation
                                             </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
                   </div>
                 </div>  
@@ -250,7 +250,7 @@ const Services = ({handleTalkClick}) => {
                                             <p className="text-[16px]">
                                                 Schedule a Free Consultation
                                             </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
                   </div>
                 </div>  
@@ -280,7 +280,7 @@ const Services = ({handleTalkClick}) => {
                                             <p className="text-[16px]">
                                                 Schedule a Free Consultation
                                             </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
                   </div>
                 </div>  
@@ -310,7 +310,7 @@ const Services = ({handleTalkClick}) => {
                                             <p className="text-[16px]">
                                                 Schedule a Free Consultation
                                             </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
                   </div>
                 </div>  
@@ -340,7 +340,7 @@ const Services = ({handleTalkClick}) => {
                                             <p className="text-[16px]">
                                                 Schedule a Free Consultation
                                             </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
                   </div>
                 </div>  
@@ -370,7 +370,7 @@ const Services = ({handleTalkClick}) => {
                                             <p className="text-[16px]">
                                                 Schedule a Free Consultation
                                             </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
                   </div>
                 </div>  
@@ -400,7 +400,7 @@ const Services = ({handleTalkClick}) => {
                                             <p className="text-[16px]">
                                                 Schedule a Free Consultation
                                             </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
                   </div>
                 </div>  
@@ -430,7 +430,7 @@ const Services = ({handleTalkClick}) => {
                                             <p className="text-[16px]">
                                                 Schedule a Free Consultation
                                             </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
                   </div>
                 </div>  

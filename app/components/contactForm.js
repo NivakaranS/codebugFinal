@@ -20,7 +20,7 @@ const ContactForm = ({onContactClick, contactClick}) => {
                         <p className="text-[17px]">
                         Get in touch
                         </p>
-                    <Image src={Arrow} height={25} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                    <Image alt="arrow" src={Arrow} height={25} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                 </div>
             </div>}
         </div>

@@ -81,7 +81,7 @@ const Portfolio = ({handlePortfolioClick}) => {
                         <p className="text-[15px]  sm:text-[17px]">
                             View All Projects
                         </p>
-                        <Image src={Arrow} height={25} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={25} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </div> 
                 </div>
 
@@ -115,18 +115,14 @@ const Portfolio = ({handlePortfolioClick}) => {
                                 <div  className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] px-4 2xl:py-2 ring-[#8C2020] py-[3px] cursor-pointer hover:bg-[#D98032] group w-fit ">
                                     <p className="text-[14px] hidden sm:flex leading-[16px]">Check it out</p>
                                     <p className="text-[14px] flex sm:hidden leading-[16px]">View </p>
-                                    <Image src={Arrow} height={20}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                                    <Image alt="arrow" src={Arrow} height={20}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                                 </div>
                             </div>
                         </div>
                          
                     </div>
 
-                    
-                    <div className='flex flex-row items-center justify-center w-[85vw]'>
-                        
-                        
-                    </div>
+                
                     
                     
                     

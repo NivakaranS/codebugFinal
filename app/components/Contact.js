@@ -73,7 +73,7 @@ const Contact = () => {
                                         <p className="2xl:text-[23px] lg:text-[20px] md:text-[20px] sm:text-[20px] text-[17px]">
                                             Submit
                                           </p>
-                                          <Image src={Arrow}  className="ml-2 h-[20px] sm:h-[25px] w-fit transition-transform duration-300 group-hover:translate-x-2"/>
+                                          <Image src={Arrow} alt="arrow" className="ml-2 h-[20px] sm:h-[25px] w-fit transition-transform duration-300 group-hover:translate-x-2"/>
                                         </div>
         
                 </div>

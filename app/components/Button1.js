@@ -4,7 +4,7 @@ import './Button1.css';
 
 const Button1 = ({ButtonName, ButtonFunction}) => {
     return (
-        <button onClick={ButtonFunction} class="boton-elegante">{ButtonName}</button>
+        <button onClick={ButtonFunction} className="boton-elegante">{ButtonName}</button>
     )
 }
 

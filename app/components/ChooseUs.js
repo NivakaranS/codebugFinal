@@ -138,7 +138,7 @@ const ChooseUs = ({handleTalkClick}) => {
                         <p className="text-[16px]">
                             Book a Free Consultation
                         </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
                 </div>
                 <div className="lg:w-[55%] md:w-[80%] sm:my-2 my-2 sm:w-[85%] h-[100%] flex sm:flex-row flex-col md:flex-row items-center justify-center">
@@ -176,7 +176,7 @@ const ChooseUs = ({handleTalkClick}) => {
                         <p className="text-[16px]">
                             Book a Free Consultation
                         </p>
-                        <Image src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                        <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                     </Link> 
 
                 

@@ -94,7 +94,7 @@ const Blogs = ({handleBlog1Click, handleBlogClick, handleBlog4Click, handleBlog3
                                         <p className="text-[15px] md:text-[17px]">
                                             View All Blogs
                                         </p>
-                                        <Image src={Arrow}  className="ml-2 h-[20px] md:h-[25px] w-fit transition-transform duration-300 group-hover:translate-x-2"/>
+                                        <Image src={Arrow} alt="arrow"  className="ml-2 h-[20px] md:h-[25px] w-fit transition-transform duration-300 group-hover:translate-x-2"/>
                                     </div>
                                 </div>
                 <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 w-[85vw] mt-9 mb-4">
@@ -113,7 +113,7 @@ const Blogs = ({handleBlog1Click, handleBlogClick, handleBlog4Click, handleBlog3
                             
                             <div onClick={handleBlog1Click} className="mt-2 bg-[#F1A230] flex flex-row items-center justify-center ring-[#BF532C] ring-[0.5px] text-xl text-black rounded-[5px] px-4 2xl:py-2 ring-[#8C2020] py-[3px] cursor-pointer  group  ">
                                 <p className="text-sm">Read Article</p>
-                                <Image src={Arrow} height={15}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                                <Image alt="arrow" src={Arrow} height={15}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                             </div>
                         </div>
                     </div>
@@ -136,13 +136,13 @@ const Blogs = ({handleBlog1Click, handleBlogClick, handleBlog4Click, handleBlog3
                             </p>
                             <div onClick={handleBlog2Click} className="mt-2 bg-[#F1A230] flex flex-row items-center justify-center ring-[#BF532C] ring-[0.5px] text-xl text-black rounded-[5px] px-4 2xl:py-2 ring-[#8C2020] py-[3px] cursor-pointer  group  ">
                                 <p className="text-sm">Read Article</p>
-                                <Image src={Arrow} height={15}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                                <Image alt="arrow" src={Arrow} height={15}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                             </div>
                         </div>
                     </div>
                     <div className="reveal44 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[60vh] w-full max-w-[285px] flex flex-col items-center justify-center">
                         <div className="flex flex-row items-center justify-center  rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
-                            <Image src={Cloud} alt="Cloud" className=" h-[100%] w-[100%]" />
+                            <Image  src={Cloud} alt="Cloud" className=" h-[100%] w-[100%]" />
                         </div>
                         <div className="flex flex-col  py-3 w-[100%] h-[80%]">
                             <div className="text-[11px] ring-[1px] ring-green-800 w-fit text-green-900 bg-green-200 px-2 py-[1.5px] mb-1.5 rounded-[3px]">
@@ -154,7 +154,7 @@ const Blogs = ({handleBlog1Click, handleBlogClick, handleBlog4Click, handleBlog3
                             </p>
                             <div onClick={handleBlog3Click} className="mt-2 bg-[#F1A230] flex flex-row items-center justify-center ring-[#BF532C] ring-[0.5px] text-xl text-black rounded-[5px] px-4 2xl:py-2 ring-[#8C2020] py-[3px] cursor-pointer  group  ">
                                 <p className="text-sm">Read Article</p>
-                                <Image src={Arrow} height={15}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                                <Image alt="arrow" src={Arrow} height={15}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                             </div>
                         </div>
                     </div>
@@ -172,7 +172,7 @@ const Blogs = ({handleBlog1Click, handleBlogClick, handleBlog4Click, handleBlog3
                             </p>
                             <div onClick={handleBlog4Click} className="mt-2 bg-[#F1A230] flex flex-row items-center justify-center ring-[#BF532C] ring-[0.5px] text-xl text-black rounded-[5px] px-4 2xl:py-2 ring-[#8C2020] py-[3px] cursor-pointer  group  ">
                                 <p className="text-sm">Read Article</p>
-                                <Image src={Arrow} height={15}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                                <Image  alt="arrow" src={Arrow} height={15}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                             </div>
                         </div>
                     </div>

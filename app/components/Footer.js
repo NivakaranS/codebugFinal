@@ -26,17 +26,17 @@ const Footer = () => {
                 <div className="sm:hidden lg:hidden xl:flex md:hidden lg:flex-row md:flex-row flex-col items-center justify-center text-[15px] lg:space-x-[90px] space-y-[10px]  md:space-x-[90px] py-9 ">
                     <div className="flex flex-col justify-center items-center md:w-[300px] w-[100vw] text-[13px] ">
                         <div>
-                        <Image src={Logo} height={60}/>
+                        <Image alt="arrow" src={Logo} height={60}/>
                         <p className="leading-[18px] mt-3 mb-2 md:w-[300px] w-[90vw]">Codebug is a dynamic and innovative software development company specializing in delivering high-quality, scalable, and user-centric digital 
                             solutions. Established to bridge the gap between cutting-edge technology and business needs, Codebug serves as a trusted partner 
                             for businesses of all sizes, from startups to enterprises.
                         </p>
                         <div className="flex flex-row space-x-1  items-center">
-                            <Image src={Mail} height={21} width={21} />
+                            <Image alt="arrow" src={Mail} height={21} width={21} />
                             <p className="text-[15px] text-gray-700">info@codebug.lk</p>
                         </div>
                         <div className="flex flex-row mt-1 space-x-1 items-center">
-                            <Image src={Phone} height={20} />
+                            <Image alt="arrow" src={Phone} height={20} />
                             <p className="text-[14px] text-gray-700">+94 75 790 2557</p>
                         </div>
                         </div>
@@ -93,8 +93,8 @@ const Footer = () => {
                         <div className="mt-3">
                             <p className="text-[16px] text-gray-800 mb-[3px]">Follow us</p>
                             <div className="flex flex-row space-x-2">
-                                <Image className="cursor-pointer" src={Instagram} height={35} />
-                                <Image className="cursor-pointer" src={LinkedIn} height={35}/>
+                                <Image alt="arrow" className="cursor-pointer" src={Instagram} height={35} />
+                                <Image alt="arrow" className="cursor-pointer" src={LinkedIn} height={35}/>
                             </div>
                         </div>
                     </div>
@@ -105,17 +105,17 @@ const Footer = () => {
                     <div className="flex md:flex-row flex-col justify-center items-center   ">
                         <div className="flex flex-col justify-center items-center md:w-[300px] w-[100vw] text-[13px] ">
                             <div>
-                                <Image src={Logo} height={60}/>
+                                <Image alt="arrow" src={Logo} height={60}/>
                                 <p className="leading-[18px] mt-3 mb-2 md:w-[300px] sm:w-[600px] w-[90vw]">Codebug is a dynamic and innovative software development company specializing in delivering high-quality, scalable, and user-centric digital 
                                     solutions. Established to bridge the gap between cutting-edge technology and business needs, Codebug serves as a trusted partner 
                                     for businesses of all sizes, from startups to enterprises.
                                 </p>
                                 <div className="flex flex-row space-x-1  items-center">
-                                    <Image src={Mail} height={21} width={21} />
+                                    <Image alt="arrow" src={Mail} height={21} width={21} />
                                     <p className="text-[15px] text-gray-700">info@codebug.lk</p>
                                 </div>
                                 <div className="flex flex-row mt-1 space-x-1 items-center">
-                                    <Image src={Phone} height={20} />
+                                    <Image alt="arrow" src={Phone} height={20} />
                                     <p className="text-[14px] text-gray-700">+94 75 790 2557</p>
                                 </div>
                             </div>
@@ -134,8 +134,8 @@ const Footer = () => {
                             <div className="mt-3 w-[35%]">
                                 <p className="text-[16px] text-gray-800 mb-[3px]">Follow us</p>
                                 <div className="flex flex-row space-x-2">
-                                    <Image className="cursor-pointer" src={Instagram} height={35} />
-                                    <Image className="cursor-pointer" src={LinkedIn} height={35}/>
+                                    <Image alt="arrow" className="cursor-pointer" src={Instagram} height={35} />
+                                    <Image alt="arrow" className="cursor-pointer" src={LinkedIn} height={35}/>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +184,7 @@ const Footer = () => {
                     <p onClick={handleTermsClick} className="cursor-pointer">Terms and Conditions</p>
                 </div>
                 <div className="flex flex-row justify-center pb-2 items-center space-x-2 ">
-                    <Image src={Logo} height={20} />
+                    <Image alt="arrow" src={Logo} height={20} />
                     <p className="text-[13px]">&copy; 2025 Codebug. All Rights Reserved.</p>
                 </div>
                 
