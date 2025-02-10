@@ -6,7 +6,7 @@ import React, {useState, useEffect} from "react";
   
 import Footer from "./components/Footer";
 
-
+import Falcon from "./components/Falcon/page.js"
 import { Element } from "react-scroll";
 import dynamic from "next/dynamic";
 import ContactForm from "./components/contactForm";
@@ -135,6 +135,7 @@ const handleBlogClick = () => {
         <Element name="services">
           <Services/>
         </Element>
+        <Falcon/>
         <ChooseUs/>
         <Element name="portfolio">
           <Portfolio/>
