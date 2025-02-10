@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 // Dynamic imports for components
 const Loading = dynamic(() => import("./components/Loading"), { ssr: false });
 const Portfolio = dynamic(() => import("./components/Portfolio"), { ssr: false });
-const Falcon = dynamic(() => import("./components/Falcon/page.js"), { ssr: false });
+const Falcon = dynamic(() => import("./components/falcon.js"), { ssr: false });
 const Navigation = dynamic(() => import("./components/Navigation"), { ssr: false });
 const Footer = dynamic(() => import("./components/Footer"), { ssr: false });
 const ContactForm = dynamic(() => import("./components/contactForm"), { ssr: false });

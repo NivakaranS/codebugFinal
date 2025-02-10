@@ -2,7 +2,7 @@
 import React from 'react';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
-import Falcon from '../../components/Falcon/page';
+import Falcon from '../../components/falcon';
 import { useState } from 'react';
 import { useRouter } from "next/navigation";
 import ContactForm from '../../components/contactForm';
