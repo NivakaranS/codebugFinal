@@ -2,9 +2,9 @@
 import React, { useState } from 'react'
 import './falcon.css'
 import Image from 'next/image';
-import Send from '../../images/send.png'
+import Send from '../images/send.png'
 import ReactPlayer from 'react-player';
-import FalconLogo from '../../images/falcon.png'
+import FalconLogo from '../images/falcon.png'
 import { useRef, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
