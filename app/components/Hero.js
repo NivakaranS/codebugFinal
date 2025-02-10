@@ -79,7 +79,7 @@ const Hero = () => {
       }, []);
 
     return(
-        <div className="flex justify-center  items-center overflow-hidden w-[100vw] h-[90vh] bg-black">
+        <div className="flex justify-center  items-center overflow-hidden w-[100vw] h-[92vh] bg-black">
             
             <div className="h-[90vh] w-[90vh] relative top-[5px]">
             <ReactPlayer
