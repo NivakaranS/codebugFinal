@@ -99,7 +99,7 @@ const Hero = () => {
                 </div>
                 <p className="reveal3 2xl:text-[26px] lg:text-[23px] md:text-[22px] sm:text-[20px] text-[18px] text-[#F1A230]">Building scalable, intelligent and transormative software solutions for a digital first world</p>
                 <div className="flex flex-row justify-center space-x-5 mt-2">
-                    <Link to="portfolio" offset={-20} smooth={true} duration={500} className=" reveal4 bg-white text-xl text-black ring-1 ring-black rounded-[5px] px-5 2xl:py-2  py-1.5 cursor-pointer hover:ring-white hover:bg-black hover:text-white">
+                    <Link to="portfolio" offset={15} smooth={true} duration={500} className=" reveal4 bg-white text-xl text-black ring-1 ring-black rounded-[5px] px-5 2xl:py-2  py-1.5 cursor-pointer hover:ring-white hover:bg-black hover:text-white">
                         <p className=" 2xl:text-[23px] lg:text-[20px] md:text-[20px] sm:text-[20px] text-[17px]">Explore</p>
                     </Link>
                     <Link to="about" offset={58} smooth={true} duration={500} className="reveal4 bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020]  py-1 sm:py-1.5 cursor-pointer hover:bg-[#D98032] group">

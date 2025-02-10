@@ -99,12 +99,12 @@ useEffect(() => {
                     </div>
                     <div className="bg-[url('/aboutbackground11.png')] text-white bg-[#373435] bg-cover ring-1 ring-gray-300 rounded-[10px] sm:rounded-[20px] text-[15px] px-5 w-[100%] sm:w-full h-full col-span-1 md:col-span-2 flex flex-col items-center py-8">
                         <Image alt='codebug' className='reveal22' src={Codebug} height={130} />
-                        <p className=' reveal20 mt-4 text-[20px]'>
+                        <p className=' reveal20 mt-4 text-[18px]'>
                             Codebug is a dynamic software development company dedicated to creating tailored software solutions that align with 
                             your business goals. With a team of experienced developers, creative innovators, and tech enthusiasts, we leverage the latest tools, technologies and frameworks to deliver 
                             solutions that make a real impact.
                         </p>
-                        <p className='reveal21 mt-4 text-[20px]'> 
+                        <p className='reveal21 mt-4 text-[18px]'> 
                             Our vision is to create the best innovative products in the world and make 
                             cutting-edge technology accessible to everyone. We strive to empower businesses with the latest
                             technology, enabling them to streamline operations, boost productivity, and achieve their full potential.
