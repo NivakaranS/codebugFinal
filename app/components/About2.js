@@ -3,76 +3,78 @@ import React, { useState } from 'react'
 
 import Image from 'next/image'
 import Codebug from '../images/codebugNew4.png'
-//import ScrollReveal from 'scrollreveal'
+import ScrollReveal from 'scrollreveal'
 import { useEffect } from 'react'
+import { useInView } from "react-intersection-observer";
+
 
 
 const About = () => {
-    
+    const { ref:ref1, inView:inView1 } = useInView({ triggerOnce: true });
 const [number1, setNumber] = useState(0);
 
-
+const { ref:ref2, inView:inView2} = useInView({triggerOnce: true});
 const [number2, setNumber2] = useState(0);
 
-// useEffect(() => {
-//     if (typeof window !== 'undefined' && inView1) {
-//       let counter = 0;
-//       const interval = setInterval(() => {
-//         counter++;
-//         setNumber(counter);
-//         if (counter >= 5) clearInterval(interval);
-//       }, 500);
+useEffect(() => {
+    if (typeof window !== 'undefined' && inView1) {
+      let counter = 0;
+      const interval = setInterval(() => {
+        counter++;
+        setNumber(counter);
+        if (counter >= 5) clearInterval(interval);
+      }, 500);
   
-//       return () => clearInterval(interval);
-//     }
-//   }, [inView1]);
+      return () => clearInterval(interval);
+    }
+  }, [inView1]);
   
-//       useEffect(()=> {
-//           if (inView2) {
-//           let counter = 0
-//           const interval = setInterval(() => {
-//               counter++
-//               setNumber2(counter)
-//               if (counter >= 5) clearInterval(interval)
-//           }, 500)
+      useEffect(()=> {
+          if (inView2) {
+          let counter = 0
+          const interval = setInterval(() => {
+              counter++
+              setNumber2(counter)
+              if (counter >= 5) clearInterval(interval)
+          }, 500)
   
-//           return () => clearInterval(interval)
-//       }
-//       }, [inView2]);
+          return () => clearInterval(interval)
+      }
+      }, [inView2]);
 
 
-    // useEffect(() => {
-    //     ScrollReveal().reveal(".reveal20", {
-    //       origin: "right", // Animation starts from the bottom
-    //       distance: "50px", // Distance to move before appearing
-    //       duration: 1000, // Animation duration in milliseconds
-    //       delay: 400, // Delay before animation starts
-    //       reset: false, // Runs only once
-    //       easing: "ease-in-out",
-    //     });
-    // }, []);
+    useEffect(() => {
+        ScrollReveal().reveal(".reveal20", {
+          origin: "right", // Animation starts from the bottom
+          distance: "50px", // Distance to move before appearing
+          duration: 1000, // Animation duration in milliseconds
+          delay: 400, // Delay before animation starts
+          reset: false, // Runs only once
+          easing: "ease-in-out",
+        });
+    }, []);
 
-    // useEffect(() => {
-    //     ScrollReveal().reveal(".reveal21", {
-    //       origin: "right", // Animation starts from the bottom
-    //       distance: "50px", // Distance to move before appearing
-    //       duration: 1000, // Animation duration in milliseconds
-    //       delay: 600, // Delay before animation starts
-    //       reset: false, // Runs only once
-    //       easing: "ease-in-out",
-    //     });
-    // }, []);
+    useEffect(() => {
+        ScrollReveal().reveal(".reveal21", {
+          origin: "right", // Animation starts from the bottom
+          distance: "50px", // Distance to move before appearing
+          duration: 1000, // Animation duration in milliseconds
+          delay: 600, // Delay before animation starts
+          reset: false, // Runs only once
+          easing: "ease-in-out",
+        });
+    }, []);
 
-    // useEffect(() => {
-    //     ScrollReveal().reveal(".reveal22", {
-    //       origin: "bottom", // Animation starts from the bottom
-    //       distance: "50px", // Distance to move before appearing
-    //       duration: 1000, // Animation duration in milliseconds
-    //       delay: 200, // Delay before animation starts
-    //       reset: false, // Runs only once
-    //       easing: "ease-in-out",
-    //     });
-    // }, []);
+    useEffect(() => {
+        ScrollReveal().reveal(".reveal22", {
+          origin: "bottom", // Animation starts from the bottom
+          distance: "50px", // Distance to move before appearing
+          duration: 1000, // Animation duration in milliseconds
+          delay: 200, // Delay before animation starts
+          reset: false, // Runs only once
+          easing: "ease-in-out",
+        });
+    }, []);
 
 
 
@@ -88,7 +90,7 @@ const [number2, setNumber2] = useState(0);
                         <div className="bg-[url('/aboutbackground4.png')] bg-center bg-cover rounded-[20px] w-full h-[200px] lg:h-full row-span-4">
                             
                         </div>
-                        <div  className='hidden ring-[1.5px] ring-white lg:flex items-center justify-center bg-[#39B5C8]   rounded-[20px] row-span-2'>
+                        <div ref={ref1} className='hidden ring-[1.5px] ring-white lg:flex items-center justify-center bg-[#39B5C8]   rounded-[20px] row-span-2'>
                             <div className=' flex flex-col  leading-[45px] mt-4 items-center justify-center text-gray-800 h-full'>
                                 <p className=' text-[90px]'>{number1}+</p>
                                 <p className='mt-1 text-[20px]'>Projects completed</p>
@@ -108,7 +110,7 @@ const [number2, setNumber2] = useState(0);
                             technology, enabling them to streamline operations, boost productivity, and achieve their full potential.
                         </p>
                     </div>
-                    <div className='flex lg:hidden justify-center items-center py-4 mb-[20px] bg-[#39B5C8]    rounded-[20px] row-span-2'>
+                    <div ref={ref2} className='flex lg:hidden justify-center items-center py-4 mb-[20px] bg-[#39B5C8]    rounded-[20px] row-span-2'>
                             <div className=' flex flex-col  leading-[45px] mt-4 text-gray-800 items-center justify-center h-full'>
                                 <p className='text-[80px]'>{number2}+</p>
                                 <p className='mt-1'>Projects completed</p>

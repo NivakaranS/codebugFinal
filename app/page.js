@@ -2,18 +2,39 @@
 'use client'
 import Navigation from "./components/Navigation";
 
-import React, {useState} from "react";
-import Hero from './components/Hero';
+import React, {useState, useEffect} from "react";
+  
 import Footer from "./components/Footer";
-import About from "./components/About2";
-import Services from "./components/Services";
-import ChooseUs from "./components/ChooseUs";
-import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
+
 import Blogs from "./components/Blogs";
 import { Element } from "react-scroll";
-
+import dynamic from "next/dynamic";
 import ContactForm from "./components/contactForm";
+
+
+const Portfolio = dynamic(() => import("./components/Portfolio"), {
+  ssr: false
+})
+
+const Hero = dynamic(() => import('./components/Hero'), {
+  ssr: false
+})
+
+const About = dynamic(() => import("./components/About2"), {
+  ssr: false
+} )
+
+const ChooseUs = dynamic(() => import("./components/ChooseUs"), {
+  ssr: false
+})
+
+const Services = dynamic(() => import("./components/Services"), {
+  ssr: false
+})
+
+const Testimonials = dynamic(() => import("./components/Testimonials"), {
+  ssr: false
+})
 
 
 const Home = () => {
@@ -22,6 +43,14 @@ const Home = () => {
 
 
   //const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Example: Access localStorage
+      const exampleValue = window.localStorage.getItem('exampleKey');
+      console.log(exampleValue);
+    }
+  }, []);
 
   const onNavigationClick = (e) => {
     setNavigationClick(e.target.innerText);

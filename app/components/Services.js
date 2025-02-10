@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import Image from "next/image";
 
 import Arrow from '../images/rightArrow2.png'
-//import ScrollReveal from "scrollreveal";
+import ScrollReveal from "scrollreveal";
 
 const Services = ({handleTalkClick=null}) => {
   const [service, setService] = useState("Artificial Intelligence");
@@ -40,27 +40,27 @@ const Services = ({handleTalkClick=null}) => {
     }
   };
   
-  // useEffect(() => {
-  //   ScrollReveal().reveal(".reveal5", {
-  //     origin: "bottom", // Animation starts from the bottom
-  //     distance: "50px", // Distance to move before appearing
-  //     duration: 1000, // Animation duration in milliseconds
-  //     delay: 200, // Delay before animation starts
-  //     reset: false, // Runs only once
-  //     easing: "ease-in-out",
-  //   });
-  // }, []);
+  useEffect(() => {
+    ScrollReveal().reveal(".reveal5", {
+      origin: "bottom", // Animation starts from the bottom
+      distance: "50px", // Distance to move before appearing
+      duration: 1000, // Animation duration in milliseconds
+      delay: 200, // Delay before animation starts
+      reset: false, // Runs only once
+      easing: "ease-in-out",
+    });
+  }, []);
 
-  // useEffect(() => {
-  //   ScrollReveal().reveal(".reveal7", {
-  //     origin: "bottom", // Animation starts from the bottom
-  //     distance: "50px", // Distance to move before appearing
-  //     duration: 1000, // Animation duration in milliseconds
-  //     delay: 400, // Delay before animation starts
-  //     reset: false, // Runs only once
-  //     easing: "ease-in-out",
-  //   });
-  // }, []);
+  useEffect(() => {
+    ScrollReveal().reveal(".reveal7", {
+      origin: "bottom", // Animation starts from the bottom
+      distance: "50px", // Distance to move before appearing
+      duration: 1000, // Animation duration in milliseconds
+      delay: 400, // Delay before animation starts
+      reset: false, // Runs only once
+      easing: "ease-in-out",
+    });
+  }, []);
 
 
   
