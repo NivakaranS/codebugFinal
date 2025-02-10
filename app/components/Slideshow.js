@@ -116,7 +116,7 @@ export default function Slideshow() {
           <div
             
             key={value.id}
-            className="card bg-white w-[430px]"
+            className="card bg-white w-[425px]"
             style={{
               marginRight: '10px', // Space between cards
                // Full viewport width for each card
