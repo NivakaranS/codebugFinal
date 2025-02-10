@@ -1,5 +1,5 @@
 
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Logo from '../images/codebugfinal8.png'
 import Image from 'next/image';
 
