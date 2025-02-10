@@ -7,16 +7,35 @@ import Menu from '../images/menu.png'
 import { useState } from 'react';
 import Logo2 from '../images/codebugNew.png'
 import {Link} from 'react-scroll'
-
+import {useRouter} from 'next/navigation'
 import Button1 from './Button1';
 
-const Navigation = ({handlePortfolioClick = null, handleTalkClick = null, handleCareerClick=null, handleResourceClick=null, onNavigationClick=null, navigationClick=null}) => {
+const Navigation = ({handleTalkClick = null,  onNavigationClick=null, navigationClick=null}) => {
     const [onMenuClick, setOneMenuClick] = useState(false)
-    //const router = useRouter();
+    const router = useRouter();
 
     //Function to handle navigation
     const handleNavigate = () => {
-        //router.push('./login')
+        router.push('/pages/login')
+    }
+
+    const handleResourceClick = () => {
+        router.push('/pages/resources')
+    }
+    const handlePortfolioClick = (e) => {
+        router.push('/pages/portfolio')
+
+    }
+
+    const handleCareerClick = () => {
+        router.push('/pages/careers')
+    }
+
+    const handleHomeClick = (e) => {
+        router.push('/')
+        onNavigationClick(e)
+        
+        
     }
 
     
@@ -36,6 +55,10 @@ const Navigation = ({handlePortfolioClick = null, handleTalkClick = null, handle
         setOneMenuClick(false)
     }
 
+    const handleTalkClick2 = () => {
+        handleTalkClick()
+        setOneMenuClick(false)
+    }
 
     
     return(
@@ -44,9 +67,9 @@ const Navigation = ({handlePortfolioClick = null, handleTalkClick = null, handle
                 <Image alt="arrow" className='cursor-pointer' src={Logo} height={43}/>
                 <ul className='flex flex-row text-[18px] space-x-7 '>
                     
-                    <Link to="home" offset={-70} smooth={true} duration={500} onClick={onNavigationClick} className={`${navigationClick=='Home'? 'text-[#BF532C]': 'text-black'} hover:text-[#D98032] cursor-pointer`}>Home</Link>
-                    <Link to="about" offset={58} smooth={true} duration={500} onClick={onNavigationClick} className={`${navigationClick=='About'? 'text-[#BF532C]': 'text-black'} hover:text-[#D98032] cursor-pointer`}>About</Link>
-                    <Link to="services" smooth={true} duration={500} onClick={onNavigationClick} className={`${navigationClick=='Services'? 'text-[#BF532C]': 'text-black'} hover:text-[#D98032] cursor-pointer`}>Services</Link>
+                    <Link to="home" offset={-70} smooth={true} duration={500} onClick={handleHomeClick} className={`${navigationClick=='Home'? 'text-[#BF532C]': 'text-black'} hover:text-[#D98032] cursor-pointer`}>Home</Link>
+                    <Link to="about" offset={58} smooth={true} duration={500} onClick={handleHomeClick} className={`${navigationClick=='About'? 'text-[#BF532C]': 'text-black'} hover:text-[#D98032] cursor-pointer`}>About</Link>
+                    <Link to="services" smooth={true} duration={500} onClick={handleHomeClick} className={`${navigationClick=='Services'? 'text-[#BF532C]': 'text-black'} hover:text-[#D98032] cursor-pointer`}>Services</Link>
                     <li onClick={handlePortfolioClick} className={`${navigationClick=='Portfolio'? 'text-[#BF532C]': 'text-black'} hover:text-[#D98032] cursor-pointer`}>Portfolio</li>
                     <li onClick={handleResourceClick}  className={`${navigationClick=='Resources'? 'text-[#BF532C]': 'text-black'} hover:text-[#D98032] cursor-pointer`}>Resources</li>
                     <li onClick={handleCareerClick}  className={`${navigationClick=='Careers'? 'text-[#BF532C]': 'text-black'} hover:text-[#D98032] cursor-pointer`}>Careers</li>
@@ -106,7 +129,7 @@ const Navigation = ({handlePortfolioClick = null, handleTalkClick = null, handle
                     </div>
                     <div className='flex flex-col space-y-2 items-center justify-center mt-5'>
                         
-                        <Link to="contact" offset={0} smooth={true} duration={500} onClick={handleTalkClick} className='flex shadow-[0_0px_2px_rgba(0,0,0,0.9)] bg-[#39B5C8] hover:bg-[#41CAD9]  ring-blue-800 w-fit  flex-row space-x-3 text-[16px] cursor-pointer  text-white ring-[0.5px] ring-black rounded-[5px] py-1 px-[50px]'>
+                        <Link to="contact" offset={0} smooth={true} duration={500} onClick={handleTalkClick2} className='flex shadow-[0_0px_2px_rgba(0,0,0,0.9)] bg-[#39B5C8] hover:bg-[#41CAD9]  ring-blue-800 w-fit  flex-row space-x-3 text-[16px] cursor-pointer  text-white ring-[0.5px] ring-black rounded-[5px] py-1 px-[50px]'>
                             <p>Let&apos;s talk</p>
                         </Link>
                         <Button1 />

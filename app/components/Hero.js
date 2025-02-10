@@ -7,10 +7,7 @@ import {Link} from 'react-scroll'
 import ScrollReveal from "scrollreveal"
 
 const Hero = () => {
-    const [width, setWidth] = useState(null);
-  
-
-  
+    
     useEffect(() => {
       if (typeof window !== "undefined") {
         ScrollReveal().reveal(".reveal", {
