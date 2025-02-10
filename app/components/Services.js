@@ -168,7 +168,7 @@ const Services = ({handleTalkClick=null}) => {
 
                   </div>
                   <div className="h-[400%] pl-[50px] pr-4  py-4">
-                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] rounded ring-1 ring-gray-800  opacity-80 flex flex-col items-center justify-center">
+                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] rounded ring-1 ring-gray-800  opacity-90 flex flex-col items-center justify-center">
                       <p  className="text-[13px]  text-sans leading-4 ">Transform your business with cutting-edge AI 
                         solutions. From machine learning and natural 
                         language processing to computer vision and 
@@ -206,7 +206,7 @@ const Services = ({handleTalkClick=null}) => {
 
                   </div>
                   <div className="h-[400%] pl-[50px] pr-4  py-4">
-                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-80 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
+                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-90 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
                       <p  className="text-[13px] text-sans leading-4 ">At CodeBug, we specialize in creating robust and scalable web applications tailored to your business needs. Our team of experts uses the latest technologies to build intuitive, responsive, and secure web apps that deliver seamless user experiences across all devices. Whether you need an e-commerce platform, a custom solution, or an enterprise-grade application, CodeBug is here to bring your ideas to life with cutting-edge web development solutions.
                       </p>
                     </div>
@@ -236,7 +236,7 @@ const Services = ({handleTalkClick=null}) => {
 
                   </div>
                   <div className="h-[400%] pl-[50px] pr-4  py-4">
-                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] rounded ring-1 opacity-80 ring-gray-800 flex flex-col items-center justify-center">
+                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] rounded ring-1 opacity-90 ring-gray-800 flex flex-col items-center justify-center">
                       <p  className="text-[13px] text-sans leading-4 ">CodeBug specializes in creating high-performance mobile apps for iOS and Android. Our team builds custom, user-friendly applications that deliver seamless, engaging experiences. Whether you need a native app or a cross-platform solution, we ensure your app is scalable, secure, and optimized to meet your business goals. Let CodeBug turn your app idea into reality with innovative and reliable mobile solutions.
                       </p>
                     </div>
@@ -266,7 +266,7 @@ const Services = ({handleTalkClick=null}) => {
 
                   </div>
                   <div className="h-[400%] pl-[50px] pr-4  py-4">
-                    <div className="bg-[#D1D1D1] w-[100%] px-4 opacity-80 h-[80%] rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
+                    <div className="bg-[#D1D1D1] w-[100%] px-4 opacity-90 h-[80%] rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
                       <p  className="text-[13px] text-sans leading-4 ">CodeBug offers tailored software solutions designed to meet your specific business needs. Our team creates high-quality, scalable, and efficient software, from custom CRMs to specialized applications, using the latest technologies. We focus on flexibility, security, and innovation to ensure your software evolves with your business and drives success. Let CodeBug build a solution that works for you.
                       </p>
                     </div>
@@ -296,7 +296,7 @@ const Services = ({handleTalkClick=null}) => {
 
                   </div>
                   <div className="h-[400%] pl-[50px] pr-4  py-4">
-                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-80 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
+                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-90 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
                       <p  className="text-[13px] text-sans leading-4 ">CodeBug offers scalable and secure cloud solutions to optimize your business performance. From cloud migration to infrastructure management, we create tailored cloud architectures that enhance efficiency, reduce costs, and ensure seamless integration. Let us help your business grow with reliable, flexible cloud solutions.
                       </p>
                     </div>
@@ -326,7 +326,7 @@ const Services = ({handleTalkClick=null}) => {
 
                   </div>
                   <div className="h-[400%] pl-[50px] pr-4  py-4">
-                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-80 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
+                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-90 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
                       <p  className="text-[13px] text-sans leading-4 ">At CodeBug, we create visually stunning and user-friendly designs that elevate the user experience. Our team focuses on crafting intuitive interfaces and seamless interactions to ensure your users enjoy every step of their journey. By combining creativity with functionality, we deliver designs that not only look great but also drive engagement and satisfaction. Let CodeBug enhance your digital products with exceptional UI/UX design tailored to your audience&apos;s needs.
                       </p>
                     </div>
@@ -356,7 +356,7 @@ const Services = ({handleTalkClick=null}) => {
 
                   </div>
                   <div className="h-[400%] pl-[50px] pr-4  py-4">
-                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-80 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
+                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-90 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
                       <p  className="text-[13px] text-sans leading-4 ">CodeBug provides reliable software support and maintenance to keep your systems running smoothly. From timely updates and bug fixes to performance optimization, we ensure your software remains secure, efficient, and up-to-date. Let us handle the maintenance while you focus on growing your business.
                       </p>
                     </div>
@@ -386,7 +386,7 @@ const Services = ({handleTalkClick=null}) => {
 
                   </div>
                   <div className="h-[400%] pl-[50px] pr-4  py-4">
-                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-80 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
+                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-90 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
                       <p  className="text-[13px] text-sans leading-4 ">CodeBug provides expert software consultancy to help you optimize your digital strategy. We offer insights on software selection, architecture design, and process improvement, ensuring solutions that align with your business goals for long-term success. Let us guide you through the complexities of software development.
                       </p>
                     </div>
@@ -416,7 +416,7 @@ const Services = ({handleTalkClick=null}) => {
 
                   </div>
                   <div className="h-[400%] pl-[50px] pr-4  py-4">
-                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-80 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
+                    <div className="bg-[#D1D1D1] w-[100%] px-4 h-[80%] opacity-90 rounded ring-1 ring-gray-800 flex flex-col items-center justify-center">
                       <p  className="text-[13px] text-sans leading-4 ">CodeBug provides custom blockchain solutions to enhance security, transparency, and efficiency for your business. From decentralized applications to secure transactions, our team helps you harness the power of blockchain technology to drive innovation and growth. Let CodeBug guide you into the future with cutting-edge blockchain solutions.
                       </p>
                     </div>
