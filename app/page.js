@@ -11,6 +11,9 @@ import { Element } from "react-scroll";
 import dynamic from "next/dynamic";
 import ContactForm from "./components/contactForm";
 
+const Loading = dynamic(() => import("./components/Loading"), {
+  ssr: false
+})
 
 const Portfolio = dynamic(() => import("./components/Portfolio"), {
   ssr: false
@@ -43,6 +46,8 @@ const Blogs = dynamic(() => import("./components/Blogs"), {
 const Home = () => {
   const [navigationClick, setNavigationClick] = useState('Home');
   const [contactClick, setContactClick] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
 
 
   //const router = useRouter();
@@ -50,8 +55,9 @@ const Home = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       // Example: Access localStorage
-      const exampleValue = window.localStorage.getItem('exampleKey');
-      console.log(exampleValue);
+      setTimeout(() => {
+        setIsLoading(false)
+      }, 2000)
     }
   }, []);
 
@@ -113,6 +119,9 @@ const handleBlogClick = () => {
   
 }
   return (
+    isLoading ? (
+      <Loading/>
+    ): (
     <div className="overflow-x-hidden bg-black ">
       
       <Navigation handlePortfolioClick={handlePortfolioClick} handleTalkClick={handleTalkClick} handleCareerClick={handleCareerClick} handleResourceClick={handleResourceClick} setContactClick={setContactClick} navigationClick={navigationClick} onNavigationClick={onNavigationClick} />
@@ -137,10 +146,10 @@ const handleBlogClick = () => {
         </Element>
       </div>
       <Footer/>
-
+    
     </div>
-
-  );
+    )
+  )
 }
 
 export default Home;
