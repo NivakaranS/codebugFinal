@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 import ScrollReveal from "scrollreveal";
 
-
+import Slideshow from "./Slideshow";
 
 const Testimonials = () => {
     const [visibleCards, setVisibleCards] = useState([false, false, false]);
@@ -65,6 +65,7 @@ const Testimonials = () => {
             <div className="flex mt-2 flex-row w-[85vw] ">
                 <p className="reveal35 w-[100%] md:w-[58%] text-[16px] sm:text-[18px] md:text-[20px] text-[#000]">Discover how our solutions have made a positive impact on our clients&apos; businesses. Hear directly from those who trust us to bring their visions to life.</p>
             </div>
+            <Slideshow/>
             
 
             
