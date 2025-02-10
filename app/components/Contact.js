@@ -58,7 +58,7 @@ const Contact = () => {
                             
                         
                     </div>
-                    <div className="flex flex-col mr-[0px] sm:w-fit w-screen items-center">
+                    <div className="flex flex-col sm:w-[100%] w-[90%]  space-y-3 sm:space-y-0 sm:flex-row sm:space-x-3">
                             <div className="sm:w-[100%] w-[80%]  ">
                             <p className="text-[15px] sm:text-[17px] text-yellow-200 mb-1">Your Message*</p>
                             <textarea type="text" className="  sm:w-[610px] w-full resize-none h-[200px] bg-gray-200 px-3.5 py-2.5 text-black outline-2 ring-1 ring-color-black ring-gray-700 focus:outline-none rounded-md focus:ring-black duration-500 hover:ring-orange-300"/>
