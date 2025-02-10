@@ -97,7 +97,7 @@ const Blogs = ({handleBlog1Click = null, handleBlogClick = null, handleBlog4Clic
                                         <Image src={Arrow} alt="arrow"  className="ml-2 h-[20px] md:h-[25px] w-fit transition-transform duration-300 group-hover:translate-x-2"/>
                                     </div>
                                 </div>
-                <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 w-[100%] mt-9 mb-4">
+                <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 w-[100%] mt-9 mb-4">
                     <div className="reveal42 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] max-h-[60vh] w-full max-w-[285px] flex flex-col items-center justify-center">
                         <div className="flex flex-row items-center justify-center bg-red-500 rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
                             <Image src={Quantum} alt="Quantum" className=" h-[100%] w-[100%]" />
