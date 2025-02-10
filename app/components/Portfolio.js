@@ -5,65 +5,65 @@ import Image from 'next/image';
 import Coffeeday from '../images/coffeeday3.png'
 import Arrow from '../images/rightArrow2.png'
 import Coffee from '../images/coffeeday.png'
-import ScrollReveal from 'scrollreveal'
-import { useEffect } from 'react';
+//import ScrollReveal from 'scrollreveal'
+//import { useEffect } from 'react';
 
-const Portfolio = ({handlePortfolioClick}) => {
+const Portfolio = ({handlePortfolioClick=null}) => {
 
-    useEffect(() => {
-        ScrollReveal().reveal(".reveal20", {
-          origin: "bottom", // Animation starts from the bottom
-          distance: "50px", // Distance to move before appearing
-          duration: 1000, // Animation duration in milliseconds
-          delay: 200, // Delay before animation starts
-          reset: false, // Runs only once
-          easing: "ease-in-out",
-        });
-      }, []);
+    // useEffect(() => {
+    //     ScrollReveal().reveal(".reveal20", {
+    //       origin: "bottom", // Animation starts from the bottom
+    //       distance: "50px", // Distance to move before appearing
+    //       duration: 1000, // Animation duration in milliseconds
+    //       delay: 200, // Delay before animation starts
+    //       reset: false, // Runs only once
+    //       easing: "ease-in-out",
+    //     });
+    //   }, []);
 
-      useEffect(() => {
-        ScrollReveal().reveal(".reveal21", {
-          origin: "bottom", // Animation starts from the bottom
-          distance: "50px", // Distance to move before appearing
-          duration: 1000, // Animation duration in milliseconds
-          delay: 400, // Delay before animation starts
-          reset: false, // Runs only once
-          easing: "ease-in-out",
-        });
-      }, []);
+    //   useEffect(() => {
+    //     ScrollReveal().reveal(".reveal21", {
+    //       origin: "bottom", // Animation starts from the bottom
+    //       distance: "50px", // Distance to move before appearing
+    //       duration: 1000, // Animation duration in milliseconds
+    //       delay: 400, // Delay before animation starts
+    //       reset: false, // Runs only once
+    //       easing: "ease-in-out",
+    //     });
+    //   }, []);
 
-      useEffect(() => {
-        ScrollReveal().reveal(".reveal30", {
-          origin: "left", // Animation starts from the bottom
-          distance: "50px", // Distance to move before appearing
-          duration: 1000, // Animation duration in milliseconds
-          delay: 600, // Delay before animation starts
-          reset: false, // Runs only once
-          easing: "ease-in-out",
-        });
-      }, []);
+    //   useEffect(() => {
+    //     ScrollReveal().reveal(".reveal30", {
+    //       origin: "left", // Animation starts from the bottom
+    //       distance: "50px", // Distance to move before appearing
+    //       duration: 1000, // Animation duration in milliseconds
+    //       delay: 600, // Delay before animation starts
+    //       reset: false, // Runs only once
+    //       easing: "ease-in-out",
+    //     });
+    //   }, []);
 
-      useEffect(() => {
-        ScrollReveal().reveal(".reveal31", {
-          origin: "left", // Animation starts from the bottom
-          distance: "50px", // Distance to move before appearing
-          duration: 1000, // Animation duration in milliseconds
-          delay: 800, // Delay before animation starts
-          reset: false, // Runs only once
-          easing: "ease-in-out",
-        });
-      }, []);
+    //   useEffect(() => {
+    //     ScrollReveal().reveal(".reveal31", {
+    //       origin: "left", // Animation starts from the bottom
+    //       distance: "50px", // Distance to move before appearing
+    //       duration: 1000, // Animation duration in milliseconds
+    //       delay: 800, // Delay before animation starts
+    //       reset: false, // Runs only once
+    //       easing: "ease-in-out",
+    //     });
+    //   }, []);
 
-      useEffect(() => {
-        ScrollReveal().reveal(".reveal32", {
-          origin: "right", // Animation starts from the bottom
-          distance: "50px", // Distance to move before appearing
-          duration: 1000, // Animation duration in milliseconds
-          delay: 1000, // Delay before animation starts
-          reset: false, // Runs only once
-          easing: "ease-in-out",
-        });
-      }, []);
+    //   useEffect(() => {
+    //     ScrollReveal().reveal(".reveal32", {
+    //       origin: "right", // Animation starts from the bottom
+    //       distance: "50px", // Distance to move before appearing
+    //       duration: 1000, // Animation duration in milliseconds
+    //       delay: 1000, // Delay before animation starts
+    //       reset: false, // Runs only once
+    //       easing: "ease-in-out",
+    //     });
+    //   }, []);
 
     return(
         <div className='py-[30px] w-[100vw] min-h-[116vh] text-white flex flex-col items-center justify-center'>

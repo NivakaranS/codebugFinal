@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Arrow from '../images/rightArrow2.png'
 
 
-const ContactForm = ({onContactClick, contactClick}) => {
+const ContactForm = ({onContactClick = null, contactClick = null}) => {
     
     return(
         <div className="w-full   flex flex-col items-center justify-center">

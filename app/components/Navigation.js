@@ -10,7 +10,7 @@ import {Link} from 'react-scroll'
 
 import Button1 from './Button1';
 
-const Navigation = ({handlePortfolioClick, handleTalkClick, handleCareerClick, handleResourceClick, onNavigationClick, navigationClick}) => {
+const Navigation = ({handlePortfolioClick = null, handleTalkClick = null, handleCareerClick=null, handleResourceClick=null, onNavigationClick=null, navigationClick=null}) => {
     const [onMenuClick, setOneMenuClick] = useState(false)
     //const router = useRouter();
 
@@ -109,7 +109,7 @@ const Navigation = ({handlePortfolioClick, handleTalkClick, handleCareerClick, h
                         <Link to="contact" offset={0} smooth={true} duration={500} onClick={handleTalkClick} className='flex shadow-[0_0px_2px_rgba(0,0,0,0.9)] bg-[#39B5C8] hover:bg-[#41CAD9]  ring-blue-800 w-fit  flex-row space-x-3 text-[16px] cursor-pointer  text-white ring-[0.5px] ring-black rounded-[5px] py-1 px-[50px]'>
                             <p>Let&apos;s talk</p>
                         </Link>
-                        <Button1 ButtonName='Login' ButtonFunction={handleNavigate}/>
+                        <Button1 />
                     </div>
                 </div>
             </div>

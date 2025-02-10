@@ -1,9 +1,8 @@
 
 'use client'
-
 import Navigation from "./components/Navigation";
 
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import Hero from './components/Hero';
 import Footer from "./components/Footer";
 import About from "./components/About2";
@@ -20,16 +19,7 @@ import ContactForm from "./components/contactForm";
 const Home = () => {
   const [navigationClick, setNavigationClick] = useState('Home');
   const [contactClick, setContactClick] = useState(false);
-  const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) {
-    return null;
-  }
- 
 
   //const router = useRouter();
 

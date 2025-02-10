@@ -5,9 +5,9 @@ import { Link } from 'react-scroll';
 import Image from "next/image";
 
 import Arrow from '../images/rightArrow2.png'
-import ScrollReveal from "scrollreveal";
+//import ScrollReveal from "scrollreveal";
 
-const Services = ({handleTalkClick}) => {
+const Services = ({handleTalkClick=null}) => {
   const [service, setService] = useState("Artificial Intelligence");
   //const outerContainerRef = useRef(null);
   //const [isInnerScrollActive, setInnerScrollActive] = useState(true);
@@ -40,27 +40,27 @@ const Services = ({handleTalkClick}) => {
     }
   };
   
-  useEffect(() => {
-    ScrollReveal().reveal(".reveal5", {
-      origin: "bottom", // Animation starts from the bottom
-      distance: "50px", // Distance to move before appearing
-      duration: 1000, // Animation duration in milliseconds
-      delay: 200, // Delay before animation starts
-      reset: false, // Runs only once
-      easing: "ease-in-out",
-    });
-  }, []);
+  // useEffect(() => {
+  //   ScrollReveal().reveal(".reveal5", {
+  //     origin: "bottom", // Animation starts from the bottom
+  //     distance: "50px", // Distance to move before appearing
+  //     duration: 1000, // Animation duration in milliseconds
+  //     delay: 200, // Delay before animation starts
+  //     reset: false, // Runs only once
+  //     easing: "ease-in-out",
+  //   });
+  // }, []);
 
-  useEffect(() => {
-    ScrollReveal().reveal(".reveal7", {
-      origin: "bottom", // Animation starts from the bottom
-      distance: "50px", // Distance to move before appearing
-      duration: 1000, // Animation duration in milliseconds
-      delay: 400, // Delay before animation starts
-      reset: false, // Runs only once
-      easing: "ease-in-out",
-    });
-  }, []);
+  // useEffect(() => {
+  //   ScrollReveal().reveal(".reveal7", {
+  //     origin: "bottom", // Animation starts from the bottom
+  //     distance: "50px", // Distance to move before appearing
+  //     duration: 1000, // Animation duration in milliseconds
+  //     delay: 400, // Delay before animation starts
+  //     reset: false, // Runs only once
+  //     easing: "ease-in-out",
+  //   });
+  // }, []);
 
 
   
@@ -71,7 +71,7 @@ const Services = ({handleTalkClick}) => {
   
   return (
     <div
-      ref={outerContainerRef}
+    
       className="py-8 w-[100vw] bg-[url('grid10.png')] bg-cover relative z-[20] h-[130vh] bg-[#002A38] ring-2 ring-white text-white flex flex-col items-center justify-center overflow-hidden"
     >
       <div className="w-[90vw]">
@@ -150,8 +150,8 @@ const Services = ({handleTalkClick}) => {
               </div>
            
           </div>
-          { isInnerScrollActive &&
-           ( 
+          
+           
           <div
             ref={divRef}
             onAbort={handleScroll}
@@ -436,8 +436,8 @@ const Services = ({handleTalkClick}) => {
                 </div>  
               </div>
             
-          </div>)
-          }
+          </div>
+  
         </div>
       </div>
     </div>
