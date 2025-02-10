@@ -16,7 +16,7 @@ const Loading = () => {
 
   return (
     <div className="flex space-y-3 flex-col items-center w-screen text-white justify-center h-screen">
-        <Image src={Logo} className="mb-2" height={100}/>
+        <Image src={Logo} height={100}/>
         <p>Loading{dots}</p>
       
     </div>
