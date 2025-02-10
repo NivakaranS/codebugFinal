@@ -6,7 +6,7 @@ import React, {useState, useEffect} from "react";
   
 import Footer from "./components/Footer";
 
-import Blogs from "./components/Blogs";
+
 import { Element } from "react-scroll";
 import dynamic from "next/dynamic";
 import ContactForm from "./components/contactForm";
@@ -36,6 +36,9 @@ const Testimonials = dynamic(() => import("./components/Testimonials"), {
   ssr: false
 })
 
+const Blogs = dynamic(() => import("./components/Blogs"), {
+  ssr: false
+})
 
 const Home = () => {
   const [navigationClick, setNavigationClick] = useState('Home');
