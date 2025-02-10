@@ -126,6 +126,7 @@ const Home = () => {
         <Element name="home">
           <Hero />
         </Element>
+        <Falcon />
         <div className="bg-[url('background5.png')] bg-cover w-[100vw] flex items-center flex-col justify-center">
           <Element name="about">
             <About />
@@ -133,7 +134,7 @@ const Home = () => {
           <Element name="services">
             <Services />
           </Element>
-          <Falcon />
+          
           <ChooseUs />
           <Element name="portfolio">
             <Portfolio />
