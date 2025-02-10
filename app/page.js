@@ -6,7 +6,7 @@ import React, {useState, useEffect} from "react";
   
 import Footer from "./components/Footer";
 
-import Falcon from "./components/Falcon/page.js"
+
 import { Element } from "react-scroll";
 import dynamic from "next/dynamic";
 import ContactForm from "./components/contactForm";
@@ -18,6 +18,10 @@ const Loading = dynamic(() => import("./components/Loading"), {
 const Portfolio = dynamic(() => import("./components/Portfolio"), {
   ssr: false
 })
+
+const Falcon = dynamic(() =>  import("./components/Falcon/page.js"), {
+  ssr: false
+} ) 
 
 const Hero = dynamic(() => import('./components/Hero'), {
   ssr: false
