@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Logo from '../images/icon2.png'
+import Logo from '../images/codebugfinal8.png'
 import Image from 'next/image';
 
 const Loading = () => {
