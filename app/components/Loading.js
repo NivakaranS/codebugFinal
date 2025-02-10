@@ -1,7 +1,8 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import Logo from '../images/codebugfinal8.png'
 import Image from 'next/image';
+
 
 const Loading = () => {
     const [dots, setDots] = useState("");
