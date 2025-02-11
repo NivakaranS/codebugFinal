@@ -140,7 +140,9 @@ const Home = () => {
             <Portfolio />
           </Element>
           <Testimonials />
+          <div className="h-[100vh] flex items-center justify-center">
           <Blogs handleBlogClick={handleBlogClick} handleBlog4Click={handleBlog4Click} handleBlog3Click={handleBlog3Click} handleBlog2Click={handleBlog2Click} handleBlog1Click={handleBlog1Click} />
+          </div>
           <Element name="contact">
             <ContactForm onContactClick={onContactClick} contactClick={contactClick} />
           </Element>

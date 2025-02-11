@@ -2,7 +2,7 @@
 import React from 'react';
 
 
-import Falcon from '../../components/falcon';
+
 import { useState } from 'react';
 import { useRouter } from "next/navigation";
 
@@ -13,6 +13,7 @@ import dynamic from 'next/dynamic';
 const Navigation = dynamic(() => import("../../components/Navigation"), { ssr: false });
 const Footer = dynamic(() => import("../../components/Footer"), { ssr: false });
 const ContactForm = dynamic(() => import("../../components/contactForm"), { ssr: false });
+const Falcon = dynamic(() => import("../../components/falcon"), { ssr: false });
 
 const Resources = () => {
     const [navigationClick, setNavigationClick] = useState('Resources');
@@ -73,8 +74,8 @@ const Resources = () => {
         <div className="overflow-x-hidden bg-[url('background5.png')] sm:bg-[url('background8.png')] bg-cover bg-left">
             <Navigation  handleTalkClick={handleTalkClick} navigationClick={navigationClick} onNavigationClick={onNavigationClick} />
         
-            <MainPage handleNewsClick={handleNewsClick} handleBlogClick={handleBlogClick} handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click}/>
-          
+            <MainPage handleTalkClick={handleTalkClick} handleNewsClick={handleNewsClick} handleBlogClick={handleBlogClick} handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click}/>
+            <Falcon />
             <Element name="contact">
                 <ContactForm onContactClick={onContactClick} contactClick={contactClick}/>
             </Element>

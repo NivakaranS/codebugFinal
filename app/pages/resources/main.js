@@ -12,27 +12,40 @@ import Cloud from '../../images/cloud.jpg'
 import Security from '../../images/security.jpg'
 import Logo from '../../images/codebugNew4.png'
 import Calender from '../../images/calender.png'
+import {Link, Element} from 'react-scroll'
 
 import dynamic from 'next/dynamic'
 const Blogs = dynamic(() => import("../../components/Blogs"), { ssr: false });
 
-const MainPage = ({handleBlog1Click, handleNewsClick, handleBlog2Click, handleBlog3Click, handleBlog4Click, handleBlogClick}) => {
+const MainPage = ({handleBlog1Click, handleTalkClick, handleNewsClick, handleBlog2Click, handleBlog3Click, handleBlog4Click, handleBlogClick}) => {
     return (
-        <div className='flex flex-col items-center justify-center w-screen py-[25px]'>
-            <div className=" shadow-lg bg-[url('/resourcesback2.png')] bg-cover bg-center  h-[40vh] overflow-hidden flex justify-end rounded-[10px]  py-[20px] ring-1 ring-black  flex flex-col w-full max-w-[85vw] mb-7 leading-[43px] ">
-                
-                <div className='px-[20px] leading-[50px]'>
- 
+        <div className='flex flex-col items-center justify-center w-screen pb-[25px]'>
+            <div className="  bg-[url('/techbackground.png')] bg-cover bg-center flex items-center justify-center relative top-[-64px] h-[100vh] w-[100vw] ">
+                <div className='px-[20px] flex flex-col items-center mt-[50px] max-w-[1400px] w-full h-[100%] max-w-[1400px] justify-center'>
+                    <div className=' leading-[50px] text-center 2xl:'>
+                        <p className=' text-[40px] sm:text-[48px] text-[#41CAD9]' >Resources & Insights</p>
+                        <p className=' text-[20px] leading-[25px]  sm:leading-[36px] lg:leading-[50px] sm:text-[35px]'>Expert knowledge to keep you ahead</p>
+                    </div>
+                    <p className=' w-[70vw] 2xl:w-[1400px] mb-5 max-w-[1000px] text-center text-[18px] text-[#F1A230] w-full'>Stay updated with the latest in technology, software development, and industry trends. Explore expert articles and updates designed to help you innovate, grow, and stay competitive in a rapidly evolving digital world. </p>
+                    <div className="flex flex-row justify-center space-x-5 mt-2">
+                        <Link to="contact" offset={15} smooth={true} duration={500} onClick={handleTalkClick} className=" reveal4 bg-white text-xl text-black ring-1 ring-black rounded-[5px] px-5 2xl:py-2  py-1.5 cursor-pointer hover:ring-white hover:bg-black hover:text-white">
+                            <p className=" 2xl:text-[23px] lg:text-[20px] md:text-[20px] sm:text-[20px] text-[17px]">Contact</p>
+                        </Link>
+                        <Link to="blogs" offset={-60} smooth={true} duration={500} className="reveal4 bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020]  py-1 sm:py-1.5 cursor-pointer hover:bg-[#D98032] group">
+                            <p className="2xl:text-[23px] lg:text-[20px] md:text-[20px] sm:text-[20px] text-[17px]">
+                                Explore Blogs
+                            </p>
+                            <Image alt="arrow" src={Arrow}  className="ml-2 h-[20px] sm:h-[25px] w-fit transition-transform duration-300 group-hover:translate-x-2"/>
+                        </Link>
+                    </div>
                 </div>
+               
                 
             </div>
-            <p className='max-w-[80vw] text-gray-100 w-full mb-4'>Stay updated with the latest in technology, software development, and industry trends. Explore our blogs for expert insights, tutorials, and best practices, and check out our news section for company updates and tech innovations. Keep learning with Codebug!</p>
             
-                                                                            
-                                                                        
-                            
-                        
-            <Blogs/>       
+            <Element name="blogs">
+                <Blogs/>        
+            </Element>
             <div className="w-[85vw] mb-[50px] mt-[100px]">
                             <div className='flex flex-row items-center justify-between'>
                                                 <div>
@@ -45,7 +58,7 @@ const MainPage = ({handleBlog1Click, handleNewsClick, handleBlog2Click, handleBl
                                             </div>
                             
                             <div className="grid place-items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-7 w-[85vw] mt-9 mb-4">
-                                <div className='flex  text-black flex-col sm:flex-row items-center px-[0.3%] justify-center  rounded-[6px] ring-white leading-[17px] h-[100%] sm:h-[60vh] w-[100%] max-w-[580px]'>
+                                <div className='flex  text-black flex-col sm:flex-row items-center px-[0.3%] justify-center  rounded-[6px] ring-white leading-[17px] h-[100%] 2xl:max-h-[380px] sm:h-[60vh] w-[100%] max-w-[580px]'>
                                     <div className="flex sm:hidden ring-[0.5px] ring-white shadow-lg w-[100%] bg-[url('/techbackground.png')] bg-cover flex items-center px-5 justify-center h-[96%] ring-black z-[0] rounded-t-[10px]">
                                         <Image src={Logo} alt="Logo" className=" py-[20px] w-[50%]" />
                                     </div>
