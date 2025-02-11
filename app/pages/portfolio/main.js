@@ -15,7 +15,9 @@ import Cloud from '../../images/cloud.jpg'
 import Security from '../../images/security.jpg'
 import Logo from '../../images/codebugNew4.png'
 import Calender from '../../images/calender.png'
-import Blogs from '@/app/components/Blogs'
+import dynamic from 'next/dynamic'
+
+const Blogs = dynamic(() => import("../../components/Blogs"), { ssr: false });
 
 const MainPage = () => {
     return (

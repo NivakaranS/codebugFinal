@@ -1,14 +1,18 @@
 'use client';
 import React from 'react';
-import Navigation from '../../components/Navigation';
-import Footer from '../../components/Footer';
+
+
 import Falcon from '../../components/falcon';
 import { useState } from 'react';
 import { useRouter } from "next/navigation";
-import ContactForm from '../../components/contactForm';
+
 import { Element } from "react-scroll";
 import MainPage from './main';
 
+import dynamic from 'next/dynamic';
+const Navigation = dynamic(() => import("../../components/Navigation"), { ssr: false });
+const Footer = dynamic(() => import("../../components/Footer"), { ssr: false });
+const ContactForm = dynamic(() => import("../../components/contactForm"), { ssr: false });
 
 const Resources = () => {
     const [navigationClick, setNavigationClick] = useState('Resources');

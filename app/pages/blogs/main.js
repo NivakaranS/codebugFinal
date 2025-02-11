@@ -10,8 +10,10 @@ import AI from '../../images/aii.jpg'
 import Arrow from '../../images/rightArrow2.png'
 import Cloud from '../../images/cloud.jpg'
 import Security from '../../images/security.jpg'
-import Blogs from '@/app/components/Blogs-new'
 
+import dynamic from 'next/dynamic'
+
+const Blogs = dynamic(() => import("../../components/Blogs-new"), { ssr: false });
 
 const MainPage = ({handleBlog1Click, handleBlog2Click, handleBlog3Click, handleBlog4Click, handleBlogClick}) => {
 

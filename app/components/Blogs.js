@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import { useRouter } from "next/navigation";
 
+
 const Blogs = () => {
 
     const router = useRouter()
