@@ -106,7 +106,7 @@ const Blogs = () => {
       }, []);
 
     return (
-        <div className='py-8  w-[100vw] min-h-[120vh] text-white flex flex-col items-center justify-center'>
+        <div className='py-8  w-[100vw]  text-white flex flex-col items-center justify-center'>
             <div className="w-[83vw] max-w-[1400px] flex flex-col items-center justify-center mt-[70px] md:mt-3">
                 <div className='flex flex-row items-center max-w-[1400px] w-[100%] justify-between'>
                                     <div>

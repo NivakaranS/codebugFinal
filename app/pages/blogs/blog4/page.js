@@ -41,6 +41,9 @@ const Blog1 = () => {
         
       } 
       
+      const onContactClick = () => {
+        setContactClick(!contactClick);
+    }
 
     return(
         <div className="overflow-x-hidden bg-[url('background5.png')] bg-cover">
@@ -49,7 +52,7 @@ const Blog1 = () => {
             <MainPage handleBlogClick={handleBlogClick} handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click} />
             <Falcon/>
             <Element name="contact">
-                <ContactForm contactClick={contactClick}/>
+                <ContactForm onContactClick={onContactClick} contactClick={contactClick}/>
             </Element>
             <Footer />
         </div>

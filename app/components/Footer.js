@@ -4,6 +4,7 @@ import Image from "next/image"
 import Logo from "../images/codebugfinal7.png"
 import Instagram from '../images/instagram.png'
 import LinkedIn from '../images/linkedin.png'
+import Facebook from '../images/facebook.png'
 import Phone from '../images/phone.png'
 import Mail from '../images/mail3.png'
 import { useRouter } from "next/navigation";
@@ -95,6 +96,7 @@ const Footer = () => {
                             <div className="flex flex-row space-x-2">
                                 <Image alt="arrow" className="cursor-pointer" src={Instagram} height={35} />
                                 <Image alt="arrow" className="cursor-pointer" src={LinkedIn} height={35}/>
+                                <Image alt="arrow" className="cursor-pointer" src={Facebook} height={35}/>
                             </div>
                         </div>
                     </div>

@@ -72,7 +72,7 @@ const Navigation = ({handleTalkClick = null, setContactClick=null, onNavigationC
     return(
         <div className=' flex  justify-center items-center w-[100vw] h-16 z-50 text-black relative  '>
             <nav className=' fixed ring-1 ring-black lg:flex hidden flex-row justify-between shadow-lg rounded-[10px] mt-5 bg-white items-center md:w-[95vw] h-[68px] p-5 max-w-[1200px]'>
-                <Image alt="arrow" className='cursor-pointer' src={Logo} height={43}/>
+                <a href="https://www.codebug.lk"><Image alt="arrow" className='cursor-pointer' src={Logo} height={43}/></a>
                 <ul className='flex flex-row text-[18px] space-x-7 '>
                     
                     <Link to="home" offset={-70} smooth={true} duration={500} onClick={handleHomeClick} className={`${navigationClick=='Home'? 'text-[#BF532C]': 'text-black'} hover:text-[#D98032] cursor-pointer`}>Home</Link>
@@ -92,11 +92,11 @@ const Navigation = ({handleTalkClick = null, setContactClick=null, onNavigationC
                 </div>
             </nav>
             <nav className='fixed ring-1 ring-black hidden lg:hidden md:flex sm:flex flex-row justify-between rounded-[10px] mt-5 bg-white items-center  sm:w-[90vw] h-[10vh] p-5'>
-                <Image alt="arrow" src={Logo} className='cursor-pointer h-[50px] w-[auto]'/>
+                <a href="https://www.codebug.lk"><Image alt="arrow" src={Logo} className='cursor-pointer h-[50px] w-[auto]'/></a>
                 <Image alt="arrow" onClick={onMenuClickHandler} src={Menu} className='h-[20px] w-[28px] invert brightness-100 cursor-pointer'/>
             </nav>
             <nav className='fixed ring-1 ring-black sm:hidden flex flex-row justify-between rounded-[10px] mt-3 bg-white items-center  w-[95vw] h-[9vh] pl-3 pr-5'>
-                <Image alt="arrow" src={Logo} className='cursor-pointer h-[40px] w-[auto]'/>
+            <a href="https://www.codebug.lk"><Image alt="arrow" src={Logo} className='cursor-pointer h-[40px] w-[auto]'/></a>
                 <Image alt="arrow" onClick={onMenuClickHandler} src={Menu} className='h-[20px] w-[28px] invert brightness-100 cursor-pointer'/>
             </nav>
             <div

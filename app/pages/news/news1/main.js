@@ -81,7 +81,7 @@ const MainPage = ({handleBlog1Click, handleBlog2Click, handleBlog3Click, handleB
            <div className='relative top-[-5px] mt-[10px]  mb-[10px] '>
                 <p className=' text-[40px]'>You might also like</p>
                 <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 xl:w-[1250px]  w-[100%] mt-9 mb-4">
-                                    <div className="reveal42 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[400px] sm:h-full max-h-[450px] w-full max-w-[285px] flex flex-col items-center justify-center">
+                                    <div className="reveal42 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[380px] sm:h-full max-h-[390px] w-full max-w-[285px] flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center bg-red-500 rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
                                             <Image src={Quantum} alt="Quantum" className=" h-[100%] w-[100%]" />
                                         </div>
@@ -100,7 +100,7 @@ const MainPage = ({handleBlog1Click, handleBlog2Click, handleBlog3Click, handleB
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="reveal43 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[400px] sm:h-full  max-h-[450px] w-full max-w-[285px] flex flex-col items-center justify-center">
+                                    <div className="reveal43 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[380px] sm:h-full  max-h-[390px] w-full max-w-[285px] flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center bg-red-500 rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
                                             <Image src={AI} alt="Quantum" className=" h-[100%] w-[100%]" />
                                         </div>
@@ -123,7 +123,7 @@ const MainPage = ({handleBlog1Click, handleBlog2Click, handleBlog3Click, handleB
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="reveal44 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[400px] sm:h-full  max-h-[450px] w-full max-w-[285px] flex flex-col items-center justify-center">
+                                    <div className="reveal44 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px]  sm:h-full h-[380px] max-h-[390px] w-full max-w-[285px] flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center  rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
                                             <Image  src={Cloud} alt="Cloud" className=" h-[100%] w-[100%]" />
                                         </div>
@@ -141,7 +141,7 @@ const MainPage = ({handleBlog1Click, handleBlog2Click, handleBlog3Click, handleB
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="reveal45 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[400px] sm:h-full  max-h-[450px] w-full max-w-[285px] flex flex-col items-center justify-center">
+                                    <div className="reveal45 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] sm:h-full h-[380px]   max-h-[390px] w-full max-w-[285px] flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center bg-red-500 rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
                                             <Image src={Security} alt="Security" className=" h-[100%] w-[100%]" />
                                         </div>

@@ -43,7 +43,7 @@ const MainPage = () => {
                         </div>
                     </div>
                     <div className='flex flex-col sm:flex-row min-h-[80vh]'>
-                    <div className='flex flex-col md:justify-end  min-h-[80vh]'>
+                    <div className='flex flex-col md:justify-end  sm:min-h-[80vh]'>
                         <div className='mt-3 w-[80%]'>
                             <p className='text-[19px] text-red-400'>Innovative Culture</p>
                             <p className='text-[13px]'>We foster an environment where creativity meets technology, encouraging fresh ideas and solutions to drive the future of software development.</p>
