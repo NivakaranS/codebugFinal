@@ -9,10 +9,13 @@ import Logo2 from '../images/codebugNew.png'
 import {Link} from 'react-scroll'
 import {useRouter} from 'next/navigation'
 import Button1 from './Button1';
+import { usePathname } from 'next/navigation';
 
 const Navigation = ({handleTalkClick = null, setContactClick=null, onNavigationClick=null, navigationClick=null}) => {
     const [onMenuClick, setOneMenuClick] = useState(false)
     const router = useRouter();
+
+    const pathname = usePathname();
 
     //Function to handle navigation
     const handleNavigate = () => {
@@ -46,6 +49,11 @@ const Navigation = ({handleTalkClick = null, setContactClick=null, onNavigationC
 
 
     const onNavigationItemClick = (e) => {
+        e.preventDefault()
+        if(pathname != '/') {
+            handleHomeClick()
+        }
+        
         setOneMenuClick(false)
         onNavigationClick(e)
         
@@ -132,7 +140,7 @@ const Navigation = ({handleTalkClick = null, setContactClick=null, onNavigationC
                         <Link to="contact" offset={0} smooth={true} duration={500} onClick={handleTalkClick2} className='flex shadow-[0_0px_2px_rgba(0,0,0,0.9)] bg-[#39B5C8] hover:bg-[#41CAD9]  ring-blue-800 w-fit  flex-row space-x-3 text-[16px] cursor-pointer  text-white ring-[0.5px] ring-black rounded-[5px] py-1 px-[50px]'>
                             <p>Let&apos;s talk</p>
                         </Link>
-                        <Button1 />
+                        <Button1 ButtonFunction={handleNavigate}  />
                     </div>
                 </div>
             </div>
