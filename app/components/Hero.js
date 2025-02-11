@@ -78,7 +78,7 @@ const Hero = () => {
     return(
         <div className="flex justify-center  items-center overflow-hidden w-[100vw] h-[92vh] bg-black">
             
-            <div className="h-[90vh] w-[90vh] relative top-[5px]">
+            <div className="h-[90vh] max-w-[700px] w-[90vh] relative top-[5px]">
             <ReactPlayer
                 url="/videos/ai-black-new.mp4" // Relative URL path to the public folder
                 width="100%"  // Adjust width

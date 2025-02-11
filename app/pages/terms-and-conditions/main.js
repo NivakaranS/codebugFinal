@@ -15,14 +15,14 @@ import Security from '../../images/security.jpg'
 const MainPage = () => {
     return (
         <div className='flex flex-col items-center justify-center w-screen py-[25px]'>
-            <div className=" shadow-lg bg-[url('/termsback2.png')] bg-cover bg-center  h-[40vh] overflow-hidden flex justify-end rounded-[10px]  py-[20px] ring-1 ring-black  flex flex-col w-full max-w-[85vw] mb-7 leading-[43px] ">
+            <div className=" shadow-lg bg-[url('/termsback2.png')] max-w-[1400px] bg-cover bg-center  h-[40vh] overflow-hidden flex justify-end rounded-[10px]  py-[20px] ring-1 ring-black  flex flex-col w-full max-w-[85vw] mb-7 leading-[43px] ">
                 
                 <div className='px-[20px] leading-[50px]'>
  
                 </div>
                 
             </div>
-            <div className=' bg-white rounded-[20px] py-[50px] px-[35px] text-black max-w-[85vw] w-full flex flex-col  space-y-[10px]'>
+            <div className=' bg-white rounded-[20px] py-[50px] px-[35px] text-black max-w-[1400px] w-[85vw] w-full flex flex-col  space-y-[10px]'>
                 <div>
                     
                     <p>Effective Date: 02/09/2025</p>

@@ -98,23 +98,23 @@ const Home = () => {
   };
 
   const handleBlog1Click = () => {
-    //router.push('./resources/blogs/blog1')
+    router.push('/pages/blogs/blog1')
   };
 
   const handleBlog2Click = () => {
-    //router.push('./resources/blogs/blog2')
+    router.push('/pages/blogs/blog2')
   };
 
   const handleBlog3Click = () => {
-    //router.push('./resources/blogs/blog3')
+    router.push('/pages/blogs/blog3')
   };
 
   const handleBlog4Click = () => {
-    //router.push('./resources/blogs/blog4')
+    router.push('/pages/blogs/blog4')
   };
 
   const handleBlogClick = () => {
-    //router.push('./resources/blogs')
+    router.push('/pages/blogs')
   };
 
   return (

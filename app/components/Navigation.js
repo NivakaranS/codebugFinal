@@ -10,7 +10,7 @@ import {Link} from 'react-scroll'
 import {useRouter} from 'next/navigation'
 import Button1 from './Button1';
 
-const Navigation = ({handleTalkClick = null,  onNavigationClick=null, navigationClick=null}) => {
+const Navigation = ({handleTalkClick = null, setContactClick=null, onNavigationClick=null, navigationClick=null}) => {
     const [onMenuClick, setOneMenuClick] = useState(false)
     const router = useRouter();
 

@@ -31,10 +31,10 @@ const MainPage = ({handleBlog1Click, handleBlogClick, handleBlog2Click, handleBl
             <div className='grid grid-cols-1 place-items-center md:grid-cols-2 gap-5 w-[85%]'>
                 
                 
-                <div className="reveal31  text-black max-w-[570px] bg-gray-100  bg-cover bg-center rounded-[10px] ring-[1px] items-center ring-black shadow-lg sm:h-[66vh] flex flex-col py-[5.5px]">
-                                        <div className="group relative flex cursor-pointer  flex-row items-center justify-center bg-[#C6A961] hover:bg-[#B87333] h-[60%] sm:h-[75%] rounded-[6px] w-[98%]">
+                <div className="reveal31 xl:h-[450px] text-black max-w-[570px] bg-gray-100  bg-cover bg-center rounded-[10px] ring-[1px] items-center ring-black shadow-lg sm:h-[66vh] flex flex-col py-[4px] sm:py-[5.5px]">
+                                        <div className="group relative flex cursor-pointer  flex-row items-center justify-center bg-[#C6A961] hover:bg-[#B87333] h-[100%] sm:h-[75%] rounded-[6px] w-[98%]">
                                             <Image src={Coffeeday} alt="Coffeeday" className=' h-[180px] py-[20px] sm:py-[0px] w-fit sm:h-[250px]  ' />
-                                            <p className='absolute text-[15px] leading-[22px] sm:text-[23px] w-[85%] py-2 leading-[31px] px-4 bottom-0 left-0 mb-4 border-r-[1.5px] border-b-[1.5px] border-t-[1.5px] text-white group-hover:bg-[#8C2020] rounded-r-[8px] transition-all duration-500 delay-0 opacity-0 group-hover:opacity-100'>
+                                            <p className='absolute text-[15px] leading-[20px] sm:leading-[22px] sm:text-[23px] w-[85%] py-2  px-4 bottom-0 left-0 mb-4 border-r-[1.5px] border-b-[1.5px] border-t-[1.5px] text-white group-hover:bg-[#8C2020] rounded-r-[8px] transition-all duration-500 delay-0 opacity-0 group-hover:opacity-100'>
                                                 Transforming the Coffee Shop Experience with Innovative Technology Solutions
                                             </p>
                                         </div>
@@ -60,7 +60,7 @@ const MainPage = ({handleBlog1Click, handleBlogClick, handleBlog2Click, handleBl
                                                 <div  className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] px-4 2xl:py-2 ring-[#8C2020] py-[3px] cursor-pointer hover:bg-[#D98032] group w-fit ">
                                                     <p className="text-[14px] hidden sm:flex leading-[16px]">Check it out</p>
                                                     <p className="text-[14px] flex sm:hidden leading-[16px]">View </p>
-                                                    <Image src={Arrow} height={20}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
+                                                    <Image alt="arrow" src={Arrow} height={20}  className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -86,8 +86,8 @@ const MainPage = ({handleBlog1Click, handleBlogClick, handleBlog2Click, handleBl
                 </div>
                 <div>
                     
-                <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 w-[100%] mt-9 mb-4">
-                                    <div className="reveal42 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] max-h-[60vh] w-full max-w-[285px] flex flex-col items-center justify-center">
+                <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 xl:w-[1250px]  w-[100%] mt-9 mb-4">
+                                    <div className="reveal42 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[400px] sm:h-full max-h-[450px] w-full max-w-[285px] flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center bg-red-500 rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
                                             <Image src={Quantum} alt="Quantum" className=" h-[100%] w-[100%]" />
                                         </div>
@@ -106,7 +106,7 @@ const MainPage = ({handleBlog1Click, handleBlogClick, handleBlog2Click, handleBl
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="reveal43 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] max-h-[60vh] w-full max-w-[285px] flex flex-col items-center justify-center">
+                                    <div className="reveal43 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[400px] sm:h-full  max-h-[450px] w-full max-w-[285px] flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center bg-red-500 rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
                                             <Image src={AI} alt="Quantum" className=" h-[100%] w-[100%]" />
                                         </div>
@@ -129,7 +129,7 @@ const MainPage = ({handleBlog1Click, handleBlogClick, handleBlog2Click, handleBl
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="reveal44 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] max-h-[60vh] w-full max-w-[285px] flex flex-col items-center justify-center">
+                                    <div className="reveal44 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[400px] sm:h-full  max-h-[450px] w-full max-w-[285px] flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center  rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
                                             <Image  src={Cloud} alt="Cloud" className=" h-[100%] w-[100%]" />
                                         </div>
@@ -147,7 +147,7 @@ const MainPage = ({handleBlog1Click, handleBlogClick, handleBlog2Click, handleBl
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="reveal45 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] max-h-[60vh] w-full max-w-[285px] flex flex-col items-center justify-center">
+                                    <div className="reveal45 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[400px] sm:h-full  max-h-[450px] w-full max-w-[285px] flex flex-col items-center justify-center">
                                         <div className="flex flex-row items-center justify-center bg-red-500 rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
                                             <Image src={Security} alt="Security" className=" h-[100%] w-[100%]" />
                                         </div>

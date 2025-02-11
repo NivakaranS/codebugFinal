@@ -1,14 +1,12 @@
 
 
 .falconMainContainer {
-    
     color: rgb(44, 42, 42);
-    position: fixed;
-    z-index: 99999;
-    bottom: 20;
-    right: 30;
-    
-    
+    position: fixed !important;  /* Ensures it remains fixed */
+    z-index: 99999 !important;   /* Keeps it on top */
+    bottom: 20px !important;     /* Adds units */
+    right: 30px !important;      /* Adds units */
+    box-sizing: border-box;      /* Prevents border/padding issues */
 }
 
 .falconInnerContainer1 {

@@ -66,9 +66,9 @@ const Portfolio = ({handlePortfolioClick=null}) => {
       }, []);
 
     return(
-        <div className='py-[30px] w-[100vw] min-h-[116vh] text-white flex flex-col items-center justify-center'>
-            <div className="w-[85vw]">
-                <div className='flex flex-row items-center justify-between'>
+        <div className='w-[100vw] py-[40px] lg:py-[0px] min-h-[116vh] text-white flex flex-col items-center justify-center'>
+            <div className="w-[85vw] max-w-[1400px] flex items-center justify-center flex-col">
+                <div className='flex flex-row items-center justify-between w-[100%]'>
                     <div>
                         <p className="reveal20 text-[#F1A230] text-[20px] sm:text-[24px]">Discover our latest projects from</p>
                         <p className="reveal21 md:text-6xl text-5xl">Portfolio</p>
@@ -85,11 +85,12 @@ const Portfolio = ({handlePortfolioClick=null}) => {
                     </div> 
                 </div>
 
-                <div className="grid grid-cols-1 mt-[25px] sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-7 w-[85vw] ">
-                    <div className="reveal31  text-black max-w-[570px] bg-gray-100  bg-cover bg-center rounded-[10px] ring-[1px] items-center ring-black shadow-lg sm:h-[66vh] flex flex-col py-[5.5px]">
-                        <div className="group relative flex cursor-pointer  flex-row items-center justify-center bg-[#C6A961] hover:bg-[#B87333] h-[60%] sm:h-[75%] rounded-[6px] w-[98%]">
+                <div className="grid grid-cols-1  lg:pl-[80px] 2xl:pl-[0px] mt-[25px] sm:grid-cols-1 gap-7  xl:gap-0 md:grid-cols-1 lg:grid-cols-2  xl:mt-[40px] xl:w-[1300px] w-[85vw] ">
+                    
+                <div className="reveal31 xl:h-[450px] text-black max-w-[570px] bg-gray-100  bg-cover bg-center rounded-[10px] ring-[1px] items-center ring-black shadow-lg sm:h-[66vh] flex flex-col py-[4px] sm:py-[5.5px]">
+                        <div className="group relative flex cursor-pointer  flex-row items-center justify-center bg-[#C6A961] hover:bg-[#B87333] h-[100%] sm:h-[75%] rounded-[6px] w-[98%]">
                             <Image src={Coffeeday} alt="Coffeeday" className=' h-[180px] py-[20px] sm:py-[0px] w-fit sm:h-[250px]  ' />
-                            <p className='absolute text-[15px] leading-[22px] sm:text-[23px] w-[85%] py-2 leading-[31px] px-4 bottom-0 left-0 mb-4 border-r-[1.5px] border-b-[1.5px] border-t-[1.5px] text-white group-hover:bg-[#8C2020] rounded-r-[8px] transition-all duration-500 delay-0 opacity-0 group-hover:opacity-100'>
+                            <p className='absolute text-[15px] leading-[20px] sm:leading-[22px] sm:text-[23px] w-[85%] py-2  px-4 bottom-0 left-0 mb-4 border-r-[1.5px] border-b-[1.5px] border-t-[1.5px] text-white group-hover:bg-[#8C2020] rounded-r-[8px] transition-all duration-500 delay-0 opacity-0 group-hover:opacity-100'>
                                 Transforming the Coffee Shop Experience with Innovative Technology Solutions
                             </p>
                         </div>
@@ -122,6 +123,10 @@ const Portfolio = ({handlePortfolioClick=null}) => {
                          
                     </div>
 
+                    
+                         
+                    
+                    
                 
                     
                     

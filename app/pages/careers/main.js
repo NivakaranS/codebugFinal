@@ -16,7 +16,7 @@ const MainPage = () => {
                 <p className=' text-[18px] leading-[23px] sm:text-[23px]  text-yellow-500'>Join our mission to revolutionize the world and create a better place to live</p>
             </div>
             <div className='w-screen my-5 ring-[1.5px] ring-white bg-black py-[20px] flex flex-col items-center justify-center'>
-                <div className='grid  grid-cols-1 place-items-center md:grid-cols-2 h-[60vh] gap-5 w-[80%]'>
+                <div className='grid max-w-[1400px] grid-cols-1 place-items-center md:grid-cols-2 h-[60vh] gap-5 w-[80%]'>
                     <div>
                         <Image src={Codebug} alt="Codebug" className=' h-[150px] lg:h-[190px] w-fit' />
 
@@ -30,7 +30,7 @@ const MainPage = () => {
                     </div>
                 </div>
                 
-                <div className='flex flex-col lg:flex-row justify-center min-h-[90vh] py-[20px] items-center mt-5 w-[80%]'>
+                <div className='flex flex-col max-w-[1400px]  lg:flex-row justify-center min-h-[90vh] py-[20px] items-center mt-5 w-[80%]'>
                     <div className='leading-[35px] mb-[20px] lg:mb-[0px]  w-[80%] flex flex-col lg:items-start items-center justify-center '>
                         <Image className='lg:ml-[40px]' src={Tech} height={280} />
                         <div>
@@ -43,7 +43,7 @@ const MainPage = () => {
                         </div>
                     </div>
                     <div className='flex flex-col sm:flex-row min-h-[80vh]'>
-                    <div className='flex flex-col md:justify-end h-[100%]'>
+                    <div className='flex flex-col md:justify-end  min-h-[80vh]'>
                         <div className='mt-3 w-[80%]'>
                             <p className='text-[19px] text-red-400'>Innovative Culture</p>
                             <p className='text-[13px]'>We foster an environment where creativity meets technology, encouraging fresh ideas and solutions to drive the future of software development.</p>
@@ -57,7 +57,7 @@ const MainPage = () => {
                             <p className='text-[13px]'>At CoDebug, we prioritize your professional growth, providing with the tools, resources, and opportunities to excel and advance in your career.</p>
                         </div>
                     </div>
-                    <div className='flex flex-col  md:justify-start h-[100%]'>
+                    <div className='flex flex-col  md:justify-start min-h-[80vh] h-[100%]'>
                         <div className='mt-3 w-[80%]'>
                             <p className='text-[19px] text-red-400'>Work-Life Balance</p>
                             <p className='text-[13px]'>Enjoy a flexible work environment that supports your personal well-being, ensuring that you can thrive both in and outside of the workplace.</p>
@@ -73,9 +73,9 @@ const MainPage = () => {
                     </div>
                     </div>
                 </div>
-                <div className='flex flex-col justify-center min-h-[95vh] py-[20px] items-center mt-5 w-[80%]'> 
+                <div className='flex flex-col justify-center min-h-[95vh] py-[20px] items-center mt-5 max-w-[1400px] w-[80%]'> 
                     <p className='text-[50px] text-yellow-500'>What We Value</p>
-                    <Image className='ml-[0px]' src={Tech} height={280} />
+                    <Image className='ml-[0px] mt-[20px]' src={Tech} height={280} />
                     <div className='flex lg:flex-row flex-col l mt-6 justify-between w-[90%]'>
                         <div className='w-[100%]'>
                             <p className='text-[19px] text-red-400'>Passion for Technology</p>

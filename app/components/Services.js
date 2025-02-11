@@ -74,8 +74,8 @@ const Services = ({handleTalkClick=null}) => {
     
       className="py-8 w-[100vw] bg-[url('grid10.png')] bg-cover relative z-[20] h-[130vh] bg-[#002A38] ring-2 ring-white text-white flex flex-col items-center justify-center overflow-hidden"
     >
-      <div className="w-[90vw]">
-        <div className="mb-9 leading-[20px]  mx-[30px]">
+      <div className="w-[90vw] max-w-[1400px] flex flex-col items-center">
+        <div className="mb-9 w-[100%] leading-[20px]">
           <p className="reveal5 text-white text-[34px] sm:text-[50px] leading-[40px] sm:leading-[55px] md:w-[100%]  lg:w-[50%]">
             Explore Our Services That Drives Innovation
           </p>
@@ -84,8 +84,8 @@ const Services = ({handleTalkClick=null}) => {
             your business
           </p>
         </div>
-        <div className="flex ring-2 ring-[#D98032] rounded-[10px] mx-7 mt-9 flex-row  justify-between items-center mt-[5px]">
-          <div className="  flex border-r-[1px] border-gray-800 flex-col bg-gray-300 text-black lg:rounded-l-[10px] lg:rounded-r-[0px] rounded-[10px]  h-[75vh] w-[100%] lg:w-[40%]">
+        <div className="flex ring-2 ring-[#D98032] rounded-[10px] mx-7 mt-9 flex-row  justify-between items-center mt-[5px]  ">
+          <div className="  flex border-r-[1px] border-gray-800 flex-col bg-gray-300 text-black lg:rounded-l-[10px] lg:rounded-r-[0px] rounded-[10px]  max-h-[520px] h-[75vh]  w-[100%] lg:w-[40%]">
               
               <div onClick={onServiceClick} className={`${
                   service === "Artificial Intelligence" ? "text-red-800 border-r-[0px] rounded-r-[10px] lg:rounded-r-[0px] bg-white border" : "text-black transform hover:translate-y-[-10px] transition-all duration-150 cursor-pointer hover:bg-gray-200 hover:text-black"
@@ -155,7 +155,7 @@ const Services = ({handleTalkClick=null}) => {
           <div
             ref={divRef}
             onAbort={handleScroll}
-            className="lg:w-[60%] md:hidden sm:hidden hidden lg:flex flex-col border-r-[1px] border-t-[1px] border-b-[1px] border-gray-800 h-[75vh] bg-white rounded-r-[10px]"
+            className="lg:w-[60%] md:hidden sm:hidden hidden lg:flex flex-col border-r-[1px] border-t-[1px] border-b-[1px] border-gray-800 max-h-[520px] h-[75vh] bg-white rounded-r-[10px]"
           >
               <div className={`${service == 'Artificial Intelligence' ? 'flex' : 'hidden'}  bg-[url('/aibackground11.png')] bg-cover flex-row text-black items-center rounded-r-[9px] justify-center h-[100%]`}>  
                 <div className="w-[100%] h-[100%] flex flex-col ">

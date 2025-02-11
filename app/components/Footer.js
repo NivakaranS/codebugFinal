@@ -6,17 +6,17 @@ import Instagram from '../images/instagram.png'
 import LinkedIn from '../images/linkedin.png'
 import Phone from '../images/phone.png'
 import Mail from '../images/mail3.png'
-//import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
-    //const router = useRouter()
+    const router = useRouter()
 
     const handlePrivacyClick = () => {
-        //router.push('../privacy')
+        router.push('/pages/privacy')
       }
 
       const handleTermsClick = () => {
-        //router.push('../terms&conditions')
+        router.push('/pages/terms-and-conditions')
       }
       
     return(

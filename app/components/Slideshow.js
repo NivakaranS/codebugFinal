@@ -91,6 +91,7 @@ export default function Slideshow() {
         marginTop: '35px',
         overflow: 'hidden', // Hide overflowing cards
         width: '85.5vw', // Take full viewport width
+        maxWidth: '1400px',
         height: '300px', // Adjust height as per card's height
         position: 'relative',
         display: 'flex',

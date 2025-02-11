@@ -1,16 +1,16 @@
 'use client';
 import React from 'react';
-import Navigation from '../../components/Navigation';
-import Footer from '../../components/Footer';
-import Falcon from '../../components/falcon';
+import Navigation from '../../../components/Navigation';
+import Footer from '../../../components/Footer';
+import Falcon from '../../../components/falcon';
 import { useState } from 'react';
 import { useRouter } from "next/navigation";
-import ContactForm from '../../components/contactForm';
+import ContactForm from '../../../components/contactForm';
 import { Element } from "react-scroll";
 import MainPage from './main';
 
-const Portfolio = () => {
-    const [navigationClick, setNavigationClick] = useState('Portfolio');
+const Blog1 = () => {
+    const [navigationClick, setNavigationClick] = useState('Resources');
     const [contactClick, setContactClick] = useState(false);
     const router = useRouter();
     
@@ -20,19 +20,13 @@ const Portfolio = () => {
         setContactClick(!contactClick);
     }
 
-    const handleTalkClick = () => {
-        setContactClick(true)
-      }
-
-    
-
       const handleBlog1Click = () => {
         router.push('/pages/blogs/blog1')
         
       }
       
       const handleBlog2Click = () => {
-       router.push('/pages/blogs/blog2')
+        router.push('/pages/blogs/blog2')
         
       }
       
@@ -50,15 +44,15 @@ const Portfolio = () => {
       const handleBlogClick = () => {
         router.push('/pages/blogs')
         
-      }
+      } 
     
 
     return(
-        <div className="overflow-x-hidden bg-[url('background5.png')] sm:bg-[url('background8.png')] bg-cover bg-left">
-            <Navigation handleTalkClick={handleTalkClick} setContactClick={setContactClick} navigationClick={navigationClick} />
+        <div className="overflow-x-hidden bg-[url('background5.png')] bg-cover">
+            <Navigation  navigationClick={navigationClick} />
         
-            <MainPage handleBlogClick={handleBlogClick} handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click}/>
-           
+            <MainPage handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click} />
+            <Falcon/>
             <Element name="contact">
                 <ContactForm onContactClick={onContactClick} contactClick={contactClick}/>
             </Element>
@@ -67,4 +61,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio;
+export default Blog1;

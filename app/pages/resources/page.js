@@ -32,47 +32,31 @@ const Resources = () => {
 
     
 
-    const handleCareerClick = () => {
-        //router.push('./careers')
-        
-    }
-    
-    const handleResourceClick = () => {
-        //router.push('./resources')
-        
-    }
-
-    const handlePortfolioClick = () => {
-        //router.push('./portfolio')
-
-      }
-    
-
       const handleBlog1Click = () => {
-        //router.push('./resources/blogs/blog1')
+        router.push('/pages/blogs/blog1')
         
     }
 
 
       
       const handleBlog2Click = () => {
-        //router.push('./resources/blogs/blog2')
+        router.push('/pages/blogs/blog2')
         
       }
       
       
       const handleBlog3Click = () => {
-        //router.push('./resources/blogs/blog3')
+        router.push('./pages/blogs/blog3')
         
       }
       
       const handleBlog4Click = () => {
-        //router.push('./resources/blogs/blog4')
+        router.push('./pages/blogs/blog4')
         
       }
       
       const handleBlogClick = () => {
-        //router.push('./resources/blogs')
+        router.push('/pages/blogs')
         
       }
       
@@ -83,7 +67,7 @@ const Resources = () => {
 
     return(
         <div className="overflow-x-hidden bg-[url('background5.png')] sm:bg-[url('background8.png')] bg-cover bg-left">
-            <Navigation handlePortfolioClick={handlePortfolioClick} handleTalkClick={handleTalkClick} handleResourceClick={handleResourceClick} handleCareerClick={handleCareerClick} setContactClick={setContactClick} navigationClick={navigationClick} onNavigationClick={onNavigationClick} />
+            <Navigation  handleTalkClick={handleTalkClick} navigationClick={navigationClick} onNavigationClick={onNavigationClick} />
         
             <MainPage handleNewsClick={handleNewsClick} handleBlogClick={handleBlogClick} handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click}/>
           

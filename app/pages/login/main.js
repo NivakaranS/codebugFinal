@@ -18,11 +18,11 @@ import Codebug from '../../images/codebugNew.png'
 const MainPage = ({handleBlogClick}) => {
     return (
         <div className='flex flex-col items-center justify-center w-screen pt-[25px] pb-[50px]'>
-            <div className='bg-gray-200 text-black h-[82vh] my-[8px] overflow-hidden flex  rounded-[10px] ring-1 ring-black  flex flex-col md:flex-row w-[84vw]  '>
+            <div className='bg-gray-200 text-black max-w-[1400px] h-[82vh] my-[8px] overflow-hidden flex  rounded-[10px] ring-1 ring-black  flex flex-col md:flex-row w-[84vw]  '>
                 <div className='w-[100%] flex items-center justify-center'>
-                    <Image src={Codebug} className=' h-[160px] py-[20px]  sm:h-[180px] w-fit' />
+                    <Image src={Codebug} className=' 2xl:h-[200px] h-[160px] py-[20px]  sm:h-[180px] w-fit' />
                 </div>
-                <div className='w-[100%] h-[100%] bg-white flex flex-col items-center py-[20px] md:justify-center'>
+                <div className='w-[100%] h-[100%] flex  bg-white flex pt-[50px] md:pt-[0px] flex-col items-center py-[20px] md:justify-center'>
                     <p className='text-[30px]'>Welcome back:)</p>
                     <div className='flex flex-col space-y-[3px] mt-[10px]'>
                         <p>Username</p>
