@@ -9,32 +9,8 @@ import Cloud from '../images/cloud.jpg'
 import Security from '../images/security.jpg'
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import { useRouter } from "next/navigation";
 
-const Blogs = () => {
-
-    const router = useRouter()
-
-    const handleBlogClick = () => {
-        router.push('/pages/blogs')
-    }
-
-    const handleBlog1Click = () => {
-        router.push('/pages/blogs/blog1')
-    }
-
-    const handleBlog2Click = () => {
-        router.push('/pages/blogs/blog2')
-    }
-
-    const handleBlog3Click = () => {
-        router.push('/pages/blogs/blog3')
-    }
-
-    const handleBlog4Click = () => {
-        router.push('/pages/blogs/blog4')
-    }
-
+const Blogs = ({handleBlog1Click = null, handleBlogClick = null, handleBlog4Click = null, handleBlog3Click = null, handleBlog2Click = null}) => {
 
     useEffect(() => {
         ScrollReveal().reveal(".reveal40", {
@@ -105,22 +81,9 @@ const Blogs = () => {
       }, []);
 
     return (
-        <div className='py-8  w-[100vw] min-h-[120vh] text-white flex flex-col items-center justify-center'>
+        <div className='py-8  w-[100vw]  text-white flex flex-col items-center justify-center'>
             <div className="w-[83vw] max-w-[1400px] flex flex-col items-center justify-center mt-[70px] md:mt-3">
-                <div className='flex flex-row items-center max-w-[1400px] w-[100%] justify-between'>
-                                    <div>
-                                        <p className="reveal40 text-[#F1A230] text-[18px] md:text-[24px]">Explore our latest insights and tips in our</p>
-                                        <p className="reveal41 md:text-6xl text-5xl">Blogs</p>
-                                    </div>
                 
-                                    
-                                    <div onClick={handleBlogClick} className="reveal4 hidden sm:flex bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] px-3 md:px-5 2xl:py-2 ring-[#8C2020] py-1.5 cursor-pointer hover:bg-[#D98032] group">
-                                        <p className="text-[15px] md:text-[17px]">
-                                            View All Blogs
-                                        </p>
-                                        <Image src={Arrow} alt="arrow"  className="ml-2 h-[20px] md:h-[25px] w-fit transition-transform duration-300 group-hover:translate-x-2"/>
-                                    </div>
-                                </div>
                 <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 xl:w-[1250px]  w-[100%] mt-9 mb-4">
                     <div className="reveal42 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px] h-[380px] max-h-[390px] sm:h-full  w-full max-w-[285px] flex flex-col items-center justify-center">
                         <div className="flex flex-row items-center justify-center bg-red-500 rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">

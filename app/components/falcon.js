@@ -22,16 +22,16 @@ const Falcon = () => {
     const [sessionId, setSessionId] = useState(null);
 
     useEffect(() => {
-        // Check if sessionId already exists in localStorage
+        
         let storedSessionId = localStorage.getItem('sessionId');
         
         if (!storedSessionId) {
-            // If it doesn't exist, generate a new UUID and store it in localStorage
+        
             storedSessionId = uuidv4();
             localStorage.setItem('sessionId', storedSessionId);
         }
 
-        // Set the sessionId from localStorage
+        
         setSessionId(storedSessionId);
     }, []);
     
@@ -47,14 +47,14 @@ const fetchData = async () => {
     };
 
     try {
-        // Making the POST request with axios
+        
         const response = await axios.post('http://127.0.0.1:8000/ask_question', payload, {
             headers: {
                 'Content-Type': 'application/json',
             }
         });
 
-        // Check if the response is successful
+        
         console.log(response.data);
         setMessageCollection((prevMessages) => [
             ...prevMessages,
@@ -64,7 +64,6 @@ const fetchData = async () => {
         setTyping(false);
 
     } catch (error) {
-        // Handling any errors that occur during the request
         console.error('Error invoking API:', error.response ? error.response.status : error.message);
         if (error.response) {
             const errorDetails = error.response.data;
@@ -103,7 +102,7 @@ const fetchData = async () => {
 
     const handleKeyDown = (e) => {
         if (e.key === "Enter") {
-            e.preventDefault(); // Prevent the default newline behavior
+            e.preventDefault(); 
             onMessageSubmit(e.target.value);
         }
     };

@@ -135,7 +135,7 @@ const Home = () => {
             <Services />
           </Element>
           
-          <ChooseUs />
+          <ChooseUs handleTalkClick={handleTalkClick} />
           <Element name="portfolio">
             <Portfolio />
           </Element>

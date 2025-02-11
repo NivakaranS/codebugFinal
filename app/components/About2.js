@@ -87,20 +87,20 @@ const About = () => {
             <div className="bg-[url('/aboutbackground4.png')] bg-center bg-cover rounded-[20px] w-full h-[200px] lg:h-full row-span-4">
             </div>
             <div ref={ref1} className='hidden ring-[1.5px] ring-white lg:flex items-center justify-center bg-[#39B5C8] rounded-[20px] row-span-2'>
-              <div className='flex flex-col leading-[45px] xl:leading-[58px] mt-4 items-center justify-center text-gray-800 h-full'>
-                <p className='text-[90px] xl:text-[110px] '>{mutableSource.current.counter1}+</p>
-                <p className='mt-1 text-[20px] xl:text-[24px]  '>Projects completed</p>
+              <div className='flex flex-col leading-[45px] 2xl:leading-[58px] mt-4 items-center justify-center text-gray-800 h-full'>
+                <p className='text-[90px] 2xl:text-[110px] '>{mutableSource.current.counter1}+</p>
+                <p className='mt-1 text-[20px] 2xl:text-[24px]  '>Projects completed</p>
               </div>
             </div>
           </div>
-          <div className="bg-[url('/aboutbackground11.png')] text-white bg-[#373435] flex xl:py-[30px] bg-cover ring-1 ring-gray-300 rounded-[10px] sm:rounded-[20px] text-[15px] px-5 md:px-[50px] 2xl:px-[80px] w-[100%] sm:w-full h-full col-span-1 md:col-span-2 flex flex-col items-center py-8">
-            <Image alt='codebug' className='reveal22 2xl:h-[130px] h-[110px]  w-fit' src={Codebug} />
+          <div className="bg-[url('/aboutbackground11.png')]  text-white bg-[#373435] flex 2xl:py-[30px] bg-cover ring-1 ring-gray-300 rounded-[10px] sm:rounded-[20px] text-[15px] px-5 md:px-[50px] 2xl:px-[80px] w-[100%] sm:w-full h-full col-span-1 md:col-span-2 flex flex-col items-center pt-5 pb-[50px] ">
+            <Image alt='codebug' className='reveal22 2xl:h-[130px] h-[100px]  w-fit' src={Codebug} />
             <p className='reveal20 mt-4 text-[15px] sm:text-[17px] '>
               Codebug is a dynamic software development company dedicated to creating tailored software solutions that align with
               your business goals. With a team of experienced developers, creative innovators, and tech enthusiasts, we leverage the latest tools, technologies and frameworks to deliver
               solutions that make a real impact.
             </p>
-            <p className='reveal21 mt-4 text-[15px] sm:text-[17px]'>
+            <p className='reveal21 mt-2 mb-6 text-[15px] sm:text-[17px]'>
               Our vision is to create the best innovative products in the world and make
               cutting-edge technology accessible to everyone. We strive to empower businesses with the latest
               technology, enabling them to streamline operations, boost productivity, and achieve their full potential.
