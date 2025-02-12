@@ -10,7 +10,7 @@ import { Element } from "react-scroll";
 import MainPage from './main';
 
 const Resources = () => {
-    const [navigationClick, setNavigationClick] = useState('');
+    const [navigationClick, setNavigationClick] = useState('Services');
     const [contactClick, setContactClick] = useState(false);
     const router = useRouter();
     
@@ -78,7 +78,7 @@ const Resources = () => {
         <div className="overflow-x-hidden bg-[url('background8.png')] bg-cover bg-left">
             <Navigation handlePortfolioClick={handlePortfolioClick} handleTalkClick={handleTalkClick} handleResourceClick={handleResourceClick} handleCareerClick={handleCareerClick} setContactClick={setContactClick} navigationClick={navigationClick} onNavigationClick={onNavigationClick} />
         
-            <MainPage handleBlogClick={handleBlogClick} handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click}/>
+            <MainPage handleTalkClick={handleTalkClick} handleBlogClick={handleBlogClick} handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click}/>
             <Falcon/>
             <Element name="contact">
                 <ContactForm onContactClick={onContactClick} contactClick={contactClick}/>

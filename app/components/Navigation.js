@@ -49,7 +49,7 @@ const Navigation = ({handleTalkClick = null, setContactClick=null, onNavigationC
 
 
     const onNavigationItemClick = (e) => {
-        e.preventDefault()
+        
         if(pathname != '/') {
             handleHomeClick()
         }

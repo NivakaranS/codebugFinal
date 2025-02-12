@@ -54,18 +54,18 @@ const MainPage = ({handleTalkClick}) => {
                     <div className=' leading-[50px] text-center 2xl:leading-[40px]'>
                         <div className='leading-[45px] flex flex-col items-center'>
                             <Image src={Services} alt="AI" height={30} />
-                            <p className=' text-[40px] mt-[10px] sm:text-[48px] text-[#41CAD9]' >Web Development</p>
+                            <p className=' text-[40px] mt-[10px] sm:text-[48px] text-[#41CAD9]' >Software Support & Maintenance</p>
                         </div>
-                        <p className=' text-[20px] leading-[25px]  sm:leading-[36px] lg:leading-[50px] mt-[10px] sm:text-[35px]'>Building Scalable High-Performance Websites</p>
+                        <p className=' text-[20px] leading-[25px]  sm:leading-[36px] lg:leading-[50px] sm:text-[35px]'>Reliable Support & Maintenance for Seamless Performance</p>
                     </div>
-                    <p className=' w-[70vw] 2xl:w-[1400px] mb-5 max-w-[1000px] text-center text-[18px] mt-[10px] text-[#F1A230] w-full'>In today's digital world, your website is your business's first impression. At Codebug, we create modern, scalable, and high-performance websites tailored to your needs. From sleek business websites to complex web applications, we deliver secure, fast and user-friendly solutions that drive growth.</p>
+                    <p className=' w-[70vw] 2xl:w-[1400px] mb-5 max-w-[1000px] text-center text-[18px] text-[#F1A230] w-full'>Keep your software running smoothly, secure, and up to date with our expert support and maintenance services. We ensure continuous performance improvements, bug fixes, security updates, and feature enhancements to maximize efficiency and minimize downtime.</p>
                     <div className="flex flex-row justify-center space-x-5 mt-2">
                         <Link to="contact" offset={15} smooth={true} duration={500} onClick={handleTalkClick} className=" reveal4 bg-white text-xl text-black ring-1 ring-black rounded-[5px] px-5 2xl:py-2  py-1.5 cursor-pointer hover:ring-white hover:bg-black hover:text-white">
                             <p className=" 2xl:text-[23px] lg:text-[20px] md:text-[20px] sm:text-[20px] text-[17px]">Request a Demo</p>
                         </Link>
                         <Link to="aiservices" offset={-55} smooth={true} duration={500}  className="reveal4 bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020]  py-1 sm:py-1.5 cursor-pointer hover:bg-[#D98032] group">
                             <p className="2xl:text-[23px] lg:text-[20px] md:text-[20px] sm:text-[20px] text-[17px]">
-                                Explore Web Solutions
+                                Explore Softaware Support
                             </p>
                             <Image alt="arrow" src={Arrow}  className="ml-2 h-[20px] sm:h-[25px] w-fit transition-transform duration-300 group-hover:translate-x-2"/>
                         </Link>
@@ -76,27 +76,31 @@ const MainPage = ({handleTalkClick}) => {
             <Element name='aiservices'>
                 <div className="w-full relative top-[-60px] text-black max-w-[100vw] bg-[url('grid10.png')] bg-[#002A38] ring-[3px] ring-white bg-cover mb-[20px] pt-[70px] flex flex-row items-center justify-center min-h-[110vh]">
                     <div className='w-[83%]  pt-[10px] pb-[40px] h-full flex flex-col  items-center justify-center'>
-                        <p className='text-[50px] mb-5 text-[#F1A230]'>Our Web Services</p>
+                        <p className='text-[50px] mb-5 text-[#F1A230]'>Our Software Support & Maintenance Services</p>
                         <div className='grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 mx-3  gap-5'>
                             <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
-                                <p className='text-[19px] w-[100%] leading-[23px] text-gray-800 mb-1'>Custom Website Development</p>
-                                <p className='text-[13px]'>We specialize in creating fully customized websites that are responsive, SEO-optimized, and built for performance. Whether you need a sleek portfolio or a complex busines site, we design with user experience and fast loading times in minde, ensuring your websites is both beautiful and functional across all devices.</p>
+                                <p className='text-[19px] w-[100%] leading-[23px] text-gray-800 mb-1'>Bug Fixes & Issue Resolution</p>
+                                <p className='text-[13px]'>We quickly identify and resolve software bugs, glitches, and errors to ensure your application functions flawlessly. Our team proactively monitors and troubleshoots issues, minimizing disruptions and improving user experience.</p>
                             </div>
                             <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
-                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>E-commerce Development</p>
-                                <p className='text-[13px]'>Our e-commerce solutions offer powerful online stores designed to boost sales and streamline your operations. We integrate secure payment gateways, provide easy product management, and ensure a seamless shopping experience. From product listings to order fulfillmen, we create a complete solution for your online business.</p>
+                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Performance Optimization</p>
+                                <p className='text-[13px]'>Over time, software can slow down due to inefficiencies. We analyze and optimize code, databases, and system architecture to enhance speed, responsiveness, and overall performance.</p>
                             </div>
                             <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
-                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Web Application Development</p>
-                                <p className='text-[13px]'>We develop custom web applications that are scalable, secure, and highly interactive. From progressive web apps to complex SaaS platforms, we focus on creating intuitive, fast and reliable applications that meet your unique business needs while ensuring top-tier security and performance.</p>
+                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Security Updates & Compliance</p>
+                                <p className='text-[13px]'>Cybersecurity threats evolve constantly. We implement regular security patches, vulnerability assessments, and compliance updates to keep your software secure from threats, data breaches, and cyberattacks.</p>
                             </div>
                             <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
-                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>CMS Development</p>
-                                <p className='text-[13px]'>Our custom Content Management Systems(CMS) provide easy-to-use interface that let you manage your website's content effortlessly. We work with popular platforms like WordPress, Joomla, and Drupal or create bespoke CMS solutions tailored to your specific requirements, allowing for seamless updates and content control.</p>
+                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Feature Enhancements & Updates</p>
+                                <p className='text-[13px]'>Technology evolves, and so should your software. We provide feature enhancements, UI/UX updates, and new integrations to ensure your software remains competitive, user-friendly, and aligned with business goals.</p>
                             </div>
                             <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
-                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Enterprise Web Solutions</p>
-                                <p className='text-[13px]'>We create secure, scalable, and efficient enterprise solutions to streamline internal processes. From employee portals to complex dashboards, our enterprise web solutions help automate workflows, integrate third-party systems, and enhance communication, ensuring your business runs smoothly and efficiently.</p>
+                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Version Upgrades & Compatibility Maintenance</p>
+                                <p className='text-[13px]'>Stay ahead of outdated technology! We help with software version upgrades, database migrations, API updates, and OS compatibility improvements to ensure smooth operation on all platforms.</p>
+                            </div>
+                            <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
+                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Proactive Monitoring & 24/7 Support</p>
+                                <p className='text-[13px]'>We offer continuous monitoring, real-time alerts, and dedicated support to detect and resolve issues before they impact your business. Our 24/7 maintenance plans ensure maximum uptime and reliability.</p>
                             </div>
                             
                         </div>
@@ -111,71 +115,71 @@ const MainPage = ({handleTalkClick}) => {
                 <div className=' rounded-[10px] mt-[20px] flex flex-col '> 
                     <div>
                         <div onClick={handlefaq1} className='flex cursor-pointer ring-[1px] ring-black flex-row justify-between px-[20px] py-[10px] rounded-[10px] bg-white text-red-800'>
-                            <p>What is the difference between a custom website and a template-based website?</p>
+                            <p>Why is software maintenance important?</p>
                             <div className='cursor-pointer ' onClick={handlefaq1}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq1 ? 'flex' : 'hidden'} bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>A custom website is built from scratch to meet your specific needs and branding, ensuring a unique and tailoredd user experience. A template0based website uses pre-made designs, which are often quicker and less expensive but may lack the personalization and scalability of a custom-built site.</p>
+                            <p>Regular maintenance ensures your software remains secure, efficient, and up to date, preventing costly downtime, security breaches, and performance issues.</p>
                         </div>
                     </div>
                     
                     <div>
                         <div onClick={handlefaq2} className='flex cursor-pointer ring-[1px] ring-black rounded-[10px] flex-row justify-between px-[20px] py-[10px]  bg-white text-red-800'>
-                            <p>How long does it take to build a website?</p>
+                            <p>How often do you perform software updates?</p>
                             <div className='cursor-pointer ' onClick={handlefaq2}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq2 ? 'flex' : 'hidden'} bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>The timeline for building a website depends on the complexity of the project. A simple website might take 4-6 weeks, while more complex sites like e-commerce platforms or web applications could take several months. We'll provide a timeline based on your specific requirements after our initial consultation.</p>
+                            <p>We provide scheduled updates, security patches, and performance enhancements based on your software’s needs and industry best practices.</p>
                         </div>
                     </div>
 
                     <div>
                     <div onClick={handlefaq3} className='flex cursor-pointer ring-[1px] ring-black rounded-[10px] flex-row justify-between px-[20px] py-[10px]  bg-white text-red-800'>
-                            <p>Will my website be mobile-friendly?</p>
+                            <p>Can you maintain software developed by another company?</p>
                             <div className='cursor-pointer ' onClick={handlefaq3}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq3 ? 'flex' : 'hidden'} flex-col space-y-2 bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>Absolutely! All of our websites are built with mobile-first approach, ensuring that they are responsive and look great on any device from smartphones to desktops</p>
+                            <p>Yes! Our team specializes in maintaining and improving third-party software, whether it was built by another vendor or an in-house team.</p>
                             
                         </div>
                     </div>
                     <div>
                     <div onClick={handlefaq4} className='flex cursor-pointer ring-[1px] ring-black rounded-[10px] flex-row justify-between px-[20px] py-[10px] bg-white text-red-800'>
-                            <p>Do you offer onging website maintenance?</p>
+                            <p>What types of applications do you support?</p>
                             <div className='cursor-pointer ' onClick={handlefaq4}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq4 ? 'flex' : 'hidden'} bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>Yes! After your website is live, we offere onging maintenance and support services, including updates, securing monitoring, and performance optimization to ensure your site continues to run smoothly.</p>
+                            <p>We provide maintenance for web applications, mobile apps, enterprise software, cloud solutions, and legacy systems across various industries.</p>
                         </div>
                     </div>
                     <div>
                     <div onClick={handlefaq5} className='flex cursor-pointer ring-[1px] ring-black rounded-[10px] flex-row justify-between px-[20px] py-[10px]  bg-white text-red-800'>
-                            <p>How much does it cost to build a website?</p>
+                            <p>How do you handle emergency issues or downtime?</p>
                             <div className='cursor-pointer ' onClick={handlefaq5}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq5 ? 'flex' : 'hidden'} bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>The cost of bulding a website varies depending on the complexity of the project nad the features you need. We offere flexible pricing to fit your budget, whether you're looking for a simple informational site or a robust e-commerce platform. Contact us for a free consultation and customized quote based on your needs.</p>
+                            <p>We offer real-time monitoring and rapid response support to fix critical issues, minimize downtime, and restore normal operations as quickly as possible.</p>
                         </div>
                     </div>
                     <div>
                     <div onClick={handlefaq6} className='flex cursor-pointer ring-[1px] ring-black rounded-[10px] flex-row justify-between px-[20px] py-[10px]  bg-white text-red-800'>
-                            <p>Will my website be secure?</p>
+                            <p>Do you offer long-term support contracts?</p>
                             <div className='cursor-pointer ' onClick={handlefaq6}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq6 ? 'flex' : 'hidden'} rounded-b-[10px] bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>We prioritize security in all of our web development projects. We implement best practices like SSL encryption, secure payment gateways, and regular security updates to protect your website and its users from potential threats.</p>
+                            <p>Yes! We provide flexible maintenance contracts, including monthly, quarterly, or yearly support plans, tailored to your needs.</p>
                         </div>
                     </div>
                 </div>
@@ -190,11 +194,11 @@ const MainPage = ({handleTalkClick}) => {
                         </div>
                         
                     </div>
-                    <div className='w-[100%]  min-h-[50vh] flex flex-col items-center justify-center
+                    <div className='w-[100%]  h-[50vh] flex flex-col items-center justify-center
                      pt-[10px] pb-[20px] sm:w-[80%] md:w-[50%] px-[40px]'>
-                        <p className='text-[28px] leading-[35px] sm:text-[35px]'>Let's Build Your Website</p>
-                        <p className='md:w-[80%] mt-5'>Are you ready to take your online presence to the next level? Whether you're starting from scratch or looking to enhance your current website, we're here to help you build a site that aligns with your business goals and engages your audience.</p>
-                        <p className='mt-3'>Our team is committed to delivering a website that not only looks great but also performs at its best. We'll make sure your site is fast, secure, and optimized to help you attract more visitors, drive conversations, and achieve your business goals.</p>
+                        <p className='text-[28px] leading-[35px] sm:text-[35px]'>Let's Discuss Your Software Support Needs Today!</p>
+                        <p className='md:w-[80%] mt-5'>Your software is the backbone of your business—don’t let downtime or outdated technology slow you down. Our dedicated support team ensures your software remains secure, efficient, and fully optimized for long-term success.</p>
+                        <p className='md:w-[80%] mt-5'>Get Reliable Software Support & Maintenance!</p>
                         <Link to='contact' duration={500} offset={0} smooth={true} onClick={handleTalkClick} className=" bg-[#D98032] flex flex-row w-fit px-[20px] mt-[10px]  items-center justify-center ring-[#BF532C]  ring-1 text-xl text-black rounded-[5px]  2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group">
                             <p className="text-[15px] ">
                                 Schedule a Consultation

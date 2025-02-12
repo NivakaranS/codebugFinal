@@ -147,7 +147,7 @@ const Home = () => {
             <ContactForm onContactClick={onContactClick} contactClick={contactClick} />
           </Element>
         </div>
-        <Footer />
+        <Footer onContactClick={onContactClick} />
       </div>
     )
   );

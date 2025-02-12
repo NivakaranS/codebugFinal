@@ -8,8 +8,9 @@ import Facebook from '../images/facebook.png'
 import Phone from '../images/phone.png'
 import Mail from '../images/mail3.png'
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
-const Footer = () => {
+const Footer = ({handleTalkClick, onContactClick}) => {
     const router = useRouter()
 
     const handlePrivacyClick = () => {
@@ -19,7 +20,98 @@ const Footer = () => {
       const handleTermsClick = () => {
         router.push('/pages/terms-and-conditions')
       }
+
+      const handleAIServiceClick = () => {
+        router.push('/pages/services/artificial-Intelligence')
+      }
       
+    
+      const handleWebDevelopmentServiceClick = () => {
+        router.push('/pages/services/web-development')
+      }
+    
+      const handleMobileDevelopmentServiceClick = () => {
+        router.push('/pages/services/mobile-app-development')
+      }
+    
+      const handleCustomSoftwareServiceClick = () => {
+        router.push('/pages/services/custom-software-development')
+      }
+    
+      const handleCloudSolutionsServiceClick = () => {
+        router.push('/pages/services/cloud-solutions')
+      }
+    
+      const handleUIUXServiceClick = () => {
+        router.push('/pages/services/ui-ux-design')
+      }
+    
+      const handleSoftwareSupportServiceClick = () => {
+        router.push('/pages/services/software-support')
+      }
+    
+      const handleSoftwareConsultancyServiceClick = () => {
+        router.push('/pages/services/software-consultancy')
+      }
+    
+      const handleBlockchainServiceClick = () => {
+        router.push('/pages/services/blockchain')
+      }
+      
+
+      const handleBlogsClick = () => {
+        router.push('/pages/blogs')
+        }
+
+      
+          const pathname = usePathname();
+      
+          //Function to handle navigation
+          const handleNavigate = () => {
+              router.push('/pages/login')
+          }
+      
+          const handleResourceClick = () => {
+              router.push('/pages/resources')
+          }
+          const handlePortfolioClick = (e) => {
+              router.push('/pages/portfolio')
+      
+          }
+      
+          const handleCareerClick = () => {
+              router.push('/pages/careers')
+          }
+      
+          const handleHomeClick = (e) => {
+              router.push('/')
+              
+              
+              
+          }
+      
+        
+      
+          const onNavigationItemClick = (e) => {
+              
+              if(pathname != '/') {
+                  handleHomeClick()
+              }
+              
+              setOneMenuClick(false)
+        
+              
+          }
+      
+          const onOverlayClick = () => {
+              setOneMenuClick(false)
+          }
+      
+          const handleTalkClick2 = () => {
+                handleTalkClick()
+              setOneMenuClick(false)
+          }
+
     return(
         <div>
             <footer className="bg-white text-black  flex flex-col w-[100vw]">
@@ -47,17 +139,17 @@ const Footer = () => {
                         <div className="flex flex-col   sm:mx-8 md:w-fit w-[100%] sm:w-[95vw]">
                             <div>
                                 <p className="text-xl text-gray-600">Company</p>
-                                <p className="cursor-pointer w-fit hover:text-gray-700">Home</p>
-                                <p className="cursor-pointer w-fit hover:text-gray-700">About</p>
-                                <p className="cursor-pointer w-fit hover:text-gray-700">Services</p>
-                                <p className="cursor-pointer w-fit hover:text-gray-700">Portfolio</p>
-                                <p className="cursor-pointer w-fit hover:text-gray-700">Resources</p>
-                                <p className="cursor-pointer w-fit hover:text-gray-700">Careers</p>
-                                <p className="cursor-pointer w-fit hover:text-gray-700">Contact</p>
+                                <p onClick={handleHomeClick} className="cursor-pointer w-fit hover:text-gray-700">Home</p>
+                                <p onClick={handleHomeClick} className="cursor-pointer w-fit hover:text-gray-700">About</p>
+                                <p onClick={handleHomeClick} className="cursor-pointer w-fit hover:text-gray-700">Services</p>
+                                <p onClick={handlePortfolioClick} className="cursor-pointer w-fit hover:text-gray-700">Portfolio</p>
+                                <p onClick={handleResourceClick} className="cursor-pointer w-fit hover:text-gray-700">Resources</p>
+                                <p onClick={handleCareerClick} className="cursor-pointer w-fit hover:text-gray-700">Careers</p>
+                                <p onClick={onContactClick} className="cursor-pointer w-fit hover:text-gray-700">Contact</p>
                                 
-                                <p className="cursor-pointer w-fit hover:text-gray-700">Blogs</p>
-                                <p className="cursor-pointer w-fit hover:text-gray-700">News</p>
-                                <p className="cursor-pointer w-fit hover:text-gray-700">Login</p>
+                                <p onClick={handleBlogsClick} className="cursor-pointer w-fit hover:text-gray-700">Blogs</p>
+                                <p onClick={handleResourceClick} className="cursor-pointer w-fit hover:text-gray-700">News</p>
+                                <p onClick={handleNavigate} className="cursor-pointer w-fit hover:text-gray-700">Login</p>
                                 
                             </div>
                             
@@ -69,14 +161,15 @@ const Footer = () => {
                             <p className="cursor-pointer w-fit hover:text-gray-700">Project 02</p>
 
                             <p className="text-xl text-gray-600 mt-6">Our Services</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700 ">Artificial Intelligence</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Web App Development</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Mobile App Development</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Custom </p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Cloud Solutions</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">UI/UX Design</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Software Consultancy</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Blockchain</p>
+                            <p onClick={handleAIServiceClick} className="cursor-pointer w-fit hover:text-gray-700 ">Artificial Intelligence</p>
+                            <p onClick={handleWebDevelopmentServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Web App Development</p>
+                            <p onClick={handleMobileDevelopmentServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Mobile App Development</p>
+                            <p onClick={handleCustomSoftwareServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Custom Development </p>
+                            <p onClick={handleCloudSolutionsServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Cloud Solutions</p>
+                            <p onClick={handleUIUXServiceClick} className="cursor-pointer w-fit hover:text-gray-700">UI/UX Design</p>
+                            <p onClick={handleSoftwareConsultancyServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Software Consultancy</p>
+                            <p onClick={handleSoftwareSupportServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Software Support</p>
+                            <p onClick={handleBlockchainServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Blockchain</p>
                             </div>
                         </div>
 
@@ -146,15 +239,18 @@ const Footer = () => {
                         
                         <div className="flex flex-col  mx-8 md:w-fit w-[50%]">
                             <div>
-                            <p className="text-xl text-gray-600">Company</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">About</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Portfolio</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Testimonials</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Contact</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Coming soon</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Careers</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Blogs</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">FAQ</p>
+                                <p className="text-xl text-gray-600">Company</p>
+                                <p onClick={handleHomeClick} className="cursor-pointer w-fit hover:text-gray-700">Home</p>
+                                <p onClick={handleHomeClick} className="cursor-pointer w-fit hover:text-gray-700">About</p>
+                                <p onClick={handleHomeClick} className="cursor-pointer w-fit hover:text-gray-700">Services</p>
+                                <p onClick={handlePortfolioClick} className="cursor-pointer w-fit hover:text-gray-700">Portfolio</p>
+                                <p onClick={handleResourceClick} className="cursor-pointer w-fit hover:text-gray-700">Resources</p>
+                                <p onClick={handleCareerClick} className="cursor-pointer w-fit hover:text-gray-700">Careers</p>
+                                <p onClick={onContactClick} className="cursor-pointer w-fit hover:text-gray-700">Contact</p>
+                                
+                                <p onClick={handleBlogsClick} className="cursor-pointer w-fit hover:text-gray-700">Blogs</p>
+                                <p onClick={handleResourceClick} className="cursor-pointer w-fit hover:text-gray-700">News</p>
+                                <p onClick={handleNavigate} className="cursor-pointer w-fit hover:text-gray-700">Login</p>
                             </div>
                             
                         </div>
@@ -165,11 +261,15 @@ const Footer = () => {
                             <p className="cursor-pointer w-fit hover:text-gray-700">Project 02</p>
 
                             <p className="text-xl text-gray-600 mt-6">Our Services</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700 ">Artificial Intelligence</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Web Applications</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Mobile Applications</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">Cloud Solutions</p>
-                            <p className="cursor-pointer w-fit hover:text-gray-700">UI/UX Design</p>
+                            <p onClick={handleAIServiceClick} className="cursor-pointer w-fit hover:text-gray-700 ">Artificial Intelligence</p>
+                            <p onClick={handleWebDevelopmentServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Web App Development</p>
+                            <p onClick={handleMobileDevelopmentServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Mobile App Development</p>
+                            <p onClick={handleCustomSoftwareServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Custom Development </p>
+                            <p onClick={handleCloudSolutionsServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Cloud Solutions</p>
+                            <p onClick={handleUIUXServiceClick} className="cursor-pointer w-fit hover:text-gray-700">UI/UX Design</p>
+                            <p onClick={handleSoftwareConsultancyServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Software Consultancy</p>
+                            <p onClick={handleSoftwareSupportServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Software Support</p>
+                            <p onClick={handleBlockchainServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Blockchain</p>
                             </div>
                         </div>
 

@@ -54,18 +54,18 @@ const MainPage = ({handleTalkClick}) => {
                     <div className=' leading-[50px] text-center 2xl:leading-[40px]'>
                         <div className='leading-[45px] flex flex-col items-center'>
                             <Image src={Services} alt="AI" height={30} />
-                            <p className=' text-[40px] mt-[10px] sm:text-[48px] text-[#41CAD9]' >Web Development</p>
+                            <p className=' text-[40px] mt-[10px] sm:text-[48px] text-[#41CAD9]' >Cloud Solutions</p>
                         </div>
-                        <p className=' text-[20px] leading-[25px]  sm:leading-[36px] lg:leading-[50px] mt-[10px] sm:text-[35px]'>Building Scalable High-Performance Websites</p>
+                        <p className=' text-[20px] leading-[25px]  sm:leading-[36px] lg:leading-[50px] sm:text-[35px]'>Unlock the Power of the Cloud</p>
                     </div>
-                    <p className=' w-[70vw] 2xl:w-[1400px] mb-5 max-w-[1000px] text-center text-[18px] mt-[10px] text-[#F1A230] w-full'>In today's digital world, your website is your business's first impression. At Codebug, we create modern, scalable, and high-performance websites tailored to your needs. From sleek business websites to complex web applications, we deliver secure, fast and user-friendly solutions that drive growth.</p>
+                    <p className=' w-[70vw] 2xl:w-[1400px] mb-5 max-w-[1000px] text-center text-[18px] text-[#F1A230] w-full'>Transform your business with powerful cloud technology that enhances efficiency, scalability, and security. Whether you’re migrating, modernizing, or optimizing, we provide tailored cloud solutions to meet your needs.</p>
                     <div className="flex flex-row justify-center space-x-5 mt-2">
                         <Link to="contact" offset={15} smooth={true} duration={500} onClick={handleTalkClick} className=" reveal4 bg-white text-xl text-black ring-1 ring-black rounded-[5px] px-5 2xl:py-2  py-1.5 cursor-pointer hover:ring-white hover:bg-black hover:text-white">
                             <p className=" 2xl:text-[23px] lg:text-[20px] md:text-[20px] sm:text-[20px] text-[17px]">Request a Demo</p>
                         </Link>
                         <Link to="aiservices" offset={-55} smooth={true} duration={500}  className="reveal4 bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020]  py-1 sm:py-1.5 cursor-pointer hover:bg-[#D98032] group">
                             <p className="2xl:text-[23px] lg:text-[20px] md:text-[20px] sm:text-[20px] text-[17px]">
-                                Explore Web Solutions
+                                Explore Cloud Solutions
                             </p>
                             <Image alt="arrow" src={Arrow}  className="ml-2 h-[20px] sm:h-[25px] w-fit transition-transform duration-300 group-hover:translate-x-2"/>
                         </Link>
@@ -76,27 +76,31 @@ const MainPage = ({handleTalkClick}) => {
             <Element name='aiservices'>
                 <div className="w-full relative top-[-60px] text-black max-w-[100vw] bg-[url('grid10.png')] bg-[#002A38] ring-[3px] ring-white bg-cover mb-[20px] pt-[70px] flex flex-row items-center justify-center min-h-[110vh]">
                     <div className='w-[83%]  pt-[10px] pb-[40px] h-full flex flex-col  items-center justify-center'>
-                        <p className='text-[50px] mb-5 text-[#F1A230]'>Our Web Services</p>
+                        <p className='text-[50px] mb-5 text-[#F1A230]'>Our Cloud Solutions Services</p>
                         <div className='grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 mx-3  gap-5'>
                             <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
-                                <p className='text-[19px] w-[100%] leading-[23px] text-gray-800 mb-1'>Custom Website Development</p>
-                                <p className='text-[13px]'>We specialize in creating fully customized websites that are responsive, SEO-optimized, and built for performance. Whether you need a sleek portfolio or a complex busines site, we design with user experience and fast loading times in minde, ensuring your websites is both beautiful and functional across all devices.</p>
+                                <p className='text-[19px] w-[100%] leading-[23px] text-gray-800 mb-1'>Cloud Migration & Strategy</p>
+                                <p className='text-[13px]'>Seamlessly move your applications, databases, and workloads to the cloud with our strategic cloud migration services. We analyze your existing infrastructure, select the best cloud platform (AWS, Azure, Google Cloud), and ensure a smooth transition with minimal disruption. Our goal is to enhance performance, scalability, and cost-efficiency while modernizing your IT ecosystem.</p>
                             </div>
                             <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
-                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>E-commerce Development</p>
-                                <p className='text-[13px]'>Our e-commerce solutions offer powerful online stores designed to boost sales and streamline your operations. We integrate secure payment gateways, provide easy product management, and ensure a seamless shopping experience. From product listings to order fulfillmen, we create a complete solution for your online business.</p>
+                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Cloud Application Development</p>
+                                <p className='text-[13px]'>Leverage the power of the cloud with custom cloud-native applications designed for speed, scalability, and flexibility. We develop SaaS platforms, serverless applications, and AI-powered cloud solutions that run seamlessly on AWS, Google Cloud, or Azure, ensuring high availability and reliability.</p>
                             </div>
                             <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
-                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Web Application Development</p>
-                                <p className='text-[13px]'>We develop custom web applications that are scalable, secure, and highly interactive. From progressive web apps to complex SaaS platforms, we focus on creating intuitive, fast and reliable applications that meet your unique business needs while ensuring top-tier security and performance.</p>
+                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Cloud Security & Compliance</p>
+                                <p className='text-[13px]'>Security is our top priority. We implement robust security measures, encryption, and compliance frameworks (ISO, GDPR, HIPAA) to protect your data, prevent cyber threats, and ensure regulatory compliance. Our security solutions include identity management, access controls, and real-time monitoring to keep your cloud infrastructure safe.</p>
                             </div>
                             <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
-                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>CMS Development</p>
-                                <p className='text-[13px]'>Our custom Content Management Systems(CMS) provide easy-to-use interface that let you manage your website's content effortlessly. We work with popular platforms like WordPress, Joomla, and Drupal or create bespoke CMS solutions tailored to your specific requirements, allowing for seamless updates and content control.</p>
+                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>DevOps & Cloud Automation</p>
+                                <p className='text-[13px]'>Optimize development and deployment processes with our DevOps and cloud automation services. We integrate CI/CD pipelines, infrastructure as code (IaC), and automated monitoring to enhance efficiency, reliability, and scalability. Our solutions help businesses reduce deployment time, eliminate manual errors, and accelerate innovation.</p>
                             </div>
                             <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
-                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Enterprise Web Solutions</p>
-                                <p className='text-[13px]'>We create secure, scalable, and efficient enterprise solutions to streamline internal processes. From employee portals to complex dashboards, our enterprise web solutions help automate workflows, integrate third-party systems, and enhance communication, ensuring your business runs smoothly and efficiently.</p>
+                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Multi-Cloud & Hybrid Cloud Solutions</p>
+                                <p className='text-[13px]'>Maximize flexibility and resilience with our multi-cloud and hybrid cloud strategies. We help businesses integrate private and public clouds, ensuring optimal performance, security, and cost savings while preventing vendor lock-in. Whether you need AWS, Google Cloud, Microsoft Azure, or a hybrid setup, we ensure seamless data and application interoperability.</p>
+                            </div>
+                            <div className='flex px-5 py-5 flex-col items-center bg-white ring-[0.5px] ring-black rounded-[5px] justify-center'>
+                                <p className='text-[19px] w-[100%] text-gray-800 leading-[23px] mb-1'>Cloud Storage & Backup Solutions</p>
+                                <p className='text-[13px]'>Securely store and manage your data with our scalable cloud storage solutions. From automated backups and disaster recovery to data archiving and secure file sharing, we ensure data availability and integrity while optimizing storage costs and performance.</p>
                             </div>
                             
                         </div>
@@ -111,71 +115,71 @@ const MainPage = ({handleTalkClick}) => {
                 <div className=' rounded-[10px] mt-[20px] flex flex-col '> 
                     <div>
                         <div onClick={handlefaq1} className='flex cursor-pointer ring-[1px] ring-black flex-row justify-between px-[20px] py-[10px] rounded-[10px] bg-white text-red-800'>
-                            <p>What is the difference between a custom website and a template-based website?</p>
+                            <p>What are cloud solutions, and why does my business need them?</p>
                             <div className='cursor-pointer ' onClick={handlefaq1}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq1 ? 'flex' : 'hidden'} bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>A custom website is built from scratch to meet your specific needs and branding, ensuring a unique and tailoredd user experience. A template0based website uses pre-made designs, which are often quicker and less expensive but may lack the personalization and scalability of a custom-built site.</p>
+                            <p>Cloud solutions involve using remote servers and data centers for storage, computing, and application hosting. They provide cost savings, scalability, flexibility, and security, making them essential for modern businesses.</p>
                         </div>
                     </div>
                     
                     <div>
                         <div onClick={handlefaq2} className='flex cursor-pointer ring-[1px] ring-black rounded-[10px] flex-row justify-between px-[20px] py-[10px]  bg-white text-red-800'>
-                            <p>How long does it take to build a website?</p>
+                            <p>How do I choose the right cloud platform for my business?</p>
                             <div className='cursor-pointer ' onClick={handlefaq2}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq2 ? 'flex' : 'hidden'} bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>The timeline for building a website depends on the complexity of the project. A simple website might take 4-6 weeks, while more complex sites like e-commerce platforms or web applications could take several months. We'll provide a timeline based on your specific requirements after our initial consultation.</p>
+                            <p>The right platform depends on your business needs. We assess your requirements, workload, and security concerns to recommend the best option, whether it's AWS, Google Cloud, Microsoft Azure, or a hybrid solution.</p>
                         </div>
                     </div>
 
                     <div>
                     <div onClick={handlefaq3} className='flex cursor-pointer ring-[1px] ring-black rounded-[10px] flex-row justify-between px-[20px] py-[10px]  bg-white text-red-800'>
-                            <p>Will my website be mobile-friendly?</p>
+                            <p>What is cloud migration, and how does it work?</p>
                             <div className='cursor-pointer ' onClick={handlefaq3}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq3 ? 'flex' : 'hidden'} flex-col space-y-2 bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>Absolutely! All of our websites are built with mobile-first approach, ensuring that they are responsive and look great on any device from smartphones to desktops</p>
+                            <p>Cloud migration is the process of moving data, applications, and IT resources from on-premises or legacy systems to the cloud. We handle the entire migration process, ensuring minimal downtime and maximum efficiency.</p>
                             
                         </div>
                     </div>
                     <div>
                     <div onClick={handlefaq4} className='flex cursor-pointer ring-[1px] ring-black rounded-[10px] flex-row justify-between px-[20px] py-[10px] bg-white text-red-800'>
-                            <p>Do you offer onging website maintenance?</p>
+                            <p>How secure are cloud solutions?</p>
                             <div className='cursor-pointer ' onClick={handlefaq4}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq4 ? 'flex' : 'hidden'} bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>Yes! After your website is live, we offere onging maintenance and support services, including updates, securing monitoring, and performance optimization to ensure your site continues to run smoothly.</p>
+                            <p>Cloud platforms offer high-level security, including encryption, multi-factor authentication, and compliance with industry regulations. We enhance security with firewalls, threat monitoring, and disaster recovery plans.</p>
                         </div>
                     </div>
                     <div>
                     <div onClick={handlefaq5} className='flex cursor-pointer ring-[1px] ring-black rounded-[10px] flex-row justify-between px-[20px] py-[10px]  bg-white text-red-800'>
-                            <p>How much does it cost to build a website?</p>
+                            <p>Can I integrate cloud services with my existing IT infrastructure?</p>
                             <div className='cursor-pointer ' onClick={handlefaq5}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq5 ? 'flex' : 'hidden'} bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>The cost of bulding a website varies depending on the complexity of the project nad the features you need. We offere flexible pricing to fit your budget, whether you're looking for a simple informational site or a robust e-commerce platform. Contact us for a free consultation and customized quote based on your needs.</p>
+                            <p>Yes! We offer hybrid and multi-cloud solutions that seamlessly integrate with your existing on-premise or legacy systems, ensuring smooth interoperability and optimized performance.</p>
                         </div>
                     </div>
                     <div>
                     <div onClick={handlefaq6} className='flex cursor-pointer ring-[1px] ring-black rounded-[10px] flex-row justify-between px-[20px] py-[10px]  bg-white text-red-800'>
-                            <p>Will my website be secure?</p>
+                            <p>What are the cost benefits of moving to the cloud?</p>
                             <div className='cursor-pointer ' onClick={handlefaq6}>
                                 <p></p>
                             </div>
                         </div>
                         <div className={`${faq6 ? 'flex' : 'hidden'} rounded-b-[10px] bg-gray-400 mx-[10px] px-[50px] py-[10px] text-black`}>
-                            <p>We prioritize security in all of our web development projects. We implement best practices like SSL encryption, secure payment gateways, and regular security updates to protect your website and its users from potential threats.</p>
+                            <p>Cloud computing reduces hardware costs, maintenance expenses, and IT overhead. With pay-as-you-go models, you only pay for what you use, helping businesses save money and scale resources efficiently.</p>
                         </div>
                     </div>
                 </div>
@@ -192,9 +196,9 @@ const MainPage = ({handleTalkClick}) => {
                     </div>
                     <div className='w-[100%]  min-h-[50vh] flex flex-col items-center justify-center
                      pt-[10px] pb-[20px] sm:w-[80%] md:w-[50%] px-[40px]'>
-                        <p className='text-[28px] leading-[35px] sm:text-[35px]'>Let's Build Your Website</p>
-                        <p className='md:w-[80%] mt-5'>Are you ready to take your online presence to the next level? Whether you're starting from scratch or looking to enhance your current website, we're here to help you build a site that aligns with your business goals and engages your audience.</p>
-                        <p className='mt-3'>Our team is committed to delivering a website that not only looks great but also performs at its best. We'll make sure your site is fast, secure, and optimized to help you attract more visitors, drive conversations, and achieve your business goals.</p>
+                        <p className='text-[28px] leading-[35px] sm:text-[35px]'>Let's Discuss Your Cloud Project Today!</p>
+                        <p className='md:w-[80%] mt-5'>Ready to embrace the cloud and unlock unlimited scalability, security, and efficiency? Our team of cloud experts will guide you through strategy, migration, development, and security to ensure a smooth transition. Whether you’re looking to modernize your IT infrastructure, build cloud-native applications, or automate workflows, we have the expertise to make it happen!</p>
+                        <p className='mt-5 md:w-[80%]'>Get in touch today for a free consultation and take your business to the next level with cloud technology!</p>
                         <Link to='contact' duration={500} offset={0} smooth={true} onClick={handleTalkClick} className=" bg-[#D98032] flex flex-row w-fit px-[20px] mt-[10px]  items-center justify-center ring-[#BF532C]  ring-1 text-xl text-black rounded-[5px]  2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group">
                             <p className="text-[15px] ">
                                 Schedule a Consultation

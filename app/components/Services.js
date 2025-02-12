@@ -6,9 +6,12 @@ import Image from "next/image";
 
 import Arrow from '../images/rightArrow2.png'
 import ScrollReveal from "scrollreveal";
+import { useRouter } from "next/navigation";
 
 const Services = ({handleTalkClick=null}) => {
   const [service, setService] = useState("Artificial Intelligence");
+
+  const router = useRouter();
   //const outerContainerRef = useRef(null);
   //const [isInnerScrollActive, setInnerScrollActive] = useState(true);
 
@@ -63,7 +66,43 @@ const Services = ({handleTalkClick=null}) => {
   }, []);
 
 
+  const handleAIServiceClick = () => {
+    router.push('/pages/services/artificial-Intelligence')
+  }
   
+
+  const handleWebDevelopmentServiceClick = () => {
+    router.push('/pages/services/web-development')
+  }
+
+  const handleMobileDevelopmentServiceClick = () => {
+    router.push('/pages/services/mobile-app-development')
+  }
+
+  const handleCustomSoftwareServiceClick = () => {
+    router.push('/pages/services/custom-software-development')
+  }
+
+  const handleCloudSolutionsServiceClick = () => {
+    router.push('/pages/services/cloud-solutions')
+  }
+
+  const handleUIUXServiceClick = () => {
+    router.push('/pages/services/ui-ux-design')
+  }
+
+  const handleSoftwareSupportServiceClick = () => {
+    router.push('/pages/services/software-support')
+  }
+
+  const handleSoftwareConsultancyServiceClick = () => {
+    router.push('/pages/services/software-consultancy')
+  }
+
+  const handleBlockchainServiceClick = () => {
+    router.push('/pages/services/blockchain')
+  }
+
 
     
 
@@ -185,12 +224,12 @@ const Services = ({handleTalkClick=null}) => {
                   </div>
     
                   <div className="h-[120%] mx-[38px]">
-                    <Link onClick={handleTalkClick} to="contact" offset={0} smooth={true} duration={500} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
+                    <div onClick={handleAIServiceClick} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
                                             <p className="text-[16px]">
-                                                Schedule a Free Consultation
+                                                Explore Artificial Intelligence
                                             </p>
                         <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
-                    </Link> 
+                    </div> 
                   </div>
                 </div>  
               </div>
@@ -216,12 +255,12 @@ const Services = ({handleTalkClick=null}) => {
                   </div>
     
                   <div className="h-[120%] mx-[38px]">
-                  <Link onClick={handleTalkClick} to="contact" offset={0} smooth={true} duration={500} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
-                                            <p className="text-[16px]">
-                                                Schedule a Free Consultation
-                                            </p>
+                  <div onClick={handleWebDevelopmentServiceClick}  className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
+                          <p className="text-[16px]">
+                            Explore Web Development
+                          </p>
                         <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
-                    </Link> 
+                    </div> 
                   </div>
                 </div>  
               </div>
@@ -246,12 +285,12 @@ const Services = ({handleTalkClick=null}) => {
                   </div>
     
                   <div className="h-[120%] mx-[38px]">
-                  <Link onClick={handleTalkClick} to="contact" offset={0} smooth={true} duration={500} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
+                  <div onClick={handleMobileDevelopmentServiceClick} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
                                             <p className="text-[16px]">
-                                                Schedule a Free Consultation
+                                                Explore Mobile Development
                                             </p>
                         <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
-                    </Link> 
+                    </div> 
                   </div>
                 </div>  
               </div>
@@ -276,12 +315,12 @@ const Services = ({handleTalkClick=null}) => {
                   </div>
     
                   <div className="h-[120%] mx-[38px]">
-                  <Link onClick={handleTalkClick} to="contact" offset={0} smooth={true} duration={500} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
+                  <div onClick={handleCustomSoftwareServiceClick}  className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
                                             <p className="text-[16px]">
-                                                Schedule a Free Consultation
+                                                Explore Custom Software Development
                                             </p>
                         <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
-                    </Link> 
+                    </div> 
                   </div>
                 </div>  
               </div>
@@ -306,12 +345,12 @@ const Services = ({handleTalkClick=null}) => {
                   </div>
     
                   <div className="h-[120%] mx-[38px]">
-                  <Link onClick={handleTalkClick} to="contact" offset={0} smooth={true} duration={500} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
+                  <div onClick={handleCloudSolutionsServiceClick}  className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
                                             <p className="text-[16px]">
-                                                Schedule a Free Consultation
+                                                Explore Cloud Solutions
                                             </p>
                         <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
-                    </Link> 
+                    </div> 
                   </div>
                 </div>  
               </div>
@@ -336,12 +375,12 @@ const Services = ({handleTalkClick=null}) => {
                   </div>
     
                   <div className="h-[120%] mx-[38px]">
-                  <Link onClick={handleTalkClick} to="contact" offset={0} smooth={true} duration={500} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
+                  <div onClick={handleUIUXServiceClick}  className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
                                             <p className="text-[16px]">
-                                                Schedule a Free Consultation
+                                                Explore UI/UX Design
                                             </p>
                         <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
-                    </Link> 
+                    </div> 
                   </div>
                 </div>  
               </div>
@@ -366,12 +405,12 @@ const Services = ({handleTalkClick=null}) => {
                   </div>
     
                   <div className="h-[120%] mx-[38px]">
-                  <Link onClick={handleTalkClick} to="contact" offset={0} smooth={true} duration={500} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
+                  <div onClick={handleSoftwareSupportServiceClick} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
                                             <p className="text-[16px]">
-                                                Schedule a Free Consultation
+                                                Explore Software Support & Maintenance
                                             </p>
                         <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
-                    </Link> 
+                    </div> 
                   </div>
                 </div>  
               </div>
@@ -396,12 +435,12 @@ const Services = ({handleTalkClick=null}) => {
                   </div>
     
                   <div className="h-[120%] mx-[38px]">
-                  <Link onClick={handleTalkClick} to="contact" offset={0} smooth={true} duration={500} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
+                  <div onClick={handleSoftwareConsultancyServiceClick}  className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
                                             <p className="text-[16px]">
-                                                Schedule a Free Consultation
+                                                Explore Software Consultancy
                                             </p>
                         <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
-                    </Link> 
+                    </div> 
                   </div>
                 </div>  
               </div>
@@ -426,12 +465,12 @@ const Services = ({handleTalkClick=null}) => {
                   </div>
     
                   <div className="h-[120%] mx-[38px]">
-                  <Link onClick={handleTalkClick} to="contact" offset={0} smooth={true} duration={500} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
+                  <div onClick={handleBlockchainServiceClick} className=" bg-[#D98032] flex flex-row items-center justify-center ring-[#000] ring-[0.5px] text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020] py-1 cursor-pointer hover:bg-[#D98032] group w-fit ">
                                             <p className="text-[16px]">
-                                                Schedule a Free Consultation
+                                                Explore Blockchain
                                             </p>
                         <Image alt="arrow" src={Arrow} height={22} className="ml-2 transition-transform duration-300 group-hover:translate-x-2"/>
-                    </Link> 
+                    </div> 
                   </div>
                 </div>  
               </div>
