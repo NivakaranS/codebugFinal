@@ -108,7 +108,7 @@ const MainPage = ({handleTalkClick}) => {
                 <p>We have just started our journey, Stay tuned for more:)</p>
             </div>
  
-            <div className='h-[90vh] flex items-center justify-center'>
+            <div className='min-h-[90vh] flex items-center justify-center'>
             <Blogs/>
             </div>   
                 
