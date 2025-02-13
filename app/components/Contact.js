@@ -4,9 +4,9 @@ import Arrow from '../images/rightArrow2.png'
 
 const Contact = () => {
     return(
-        <div className="min-h-[120vh] pb-[40px]  bg-yellow-700 flex items-center justify-center">
+        <div className="min-h-[120vh] py-[40px] md:pb-[40px]  bg-yellow-700 flex items-center justify-center">
         
-            <div className="lg:w-4/5  w-[100%] h-[100%] flex md:flex-col flex-col  lg:flex-row  px-10  ">
+            <div className="lg:w-4/5 my-[20px] w-[100%] h-[100%] flex md:flex-col flex-col  lg:flex-row  px-10  ">
                 <div className="lg:w-[40%] max-w-[1400px] w-[100%] py-10 flex flex-col items-center">
                     <div className="sm:w-[100%] w-[90%]">
                     <p className=" text-2xl sm:text-3xl text-white">Contact Us</p>
