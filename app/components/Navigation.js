@@ -92,7 +92,7 @@ const Navigation = ({handleTalkClick = null, setContactClick=null, onNavigationC
                 </div>
             </nav>
             <nav className='fixed ring-1 ring-black hidden lg:hidden md:flex sm:flex flex-row justify-between rounded-[10px] mt-5 bg-white items-center  sm:w-[90vw] h-[10vh] p-5'>
-                <a href="https://www.codebug.lk"><Image alt="arrow" src={Logo} className='cursor-pointer h-[50px] w-[auto]'/></a>
+                <a href="https://www.codebug.lk"><Image alt="arrow" src={Logo} className='cursor-pointer h-[40px] w-[auto]'/></a>
                 <Image alt="arrow" onClick={onMenuClickHandler} src={Menu} className='h-[20px] w-[28px] invert brightness-100 cursor-pointer'/>
             </nav>
             <nav className='fixed ring-1 ring-black sm:hidden flex flex-row justify-between rounded-[10px] mt-3 bg-white items-center  w-[95vw] h-[9vh] pl-3 pr-5'>

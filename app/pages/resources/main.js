@@ -1,10 +1,10 @@
 
-
+'use client'
 import Image from 'next/image'
 import Coffeeday from '../../images/coffeeday3.png'
 
 import Coffee from '../../images/coffeeday.png'
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Quantum from '../../images/quantum.jpg'
 import AI from '../../images/aii.jpg'
 import Arrow from '../../images/rightArrow2.png'
@@ -13,12 +13,19 @@ import Security from '../../images/security.jpg'
 import Logo from '../../images/codebugNew4.png'
 import Calender from '../../images/calender.png'
 import {Link, Element} from 'react-scroll'
+import Loading from '../../components/Loading'
 
 import dynamic from 'next/dynamic'
+
 const Blogs = dynamic(() => import("../../components/Blogs"), { ssr: false });
 
 const MainPage = ({handleBlog1Click, handleTalkClick, handleNewsClick, handleBlog2Click, handleBlog3Click, handleBlog4Click, handleBlogClick}) => {
+
+    
     return (
+        <div>
+            
+        
         <div className='flex flex-col items-center justify-center w-screen pb-[25px]'>
             <div className="  bg-[url('/techbackground.png')] bg-cover bg-center flex items-center justify-center relative top-[-64px] h-[100vh] w-[100vw] ">
                 <div className='px-[20px] flex flex-col items-center mt-[50px] max-w-[1400px] w-full h-[100%] max-w-[1400px] justify-center'>
@@ -50,7 +57,7 @@ const MainPage = ({handleBlog1Click, handleTalkClick, handleNewsClick, handleBlo
                             <div className='flex flex-row items-center justify-between'>
                                                 <div>
                                                     
-                                                    <p className="reveal41 text-5xl sm:text-6xl">News & Updates</p>
+                                                    <p className=" text-5xl sm:text-6xl">News & Updates</p>
                                                 </div>
                             
                                                 
@@ -83,6 +90,7 @@ const MainPage = ({handleBlog1Click, handleTalkClick, handleNewsClick, handleBlo
 
                             
                         </div>
+        </div>
         </div>
     )
 }

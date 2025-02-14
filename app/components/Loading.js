@@ -17,7 +17,7 @@ const Loading = () => {
 
 
   return (
-    <div className="flex overflow-hidden space-y-3 flex-col items-center w-screen text-white justify-center h-screen">
+    <div className="flex relative z-[999] overflow-hidden bg-black space-y-3 flex-col items-center w-screen text-white justify-center h-screen">
       
  
 		<div className="socket">

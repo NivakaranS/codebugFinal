@@ -21,7 +21,7 @@ const MainPage = ({ handleBlog2Click, handleBlog3Click, handleBlog4Click}) => {
     return (
         <div className='flex flex-col items-center justify-center w-screen py-[25px]'>
             <div className='relative top-[-100px] h-[60vh] w-screen bg-gray-300 overflow-hidden'>
-                <Image src={Quantum} alt="Quantum" className=" h-[200%] w-[100%]" />
+                <Image src={Quantum} alt="Quantum" className=" w-[100%] " />
             </div>
             <div className='relative top-[-100px]  max-w-[1400px] flex w-[90vw] h-[100%] flex-row justify-center'>
                 <div className='w-[100%] rounded-b-[30px] pt-[30px] pb-[50px]  text-black bg-white flex items-center justify-center flex-col'>

@@ -19,55 +19,28 @@ const Services = dynamic(() => import("./components/Services"), { ssr: false });
 const Testimonials = dynamic(() => import("./components/Testimonials"), { ssr: false });
 const Blogs = dynamic(() => import("./components/Blogs"), { ssr: false });
 
-// Define a mutable source for loading state
-const mutableSource = {
-  data: true, // Initial loading state is true
-  listeners: new Set(),
-  
-  subscribe(callback) {
-    this.listeners.add(callback);
-    return () => this.listeners.delete(callback); // Cleanup on unsubscribe
-  },
-
-  setData(newData) {
-    this.data = newData;
-    this.listeners.forEach(callback => callback()); // Notify listeners on data change
-  },
-
-  getData() {
-    return this.data;
-  }
-};
-
 const Home = () => {
   const [navigationClick, setNavigationClick] = useState('Home');
   const [contactClick, setContactClick] = useState(false);
-  const [firstTime, setFirstTime] = useState(true);
-
-  // Use `useMutableSource` for loading state
-  const getSnapshot = () => mutableSource.getData();
-  const subscribe = (callback) => mutableSource.subscribe(callback);
-  const [isLoading, setIsLoading] = useState(getSnapshot);
-
-  useEffect(() => {
-    // Simulate a delay for loading state
-    const timer = setTimeout(() => {
-      mutableSource.setData(false); // Set loading to false after 1 second
-      setFirstTime(false);
-    }, 3000);
-
-    const unsubscribe = subscribe(() => setIsLoading(getSnapshot()));
-    return () => {
-      clearTimeout(timer);
-      unsubscribe();
-    };
-  }, []);
-
+  const [isLoading, setIsLoading] = useState(true);
+  const [otherComponentsLoaded, setOtherComponentsLoaded] = useState(false);
+  const [allComponentsLoaded, setAllComponentsLoaded] = useState(false);
   const router = useRouter();
 
-  const handleComponentLoaded = () => {
-    setComponentsLoaded(prev => prev + 1);
-  };
+  // Simulate loading other components
+  useEffect(() => {
+    setTimeout(() => {
+      console.log("Other components loaded!");
+      setOtherComponentsLoaded(true);
+    }, 2000); 
+  }, []);
+
+  // Track when all components are loaded
+  useEffect(() => {
+    if (!isLoading && otherComponentsLoaded) {
+      setAllComponentsLoaded(true);
+    }
+  }, [isLoading, otherComponentsLoaded]);
 
   const onNavigationClick = (e) => {
     setNavigationClick(e.target.innerText);
@@ -77,71 +50,34 @@ const Home = () => {
     setContactClick(!contactClick);
   };
 
-  const handleCareerClick = () => {
-    router.push('./pages/careers');
-  };
-
-  const handleHomeClick = () => {
-    router.push('/');
-  };
-
-  const handlePortfolioClick = () => {
-    router.push('./pages/portfolio');
-  };
-
-  const handleTalkClick = () => {
-    setContactClick(true);
-  };
-
-  const handleResourceClick = () => {
-    //router.push('./resources')
-  };
-
-  const handleBlog1Click = () => {
-    router.push('/pages/blogs/blog1')
-  };
-
-  const handleBlog2Click = () => {
-    router.push('/pages/blogs/blog2')
-  };
-
-  const handleBlog3Click = () => {
-    router.push('/pages/blogs/blog3')
-  };
-
-  const handleBlog4Click = () => {
-    router.push('/pages/blogs/blog4')
-  };
-
-  const handleBlogClick = () => {
-    router.push('/pages/blogs')
-  };
-
   return (
-    isLoading && firstTime ? (
-      <Loading />
-    ) : (
-      <div className="overflow-x-hidden bg-black">
-        <Navigation handleHomeClick={handleHomeClick} handlePortfolioClick={handlePortfolioClick} handleTalkClick={handleTalkClick} handleCareerClick={handleCareerClick} handleResourceClick={handleResourceClick} setContactClick={setContactClick} navigationClick={navigationClick} onNavigationClick={onNavigationClick} />
+    <div >
+      {!allComponentsLoaded && <Loading />} 
+
+      <div className={`${allComponentsLoaded ? '' : 'hidden'} overflow-x-hidden z-[100] bg-black`}>
+        <Navigation 
+          handleHomeClick={() => router.push('/')}
+          handlePortfolioClick={() => router.push('/portfolio')}
+          handleTalkClick={() => setContactClick(true)}
+          handleCareerClick={() => router.push('/careers')}
+          setContactClick={setContactClick}
+          navigationClick={navigationClick}
+          onNavigationClick={onNavigationClick}
+        />
+        
         <Element name="home">
-          <Hero />
+          <Hero onVideoLoad={() => setIsLoading(false)} />
         </Element>
+
         <Falcon />
-        <div className="bg-[url('background5.png')] bg-cover w-[100vw] flex items-center flex-col justify-center">
-          <Element name="about">
-            <About />
-          </Element>
-          <Element name="services">
-            <Services />
-          </Element>
-          
-          <ChooseUs handleTalkClick={handleTalkClick} />
-          <Element name="portfolio">
-            <Portfolio />
-          </Element>
+        <div className={`${allComponentsLoaded ? "bg-[url('background5.png')]" : 'bg-black'}  bg-cover w-[100vw] flex items-center flex-col justify-center`}>
+          <Element name="about"><About /></Element>
+          <Element name="services"><Services /></Element>
+          <ChooseUs handleTalkClick={() => setContactClick(true)} />
+          <Element name="portfolio"><Portfolio /></Element>
           <Testimonials />
           <div className="min-h-[100vh] flex items-center justify-center">
-          <Blogs handleBlogClick={handleBlogClick} handleBlog4Click={handleBlog4Click} handleBlog3Click={handleBlog3Click} handleBlog2Click={handleBlog2Click} handleBlog1Click={handleBlog1Click} />
+            <Blogs handleBlogClick={() => router.push('/blogs')} />
           </div>
           <Element name="contact">
             <ContactForm onContactClick={onContactClick} contactClick={contactClick} />
@@ -149,7 +85,7 @@ const Home = () => {
         </div>
         <Footer onContactClick={onContactClick} />
       </div>
-    )
+    </div>
   );
 };
 

@@ -70,14 +70,14 @@ const Portfolio = ({handlePortfolioClick=null}) => {
             <div className="w-[85vw] max-w-[1400px] flex items-center justify-center flex-col">
                 <div className='flex flex-row items-center justify-between w-[100%]'>
                     <div>
-                        <p className="reveal20 text-[#F1A230] text-[20px] sm:text-[24px]">Discover our latest projects from</p>
-                        <p className="reveal21 md:text-6xl text-5xl">Portfolio</p>
+                        <p className=" text-[#F1A230] text-[20px] sm:text-[24px]">Discover our latest projects from</p>
+                        <p className=" md:text-6xl text-5xl">Portfolio</p>
                     </div>
 
                     
                 
 
-                    <div onClick={handlePortfolioClick}  className="hidden sm:flex mt-[20px] reveal4 bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] sm:px-5 2xl:py-2 ring-[#8C2020] py-1.5 cursor-pointer hover:bg-[#D98032] group w-fit ">
+                    <div onClick={handlePortfolioClick}  className="hidden sm:flex mt-[20px]  bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] sm:px-5 2xl:py-2 ring-[#8C2020] py-1.5 cursor-pointer hover:bg-[#D98032] group w-fit ">
                         <p className="text-[15px]  sm:text-[17px]">
                             View All Projects
                         </p>
@@ -87,7 +87,7 @@ const Portfolio = ({handlePortfolioClick=null}) => {
 
                 <div className="grid grid-cols-1  lg:pl-[80px] 2xl:pl-[0px] mt-[25px] sm:grid-cols-1 gap-7  xl:gap-0 md:grid-cols-1 lg:grid-cols-2  xl:mt-[40px] xl:w-[1300px] w-[85vw] ">
                     
-                <div className="reveal31 xl:h-[450px] text-black max-w-[570px] bg-gray-100  bg-cover bg-center rounded-[10px] ring-[1px] items-center ring-black shadow-lg h-[56vh] sm:h-[66vh] flex flex-col py-[4px] sm:py-[5.5px]">
+                <div className=" xl:h-[450px] text-black max-w-[570px] bg-gray-100  bg-cover bg-center rounded-[10px] ring-[1px] items-center ring-black shadow-lg h-[56vh] sm:h-[66vh] flex flex-col py-[4px] sm:py-[5.5px]">
                         <div className="group relative flex cursor-pointer  flex-row items-center justify-center bg-[#C6A961] hover:bg-[#B87333] h-[100%] sm:h-[75%] rounded-[6px] w-[98%]">
                             <Image src={Coffeeday} alt="Coffeeday" className=' h-[220px] py-[20px] sm:py-[0px] w-fit sm:h-[250px]  ' />
                             <p className='absolute text-[15px] leading-[20px] sm:leading-[30px] sm:text-[23px] w-[85%] py-2  px-4 bottom-0 left-0 mb-4 border-r-[1.5px] border-b-[1.5px] border-t-[1.5px] text-white group-hover:bg-[#8C2020] rounded-r-[8px] transition-all duration-500 delay-0 opacity-0 group-hover:opacity-100'>

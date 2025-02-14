@@ -27,7 +27,7 @@ const MainPage = ({handleTalkClick}) => {
             
             <div className="  bg-[url('/techbackground.png')] bg-cover bg-center flex items-center justify-center relative top-[-64px] h-[100vh] w-[100vw] ">
                 <div className='px-[20px] flex flex-col items-center mt-[50px] max-w-[1400px] w-full h-[100%] max-w-[1400px] justify-center'>
-                    <div className=' leading-[50px] text-center 2xl:'>
+                    <div className=' leading-[50px] text-center '>
                         <p className=' text-[40px] sm:text-[48px] text-[#41CAD9]' >Buidling the Future of Software</p>
                         <p className=' text-[20px] leading-[25px]  sm:leading-[36px] lg:leading-[50px] sm:text-[35px]'>Transforming ideas into powerful digital experiences</p>
                     </div>

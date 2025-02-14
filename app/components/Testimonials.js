@@ -61,10 +61,10 @@ const Testimonials = () => {
             <div className="max-w-[1400px]  w-[85vw]">
                 <div className="flex flex-row items-center">
                     <Image alt="arrow" src={Quote} className=" h-[80px] sm:h-[90px] w-fit "  />
-                    <p className="reveal34 md:text-5xl text-3xl sm:text-4xl text-white ml-3 w-[400px]">Kind Words From Our Customers</p>
+                    <p className=" md:text-5xl text-3xl sm:text-4xl text-white ml-3 w-[400px]">Kind Words From Our Customers</p>
                 </div>
                 <div className="  flex mt-2 flex-row  ">
-                    <p className="reveal35 w-[100%] md:w-[58%] text-[16px] sm:text-[18px] md:text-[20px] text-[#000]">Discover how our solutions have made a positive impact on our clients&apos; businesses. Hear directly from those who trust us to bring their visions to life.</p>
+                    <p className=" w-[100%] md:w-[58%] text-[16px] sm:text-[18px] md:text-[20px] text-[#000]">Discover how our solutions have made a positive impact on our clients&apos; businesses. Hear directly from those who trust us to bring their visions to life.</p>
                 </div>
                 <Slideshow/>
             </div>

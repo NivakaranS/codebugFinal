@@ -284,26 +284,10 @@ const Footer = ({handleTalkClick, onContactClick}) => {
                 {/* Half page */}
                 <div className="hidden py-8 md:flex lg:flex sm:flex xl:hidden flex-col justify-center items-center">
                     <div className="flex md:flex-row flex-col justify-center items-center   ">
-                        <div className="flex flex-col justify-center items-center md:w-[300px] w-[100vw] text-[13px] ">
-                            <div>
-                                <Image alt="arrow" src={Logo} height={60}/>
-                                <p className="leading-[18px] mt-3 mb-2 md:w-[300px] sm:w-[600px] w-[90vw]">Codebug is a dynamic and innovative software development company specializing in delivering high-quality, scalable, and user-centric digital 
-                                    solutions. Established to bridge the gap between cutting-edge technology and business needs, Codebug serves as a trusted partner 
-                                    for businesses of all sizes, from startups to enterprises.
-                                </p>
-                                <div className="flex flex-row space-x-1  items-center">
-                                    <Image alt="arrow" src={Mail} height={21} width={21} />
-                                    <p className="text-[15px] text-gray-700">info@codebug.lk</p>
-                                </div>
-                                <div className="flex flex-row mt-1 space-x-1 items-center">
-                                    <Image alt="arrow" src={Phone} height={20} />
-                                    <p className="text-[14px] text-gray-700">+94 75 790 2557</p>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                         <div className="flex my-[20px] flex-col my-3 space-x-7 md:space-x-4 justify-center px-8 md:w-[450px] w-[100vw] ">
-                            <div className="bg-gray-300 py-5 px-5 rounded-[5px] w-[65%] md:w-[500px]">
+                            <div className="bg-gray-300 py-8 px-5 rounded-[5px] w-[100%] md:w-[500px]">
                                 <p className="mb-1.5 text-[15px]">Subscribe to Our Newsletter</p>
                                 <div className="relative ">
                                     <input className="outline-none bg-white ring-1 ring-black rounded-[6px] pl-3 pr-[110px] py-2 w-full " placeholder="Enter your email  address"/>
@@ -325,7 +309,7 @@ const Footer = ({handleTalkClick, onContactClick}) => {
                         
                         <div className="flex flex-col  mx-8 md:w-fit w-[50%]">
                             <div>
-                                <p className="text-xl text-gray-600">Company</p>
+                                <p className="text-2xl text-gray-600">Company</p>
                                 <p onClick={handleHomeClick} className="cursor-pointer w-fit hover:text-gray-700">Home</p>
                                 <p onClick={handleHomeClick} className="cursor-pointer w-fit hover:text-gray-700">About</p>
                                 <p onClick={handleHomeClick} className="cursor-pointer w-fit hover:text-gray-700">Services</p>
@@ -342,11 +326,11 @@ const Footer = ({handleTalkClick, onContactClick}) => {
                         </div>
                         <div className="flex flex-col justify-center mx-8 w-[50%] ">
                             <div>
-                            <p className="text-xl text-gray-600">Our Products</p>
+                            <p className="text-2xl text-gray-600">Our Products</p>
                             <p className="cursor-pointer w-fit hover:text-gray-700">Project 01</p>
                             <p className="cursor-pointer w-fit hover:text-gray-700">Project 02</p>
 
-                            <p className="text-xl text-gray-600 mt-6">Our Services</p>
+                            <p className="text-2xl text-gray-600 mt-6">Our Services</p>
                             <p onClick={handleAIServiceClick} className="cursor-pointer w-fit hover:text-gray-700 ">Artificial Intelligence</p>
                             <p onClick={handleWebDevelopmentServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Web App Development</p>
                             <p onClick={handleMobileDevelopmentServiceClick} className="cursor-pointer w-fit hover:text-gray-700">Mobile App Development</p>
@@ -360,6 +344,23 @@ const Footer = ({handleTalkClick, onContactClick}) => {
                         </div>
 
                     </div>
+                    <div className="flex flex-col justify-center items-center md:w-[300px] w-[100vw] text-[13px] ">
+                            <div>
+                                <Image alt="arrow" src={Logo} height={60}/>
+                                <p className="leading-[18px] mt-3 mb-2 md:w-[300px] sm:w-[600px] w-[90vw]">Codebug is a dynamic and innovative software development company specializing in delivering high-quality, scalable, and user-centric digital 
+                                    solutions. Established to bridge the gap between cutting-edge technology and business needs, Codebug serves as a trusted partner 
+                                    for businesses of all sizes, from startups to enterprises.
+                                </p>
+                                <div className="flex flex-row space-x-1  items-center">
+                                    <Image alt="arrow" src={Mail} height={21} width={21} />
+                                    <p className="text-[15px] text-gray-700">info@codebug.lk</p>
+                                </div>
+                                <div className="flex flex-row mt-1 space-x-1 items-center">
+                                    <Image alt="arrow" src={Phone} height={20} />
+                                    <p className="text-[14px] text-gray-700">+94 75 790 2557</p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
                 <div className="flex flex-row justify-center items-center">

@@ -10,6 +10,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        overlayBlack: 'rgba(0, 0, 0, 0.5)',
+        overlayWhite: 'rgba(255, 255, 255, 0.7)',
+        customGray: '#808080'
       },
     },
   },

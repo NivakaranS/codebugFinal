@@ -21,7 +21,7 @@ const MainPage = ({handleBlog1Click, handleBlog2Click, handleBlog3Click, handleB
     return (
         <div className='flex flex-col items-center justify-center w-screen py-[25px]'>
             <div className="relative top-[-100px] h-[60vh] bg-[url('/techbackground.png')] bg-cover bg-center  w-screen flex items-center justify-center py-[80px] bg-gray-300 overflow-hidden">
-                <Image src={Logo} alt="Quantum" className=" h-[100%] mt-[80px] w-fit" />
+                <Image src={Logo} alt="Quantum" className=" h-[100%] w-[auto] mt-[80px] w-fit" />
             </div>
             <div className='relative top-[-100px] flex w-[90vw] h-[100%] flex-row justify-center'>
                 <div className='w-[100%] rounded-b-[30px] pt-[30px] pb-[50px]  text-black bg-white flex items-center justify-center flex-col'>

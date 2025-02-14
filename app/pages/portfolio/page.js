@@ -3,9 +3,9 @@ import React from 'react';
 
 
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from "next/navigation";
-
+import Loading from '../../components/Loading';
 import { Element } from "react-scroll";
 import MainPage from './main';
 
@@ -20,7 +20,24 @@ const Portfolio = () => {
     const [navigationClick, setNavigationClick] = useState('Portfolio');
     const [contactClick, setContactClick] = useState(false);
     const router = useRouter();
+
+    const [otherComponentsLoaded, setOtherComponentsLoaded] = useState(false);
+        const [allComponentsLoaded, setAllComponentsLoaded] = useState(false);
     
+        // Simulate loading other components
+        useEffect(() => {
+            setTimeout(() => {
+                console.log("Other components loaded!");
+                setOtherComponentsLoaded(true);
+            }, 2000);
+        }, []);
+    
+        // Track when all components are loaded
+        useEffect(() => {
+            if (otherComponentsLoaded) {
+                setAllComponentsLoaded(true);
+            }
+        }, [otherComponentsLoaded]);
         
     
     const onContactClick = () => {
@@ -61,6 +78,12 @@ const Portfolio = () => {
     
 
     return(
+      <div>
+            {!allComponentsLoaded && 
+            <div className='overflow-hidden'>
+              <Loading />
+            </div>
+            }
         <div className="overflow-x-hidden bg-[url('background5.png')] sm:bg-[url('background8.png')] bg-cover bg-left">
             <Navigation handleTalkClick={handleTalkClick} setContactClick={setContactClick} navigationClick={navigationClick} />
         
@@ -70,6 +93,7 @@ const Portfolio = () => {
                 <ContactForm onContactClick={onContactClick} contactClick={contactClick}/>
             </Element>
             <Footer />
+        </div>
         </div>
     )
 }

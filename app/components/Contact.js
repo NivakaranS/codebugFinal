@@ -6,7 +6,7 @@ const Contact = () => {
     return(
         <div className="min-h-[120vh] py-[40px] md:pb-[40px]  bg-yellow-700 flex items-center justify-center">
         
-            <div className="lg:w-4/5 my-[20px] w-[100%] h-[100%] flex md:flex-col flex-col  lg:flex-row  px-10  ">
+            <div className="lg:w-4/5 my-[20px] w-[100%] h-[100%] flex md:flex-col flex-col  lg:flex-row  px-3 sm:px-10  ">
                 <div className="lg:w-[40%] max-w-[1400px] w-[100%] py-10 flex flex-col items-center">
                     <div className="sm:w-[100%] w-[90%]">
                     <p className=" text-2xl sm:text-3xl text-white">Contact Us</p>
@@ -19,7 +19,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="lg:w-[60%] w-[100%] md:mb-[0px] mb- flex flex-col space-y-3  items-center">
-                    <div className="flex flex-col sm:w-[100%] w-[90%]  space-y-3 sm:space-y-0 sm:flex-row sm:space-x-3">
+                    <div className="flex flex-col sm:w-[100%] w-[100%] sm:w-[90%]  space-y-3 sm:space-y-0 sm:flex-row sm:space-x-3">
                         <div>
                             <div className="flex flex-row items-center mx-[25px] sm:mx-[0px] w-[100%]">
                                     <p className=" text-[15px] sm:text-[17px] text-yellow-200 mb-1">Your Name*</p>
@@ -37,7 +37,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col sm:w-[100%] w-[90%] space-y-3 sm:space-y-0 sm:flex-row sm:space-x-3">
+                    <div className="flex flex-col sm:w-[100%] w-[100%] sm:w-[90%] space-y-3 sm:space-y-0 sm:flex-row sm:space-x-3">
                             <div>
                             <div className="flex flex-row items-center mx-[25px] sm:mx-[0px] w-[100%]">
                                     <p className=" text-[15px] sm:text-[17px] text-yellow-200 mb-1">Phone*</p>
@@ -58,7 +58,7 @@ const Contact = () => {
                             
                         
                     </div>
-                    <div className="flex flex-col sm:w-[100%]  w-[90%]  ml-[9%] sm:ml-[0%]  space-y-3 sm:space-y-0 sm:flex-row sm:space-x-3">
+                    <div className="flex flex-col sm:w-[100%]  w-[100%] sm:w-[90%]  ml-[9%] sm:ml-[0%]  space-y-3 sm:space-y-0 sm:flex-row sm:space-x-3">
                             <div className="sm:w-[100%] w-[80%]  ">
                             <p className="text-[15px] sm:text-[17px] text-yellow-200 mb-1">Your Message*</p>
                             <textarea type="text" className="  sm:w-[610px]  w-[113%] resize-none h-[200px] bg-gray-200 px-3.5 py-2.5 text-black outline-2 ring-1 ring-color-black ring-gray-700 focus:outline-none rounded-md focus:ring-black duration-500 hover:ring-orange-300"/>

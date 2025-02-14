@@ -79,7 +79,7 @@ const About = () => {
 
   return (
     <div className='min-h-[115vh]  w-[100vw] text-white flex justify-center items-end'>
-      <div className="rounded-t-[15px] sm:rounded-t-[30px] mt-[45px] lg:mt-[0px] ring-2 ring-gray-400 max-w-[1400px] w-[90vw] min-h-[100vh] bg-[url('/aboutbackground15.png')] bg-cover bg-white flex items-center justify-center">
+      <div className="rounded-t-[15px] sm:rounded-t-[30px] mt-[45px] lg:mt-[0px] ring-2 ring-gray-400 max-w-[1400px] w-[90vw] min-h-[100vh] bg-[#000]  flex items-center justify-center">
         <div className='grid grid-cols-1 pt-[5px] sm:pt-[30px] md:pt-[5px] lg:grid-cols-4 xl:py-[50px] min-h-[86vh] gap-4 w-[100%] sm:w-[90%] text-[#F1A230] text-[19px] px-4 md:px-12 text-center'>
           <div className="bg-[url('/aboutbackground3.png')] bg-cover rounded-[20px] w-full h-full">
           </div>
@@ -93,23 +93,32 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[url('/aboutbackground11.png')]  text-white bg-[#373435] flex 2xl:py-[30px] bg-cover ring-1 ring-gray-300 rounded-[10px] sm:rounded-[20px] text-[15px] px-5 md:px-[50px] 2xl:px-[80px] w-[100%] sm:w-full h-full col-span-1 md:col-span-2 flex flex-col items-center pt-5 pb-[50px] ">
-            <Image alt='codebug' className='reveal22 2xl:h-[130px] h-[100px]  w-fit' src={Codebug} />
-            <p className='reveal20 mt-4 text-[15px] sm:text-[17px] '>
+          <div className=" text-white lg:ring-1 flex 2xl:py-[30px]   ring-gray-300 rounded-[10px] sm:rounded-[20px] text-[15px] px-5 md:px-[50px] 2xl:px-[80px] w-[100%] sm:w-full h-full col-span-1 md:col-span-2 flex flex-col items-center pt-[45px] pb-[30px] ">
+            <div>
+              <p className=" text-2xl  text-[#F1A230]">About Codebug</p>
+              <p className=" text-[40px] leading-[40px] sm:text-5xl  w-[300px]">The Codebug </p>
+              
+            </div>
+           
+            <p className=' mt-4 text-[15px] text-gray-300 sm:text-[17px] '>
               Codebug is a dynamic software development company dedicated to creating tailored software solutions that align with
               your business goals. With a team of experienced developers, creative innovators, and tech enthusiasts, we leverage the latest tools, technologies and frameworks to deliver
               solutions that make a real impact.
             </p>
-            <p className='reveal21 mt-2 mb-6 text-[15px] sm:text-[17px]'>
+            <p className=' mt-2 mb-6 text-[15px] text-gray-300 sm:text-[17px]'>
               Our vision is to create the best innovative products in the world and make
               cutting-edge technology accessible to everyone. We strive to empower businesses with the latest
               technology, enabling them to streamline operations, boost productivity, and achieve their full potential.
             </p>
           </div>
-          <div ref={ref2} className='flex lg:hidden justify-center items-center py-4 mb-[20px] bg-[#39B5C8] rounded-[20px] row-span-2'>
-            <div className='flex flex-col leading-[45px] mt-4 text-gray-800 items-center justify-center h-full'>
-              <p className='text-[80px]'>{mutableSource.current.counter2}+</p>
+          <div ref={ref2} className='flex lg:hidden justify-center space-x-[40px] md:space-x-[0px]   items-center py-4 mb-[20px] md:bg-[#39B5C8] rounded-[20px] row-span-2'>
+            <div className='flex flex-col leading-[50px] md:leading-[45px] mt-4 text-red-500 md:text-gray-800 items-center justify-center h-full'>
+              <p className='text-[100px] md:text-[80px]'>{mutableSource.current.counter2}+</p>
               <p className='mt-1'>Projects completed</p>
+            </div>
+            <div className='flex flex-col leading-[50px] md:leading-[45px] mt-4 text-red-500 md:text-gray-800 items-center justify-center h-full'>
+              <p className='text-[100px] md:text-[80px]'>2+</p>
+              <p className='mt-1'>Years experience</p>
             </div>
           </div>
         </div>

@@ -115,15 +115,15 @@ const Services = ({handleTalkClick=null}) => {
     >
       <div className="w-[90vw] max-w-[1400px] flex flex-col items-center">
         <div className="mb-9 w-[100%] leading-[20px]">
-          <p className="reveal5 text-white text-[34px] sm:text-[50px] leading-[40px] sm:leading-[55px] md:w-[100%]  lg:w-[50%]">
+          <p className=" text-white text-[34px] sm:text-[50px] leading-[40px] sm:leading-[55px] md:w-[100%]  lg:w-[50%]">
             Explore Our Services That Drives Innovation
           </p>
-          <p className="reveal7 text-[17px] sm:text-[24px] text-[#F1A230] mt-1">
+          <p className=" text-[17px] sm:text-[24px] leading-[30px] text-[#F1A230] mt-1">
             Leveraging our expertise to provide impactful solutions that elevate
             your business
           </p>
         </div>
-        <div className="flex ring-2 ring-[#D98032] rounded-[10px] mx-7 mt-9 flex-row  justify-between items-center mt-[5px]  ">
+        <div className="flex ring-2 ring-[#D98032] rounded-[10px] mx-7 mt-9 flex-row  justify-between items-center mt-[5px] w-[100%] ">
           <div className="  flex border-r-[1px] border-gray-800 flex-col bg-gray-300 text-black lg:rounded-l-[10px] lg:rounded-r-[0px] rounded-[10px]  max-h-[520px] h-[75vh]  w-[100%] lg:w-[40%]">
               
               <div onClick={onServiceClick} className={`${

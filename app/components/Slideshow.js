@@ -87,10 +87,12 @@ export default function Slideshow() {
 
   return (
     <div
+      
       style={{
+      
         marginTop: '35px',
         overflow: 'hidden', // Hide overflowing cards
-        width: '85.5vw', // Take full viewport width
+        // Take full viewport width
         maxWidth: '1400px',
         height: '300px', // Adjust height as per card's height
         position: 'relative',
@@ -106,8 +108,8 @@ export default function Slideshow() {
           display: 'flex',
           flexDirection: 'row', // Horizontal alignment
           padding: '10px 0', // Space between cards
+          minWidth: '2300px',
 
-          
           borderRadius: '5px',
           
         }}
@@ -122,7 +124,7 @@ export default function Slideshow() {
               marginRight: '10px', // Space between cards
                // Full viewport width for each card
               height: '100%', // Full height for each card
-
+              
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',

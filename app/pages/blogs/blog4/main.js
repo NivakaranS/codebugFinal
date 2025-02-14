@@ -109,7 +109,7 @@ const MainPage = ({handleBlog1Click, handleBlog2Click, handleBlog3Click, handleB
                 <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 xl:w-[1250px]  w-[100%] mt-9 mb-4">
                                                                 <div className="reveal42 px-3 text-black w-full bg-gray-100 rounded-[6px] ring-2 ring-white leading-[17px]  sm:h-full h-[380px] max-h-[390px] w-full max-w-[285px] flex flex-col items-center justify-center">
                                                                     <div className="flex flex-row items-center justify-center bg-red-500 rounded-[8px] overflow-hidden h-[350px] w-[109.5%]">
-                                                                        <Image src={Quantum} alt="Quantum" className=" h-[100%] w-[100%]" />
+                                                                        <Image src={Quantum} alt="Quantum" className=" h-[100%] " />
                                                                     </div>
                                                                     <div className="flex flex-col  py-3 w-[100%] h-[80%]">
                                                                         <div className="text-[11px] ring-[1px] ring-blue-800 w-fit text-blue-900 bg-blue-200 px-2 py-[1.5px] mb-1.5 rounded-[3px]">

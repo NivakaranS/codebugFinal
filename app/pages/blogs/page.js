@@ -3,8 +3,9 @@ import React from 'react';
 
 
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from "next/navigation";
+import Loading from '../../components/Loading';
 
 import { Element } from "react-scroll";
 import MainPage from './main';
@@ -19,6 +20,24 @@ const BlogsMainPage = () => {
     const [navigationClick, setNavigationClick] = useState('Resources');
     const [contactClick, setContactClick] = useState(false);
     const router = useRouter();
+
+    const [otherComponentsLoaded, setOtherComponentsLoaded] = useState(false);
+                const [allComponentsLoaded, setAllComponentsLoaded] = useState(false);
+            
+                // Simulate loading other components
+                useEffect(() => {
+                    setTimeout(() => {
+                        console.log("Other components loaded!");
+                        setOtherComponentsLoaded(true);
+                    }, 2000);
+                }, []);
+            
+                // Track when all components are loaded
+                useEffect(() => {
+                    if (otherComponentsLoaded) {
+                        setAllComponentsLoaded(true);
+                    }
+                }, [otherComponentsLoaded]);
     
         
     
@@ -62,7 +81,13 @@ const BlogsMainPage = () => {
       }
 
     return(
-        <div className="overflow-x-hidden bg-[url('background8.png')] bg-cover bg-left">
+      <div>
+            {!allComponentsLoaded && 
+            <div className='overflow-hidden'>
+              <Loading />
+            </div>
+            }
+        <div className={`${allComponentsLoaded ? '': 'hidden'} overflow-x-hidden bg-[url('background8.png')] bg-cover bg-left`}>
             <Navigation  setContactClick={setContactClick} navigationClick={navigationClick}  />
         
             <MainPage handleBlogClick={handleBlogClick} handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click}/>
@@ -71,6 +96,7 @@ const BlogsMainPage = () => {
                 <ContactForm onContactClick={onContactClick} contactClick={contactClick}/>
             </Element>
             <Footer />
+        </div>
         </div>
     )
 }
