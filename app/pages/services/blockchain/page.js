@@ -1,7 +1,5 @@
 'use client';
-import React from 'react';
-
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from "next/navigation";
 
 import { Element } from "react-scroll";
@@ -38,6 +36,16 @@ const mutableSource = {
 const Resources = () => {
     const [navigationClick, setNavigationClick] = useState('Services');
     const [contactClick, setContactClick] = useState(false);
+
+    const [allComponentsLoaded, setAllComponentsLoaded] = useState(false);
+        
+        // Simulate loading other components
+        useEffect(() => {
+            setTimeout(() => {
+                console.log("Other components loaded!");
+                setAllComponentsLoaded(true);
+              }, 2000);
+        }, []);
 
     const getSnapshot = () => mutableSource.getData();
       const subscribe = (callback) => mutableSource.subscribe(callback);
@@ -121,10 +129,13 @@ const Resources = () => {
       }
 
     return(
-      isLoading ? (
-        <Loading />
-      ) : (
-        <div className="overflow-x-hidden bg-[url('background8.png')] bg-cover bg-left">
+      <div>
+            {!allComponentsLoaded && 
+            <div className='overflow-hidden'>
+              <Loading />
+            </div>
+            }
+        <div className={`${allComponentsLoaded ? '' : 'hidden'} overflow-x-hidden bg-[url('background8.png')] bg-cover bg-left`}>
             <Navigation handlePortfolioClick={handlePortfolioClick} handleTalkClick={handleTalkClick} handleResourceClick={handleResourceClick} handleCareerClick={handleCareerClick} setContactClick={setContactClick} navigationClick={navigationClick} onNavigationClick={onNavigationClick} />
         
             <MainPage handleTalkClick={handleTalkClick} handleBlogClick={handleBlogClick} handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click}/>
@@ -134,8 +145,9 @@ const Resources = () => {
             </Element>
             <Footer />
         </div>
+        </div>
       )
-    )
+    
 }
 
 export default Resources

@@ -1,18 +1,29 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navigation from '../../../components/Navigation';
 import Footer from '../../../components/Footer';
 import Falcon from '../../../components/falcon';
-import { useState } from 'react';
+
 import { useRouter } from "next/navigation";
 import ContactForm from '../../../components/contactForm';
 import { Element } from "react-scroll";
 import MainPage from './main';
+import Loading from '../../../components/Loading';
 
 const Resources = () => {
     const [navigationClick, setNavigationClick] = useState('Services');
     const [contactClick, setContactClick] = useState(false);
     const router = useRouter();
+
+    const [allComponentsLoaded, setAllComponentsLoaded] = useState(false);
+        
+        // Simulate loading other components
+        useEffect(() => {
+            setTimeout(() => {
+                console.log("Other components loaded!");
+                setAllComponentsLoaded(true);
+              }, 2000);
+        }, []);
     
     const onNavigationClick = () => {
         router.push('/')
@@ -75,7 +86,13 @@ const Resources = () => {
       }
 
     return(
-        <div className="overflow-x-hidden bg-[url('background8.png')] bg-cover bg-left">
+      <div>
+            {!allComponentsLoaded && 
+            <div className='overflow-hidden'>
+              <Loading />
+            </div>
+            }
+        <div className={`${allComponentsLoaded ? '' : 'hidden'}  overflow-x-hidden bg-[url('background8.png')] bg-cover bg-left`}>
             <Navigation handlePortfolioClick={handlePortfolioClick} handleTalkClick={handleTalkClick} handleResourceClick={handleResourceClick} handleCareerClick={handleCareerClick} setContactClick={setContactClick} navigationClick={navigationClick} onNavigationClick={onNavigationClick} />
         
             <MainPage handleTalkClick={handleTalkClick} handleBlogClick={handleBlogClick} handleBlog1Click={handleBlog1Click} handleBlog2Click={handleBlog2Click} handleBlog3Click={handleBlog3Click} handleBlog4Click={handleBlog4Click}/>
@@ -84,6 +101,7 @@ const Resources = () => {
                 <ContactForm onContactClick={onContactClick} contactClick={contactClick}/>
             </Element>
             <Footer />
+        </div>
         </div>
     )
 }
