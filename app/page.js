@@ -22,11 +22,12 @@ const Blogs = dynamic(() => import("./components/Blogs"), { ssr: false });
 const Home = () => {
   const [navigationClick, setNavigationClick] = useState('Home');
   const [contactClick, setContactClick] = useState(false);
+
+  const router = useRouter();
+  
   const [isLoading, setIsLoading] = useState(true);
   const [otherComponentsLoaded, setOtherComponentsLoaded] = useState(false);
   const [allComponentsLoaded, setAllComponentsLoaded] = useState(false);
-  const router = useRouter();
-
   // Simulate loading other components
   useEffect(() => {
     setTimeout(() => {

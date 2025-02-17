@@ -38,36 +38,40 @@ const Falcon = () => {
 
 
 const fetchData = async () => {
-    if (!sessionId) return;
+    if (!sessionId || !message) return;
 
-    console.log(sessionId);
-    const payload = {
-        session_id: sessionId,
-        question: message,
-    };
+    console.log("Session ID:", sessionId);
+
+    const payload = { session_id: sessionId, question: message };
 
     try {
-        
-        const response = await axios.post('http://127.0.0.1:8000/ask_question', payload, {
-            headers: {
-                'Content-Type': 'application/json',
+        const response = await axios.post(
+            "https://nivakaran-falconv2.hf.space/ask_question/",
+            payload,
+            {
+                headers: { "Content-Type": "application/json" },
+                timeout: 10000, // Timeout of 10 seconds
             }
-        });
+        );
 
-        
-        console.log(response.data);
+        console.log("API Response:", response.data);
+
+        const answer = response.data?.answer || "No response received";
+
         setMessageCollection((prevMessages) => [
             ...prevMessages,
-            { type: 'receiver', content: response.data.answer, timestamp: Date.now() }
+            { type: "receiver", content: answer, timestamp: Date.now() }
         ]);
 
         setTyping(false);
 
     } catch (error) {
-        console.error('Error invoking API:', error.response ? error.response.status : error.message);
+        console.error("Error invoking API:", error.message);
         if (error.response) {
-            const errorDetails = error.response.data;
-            console.log(errorDetails);
+            console.error("Response Status:", error.response.status);
+            console.error("Response Data:", error.response.data);
+        } else {
+            console.error("Network error: API may be down.");
         }
     }
 };
