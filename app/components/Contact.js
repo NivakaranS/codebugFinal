@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Arrow from '../images/rightArrow2.png'
 
-const Contact = () => {
+const Contact = ({handleMessageSubmit}) => {
     return(
         <div className="min-h-[120vh] py-[40px] md:pb-[40px]  bg-yellow-700 flex items-center justify-center">
         
@@ -69,7 +69,7 @@ const Contact = () => {
                     
                     
 
-                    <div  className="reveal4 bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020]  py-1 sm:py-1.5 cursor-pointer hover:bg-[#D98032] group">
+                    <div onClick={handleMessageSubmit}  className="reveal4 bg-[#D98032] flex flex-row items-center justify-center ring-[#BF532C] ring-1 text-xl text-black rounded-[5px] px-5 2xl:py-2 ring-[#8C2020]  py-1 sm:py-1.5 cursor-pointer hover:bg-[#D98032] group">
                                         <p className="2xl:text-[23px] lg:text-[20px] md:text-[20px] sm:text-[20px] text-[17px]">
                                             Submit
                                           </p>
