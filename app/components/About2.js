@@ -79,7 +79,7 @@ const About = () => {
 
   return (
     <div className='min-h-[115vh]  w-[100vw] text-white flex justify-center items-end'>
-      <div className="rounded-t-[15px]  sm:rounded-t-[30px] mt-[45px] lg:mt-[0px] ring-2 ring-gray-400 max-w-[1400px] w-[90vw] min-h-[100vh] bg-[#000]  flex items-center justify-center">
+      <div className="rounded-t-[15px] bg-[url('/aboutbackground15.png')] bg-cover   sm:rounded-t-[30px] mt-[45px] lg:mt-[0px] ring-2 ring-gray-400 max-w-[1400px] w-[90vw] min-h-[100vh] bg-[#000]  flex items-center justify-center">
         <div className='grid grid-cols-1 pt-[5px] sm:pt-[30px] md:pt-[5px] lg:grid-cols-4 xl:pt-[50px] pb-[40px] min-h-[100vh] gap-4 w-[100%]  sm:w-[90%] text-[#F1A230] text-[19px] px-4 md:px-12 text-center'>
           <div className="bg-[url('/aboutbackground3.png')] bg-cover rounded-[20px] w-full h-full">
           </div>
