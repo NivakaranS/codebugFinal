@@ -100,12 +100,12 @@ const About = () => {
               
             </div>
            
-            <p className=' mt-4 text-[15px] text-gray-300 sm:text-[17px] '>
+            <p className=' mt-4 text-[18px] lg:w-[90%] text-gray-300 sm:text-[17px] '>
               Codebug is a dynamic software development company dedicated to creating tailored software solutions that align with
               your business goals. With a team of experienced developers, creative innovators, and tech enthusiasts, we leverage the latest tools, technologies and frameworks to deliver
               solutions that make a real impact.
             </p>
-            <p className=' mt-2 mb-6 text-[15px] text-gray-300 sm:text-[17px]'>
+            <p className=' mt-2 mb-6 text-[18px] lg:w-[90%] text-gray-300 sm:text-[17px]'>
               Our vision is to create the best innovative products in the world and make
               cutting-edge technology accessible to everyone. We strive to empower businesses with the latest
               technology, enabling them to streamline operations, boost productivity, and achieve their full potential.
