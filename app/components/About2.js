@@ -93,7 +93,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className=" text-white lg:ring-1 flex 2xl:py-[30px]   ring-gray-300 rounded-[10px] sm:rounded-[20px] text-[15px] px-5 md:px-[50px] 2xl:px-[80px] w-[100%] sm:w-full h-full col-span-1 md:col-span-2 flex flex-col items-center pt-[45px] pb-[30px] ">
+          <div className=" text-white flex md:ring-1 ring-gray-300  rounded-[10px] sm:rounded-[20px] text-[15px] px-5  w-[100%] sm:w-full h-full col-span-1 md:col-span-2 flex flex-col items-center justify-center">
             <div>
               <p className=" text-2xl  text-[#F1A230]">About Codebug</p>
               <p className=" text-[40px] leading-[40px] sm:text-5xl  w-[300px]">The Codebug </p>
