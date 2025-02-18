@@ -517,7 +517,7 @@ const Services = ({handleTalkClick=null}) => {
             </div>
         </div>
         <div className="hidden md:flex  min-h-[70vh] rounded-[10px] bg-white mt-[25px] flex-row  justify-center items-center  w-[85%] ">
-          <div className="w-[40%] ring-1 ring-black relative rounded-[10px] py-[15px] bg-gray-200 top-[-15px] left-[-15px] h-[75vh] text-black flex flex-col">
+          <div className="w-[40%] ring-1 ring-black relative rounded-[10px] py-[15px] bg-gray-200 top-[-15px] left-[-15px] h-[70vh] text-black flex flex-col">
             <div onClick={onServiceClick} className={`${service === "Artificial Intelligence" ? "bg-blue-300 rounded-[10px] w-[105%]" : "hover:bg-gray-200 hover:w-[100%]"} h-[100%] px-[20px]  cursor-pointer rounded-tl-[10px] flex items-center `}>
               <p>Artificial Intelligence</p>
             </div>
